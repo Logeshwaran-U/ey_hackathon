@@ -1,0 +1,20 @@
+# Ignore environment variables
+.env
+
+# Ignore virtual environment
+env_ey/
+
+# Ignore temp + processed data
+temp/
+data/processed/
+data/output/
+
+# Ignore database files
+database/*.db
+
+# Ignore system logs
+system.log
+
+# Ignore __pycache__
+__pycache__/
+**/__pycache__/

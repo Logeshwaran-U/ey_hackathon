@@ -1,0 +1,10 @@
+Got it — here’s the **7-line max explanation**:
+"""setting.py""""
+1. `settings.py` stores all important configuration in one place.
+2. Other files import it to access API keys, model names, and paths.
+3. It prevents hardcoding values inside agents or services.
+4. Makes the project easier to maintain and change later.
+5. Keeps file paths and thresholds consistent everywhere.
+6. Ensures the system doesn’t break if something changes.
+7. It’s the foundation every other file depends on.
+
