@@ -8,3 +8,18 @@ Got it — here’s the **7-line max explanation**:
 6. Ensures the system doesn’t break if something changes.
 7. It’s the foundation every other file depends on.
 
+🟩 2. The flow is ALWAYS:
+(1) PDF Extraction
+↓
+
+(2) Enrichment Agent → creates structured information
+↓
+
+(3) Validation Agent → compares CSV vs enriched
+↓
+
+(4) QA Agent → assigns confidence scores
+↓
+
+(5) Directory Agent → writes final CSV
+This is exactly how EY’s reference workflow works.
