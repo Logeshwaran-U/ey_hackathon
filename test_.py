@@ -256,4 +256,10 @@ def run_tests(name: str, address: str):
 
 
 if __name__ == "__main__":
-    run_validation_batch()
+    parser = argparse.ArgumentParser(description="Google Maps API Tester")
+    parser.add_argument("--name", type=str, required=True, help="Clinic/Provider name (e.g. 'Ruban Hospital')")
+    parser.add_argument("--address", type=str, required=True, help="Address or city (e.g. 'Patna')")
+
+    args = parser.parse_args()
+    run_tests(args.name, args.address)
+
