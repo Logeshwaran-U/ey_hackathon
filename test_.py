@@ -90,19 +90,95 @@
 # print("\n===== END CHECK =====\n")
 
 
+# import os
+# import glob
+# from services.pdf_vlm_extractor import PDFVLMExtractor
+
+# PDF_DIR = "data/input/pdfs"
+
+# def run_batch():
+#     extractor = PDFVLMExtractor()
+#     pdfs = glob.glob(os.path.join(PDF_DIR, "*.pdf"))
+#     for pdf_path in pdfs:
+#         provider_id = os.path.splitext(os.path.basename(pdf_path))[0].upper()
+#         print(f"\nProcessing: {provider_id}")
+#         extractor.run(pdf_path, provider_id)
+
+# if __name__ == "__main__":
+#     run_batch()
+
+
+
 import os
+import json
 import glob
-from services.pdf_vlm_extractor import PDFVLMExtractor
 
-PDF_DIR = "data/input/pdfs"
+from agents.data_validation_agent import DataValidationAgent
 
-def run_batch():
-    extractor = PDFVLMExtractor()
-    pdfs = glob.glob(os.path.join(PDF_DIR, "*.pdf"))
-    for pdf_path in pdfs:
-        provider_id = os.path.splitext(os.path.basename(pdf_path))[0].upper()
-        print(f"\nProcessing: {provider_id}")
-        extractor.run(pdf_path, provider_id)
+# folders
+CSV_FILE = "data/input/providers.csv"      # optional
+PDF_EXTRACTED_JSON = "data/processed/enriched_data.json"   # output of PDF extractor
+VALIDATION_OUTPUT = "data/processed/validated_data.json"
+
+def load_csv_rows():
+    """
+    Loads providers.csv as a dict keyed by provider_id.
+    If CSV is not used in your project, returns empty dict.
+    """
+    if not os.path.exists(CSV_FILE):
+        print("⚠ No providers.csv found → continuing without CSV rows.")
+        return {}
+
+    import csv
+    rows = {}
+    with open(CSV_FILE, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for r in reader:
+            pid = (r.get("provider_id") or r.get("id") or "").strip()
+            if pid:
+                rows[pid.upper()] = r
+    return rows
+
+
+def load_pdf_extracted():
+    """
+    Loads the entire enriched_data.json produced by pdf_vlm_extractor.
+    Each key: provider_id → extracted fields.
+    """
+    if not os.path.exists(PDF_EXTRACTED_JSON):
+        print("❌ ERROR: enriched_data.json not found. Run pdf_vlm_extractor first.")
+        return {}
+
+    return json.load(open(PDF_EXTRACTED_JSON, "r", encoding="utf-8"))
+
+
+def run_validation_batch():
+    print("\n🚀 Starting Data Validation Batch...\n")
+
+    csv_rows = load_csv_rows()
+    pdf_json_all = load_pdf_extracted()
+
+    agent = DataValidationAgent()
+    validated_count = 0
+
+    for provider_id, extracted_json in pdf_json_all.items():
+        provider_id = provider_id.upper()
+
+        csv_row = csv_rows.get(provider_id)
+
+        print(f"\n🔍 Validating Provider: {provider_id}")
+        result = agent.run(provider_id, csv_row=csv_row, extracted_json=extracted_json)
+
+        print("✔ Validation Complete:")
+        print(json.dumps(result, indent=2, ensure_ascii=False))
+
+        validated_count += 1
+
+    print("\n==============================================")
+    print(f"✅ TOTAL VALIDATED PROVIDERS: {validated_count}")
+    print(f"📄 Output file: {VALIDATION_OUTPUT}")
+    print("==============================================\n")
+
 
 if __name__ == "__main__":
-    run_batch()
+    run_validation_batch()
