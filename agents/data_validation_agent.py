@@ -1,21 +1,3 @@
-"""
-agents/data_validation_agent.py  (Option 4)
-
-Advanced Data Validation Agent — CSV + PDF fusion + phonenumbers + combined confidence.
-
-Features:
-- Merge CSV (optional) and PDF-extracted JSON (optional).
-- Normalize fields (name, phone, email, address, qualifications, registration).
-- Use phonenumbers library (if installed) for phone validation; graceful fallback otherwise.
-- Compute source_confidence (CSV vs PDF matching), format_confidence (regex/lib-based),
-  and final_combined_confidence = source_confidence * format_confidence (configurable).
-- Produce validation_flags, missing_fields, field_confidence (component scores) and overall_confidence.
-- Atomic write into data/processed/validated_data.json (same path as before).
-- CLI runner and a quick `self_test()` helper.
-
-Usage examples:
-    python -m agents.data_validation_agent SAMPLE1 --extracted path/to/extracted.json --csv path/to/csv_row.json --show
-"""
 
 from __future__ import annotations
 
@@ -70,9 +52,7 @@ except Exception:
     PHONENUMBERS_AVAILABLE = False
 
 
-# -------------------------
 # Normalizers (safe fallbacks)
-# -------------------------
 def normalize_name(name: Optional[str]) -> str:
     if not name:
         return ""
@@ -146,9 +126,7 @@ def extract_experience_years(exp: Optional[str]) -> Optional[int]:
     return None
 
 
-# -------------------------
 # Helper: atomic write
-# -------------------------
 def _atomic_write(path: str, data: Dict[str, Any]) -> None:
     d = os.path.dirname(path)
     os.makedirs(d, exist_ok=True)
@@ -167,9 +145,7 @@ def _atomic_write(path: str, data: Dict[str, Any]) -> None:
                 pass
 
 
-# -------------------------
 # Main Agent
-# -------------------------
 class DataValidationAgent:
     def __init__(self, validated_json_path: str = VALIDATED_JSON_PATH, default_region: str = DEFAULT_REGION):
         self.validated_json_path = validated_json_path
@@ -186,9 +162,8 @@ class DataValidationAgent:
             logger.warning("Failed to load existing validated JSON (%s). Starting fresh. Error: %s", self.validated_json_path, e)
             return {}
 
-    # -------------------------
     # Format validation (lib/regex)
-    # -------------------------
+    
     def _format_phone_confidence(self, phone: str) -> float:
         """Use phonenumbers when available for stronger format confidence"""
         if not phone:
@@ -258,9 +233,7 @@ class DataValidationAgent:
             return 0.6
         return 0.0
 
-    # -------------------------
     # Source confidence (CSV vs PDF)
-    # -------------------------
     def _source_confidence_for_field(self, field_name: str, csv_row: Optional[Dict[str, Any]], pdf_json: Optional[Dict[str, Any]], normalized_value) -> float:
         """
         Determine confidence coming from source agreement:
@@ -317,9 +290,7 @@ class DataValidationAgent:
             return 0.60
         return 0.0
 
-    # -------------------------
     # Main run
-    # -------------------------
     def run(self, provider_id: str, csv_row: Optional[Dict[str, Any]] = None, extracted_json: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         """
         Validate a single provider. Writes/updates validated JSON atomically.
@@ -453,9 +424,7 @@ class DataValidationAgent:
         logger.info("Validation complete for %s (overall_conf=%.3f)", provider_id, overall_confidence)
         return validated_record
 
-    # -------------------------
     # Quick self-test helper
-    # -------------------------
     def self_test(self):
         # Small sanity check: demonstrate behavior on a few synthetic examples
         samples = [

@@ -25,3 +25,24 @@ Got it — here’s the **7-line max explanation**:
 This is exactly how EY’s reference workflow works. 
 
 # check the  project our leader logeshwaran 
+
+
+"""
+agents/data_validation_agent.py  (Option 4)
+
+Advanced Data Validation Agent — CSV + PDF fusion + phonenumbers + combined confidence.
+
+Features:
+- Merge CSV (optional) and PDF-extracted JSON (optional).
+- Normalize fields (name, phone, email, address, qualifications, registration).
+- Use phonenumbers library (if installed) for phone validation; graceful fallback otherwise.
+- Compute source_confidence (CSV vs PDF matching), format_confidence (regex/lib-based),
+  and final_combined_confidence = source_confidence * format_confidence (configurable).
+- Produce validation_flags, missing_fields, field_confidence (component scores) and overall_confidence.
+- Atomic write into data/processed/validated_data.json (same path as before).
+- CLI runner and a quick `self_test()` helper.
+
+Usage examples:
+    python -m agents.data_validation_agent SAMPLE1 --extracted path/to/extracted.json --csv path/to/csv_row.json --show
+"""
+hello
