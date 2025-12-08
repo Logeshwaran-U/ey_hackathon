@@ -1,0 +1,36 @@
+{
+  "TEST001": {
+    "name": "Tan Ah Moi",
+    "qualifications": null,
+    "clinic_address": "1 Blackacre Hospital, Singapore 01010101",
+    "phone": null,
+    "email": null,
+    "specializations": null,
+    "experience_years": null,
+    "registration_number": "333333"
+  },
+  "SAMPLE1": {
+    "name": "Tan Ah Moi",
+    "qualifications": "",
+    "clinic_address": "1 Blackacre Hospital, Singapore 01010101",
+    "phone": "",
+    "email": "",
+    "specializations": "",
+    "experience_years": "",
+    "registration_number": "333333"
+  },
+  "SAMPLE2": {
+    "error": "JSON not found",
+    "raw": "I apologize, but no text was provided for me to extract the healthcare provider data from. Please provide the text so I can process it and return the structured JSON."
+  },
+  "SAMPLE3": {
+    "name": "Dr. ABHILASHA ANAND",
+    "qualifications": "DNB, GENERAL SURGERY, FELLOWSHIP HPB",
+    "clinic_address": "Colony, Near Patliputra Golambar, Patna-800001",
+    "phone": "6202775969",
+    "email": "info@ruban.org.in",
+    "specializations": "General Surgery, Laparoscopic Surgery, HPB",
+    "experience_years": "",
+    "registration_number": ""
+  }
+}
