@@ -90,19 +90,19 @@
 # print("\n===== END CHECK =====\n")
 
 
-import os
-import glob
-from services.pdf_vlm_extractor import PDFVLMExtractor
+# import os
+# import glob
+# from services.pdf_vlm_extractor import PDFVLMExtractor
 
-PDF_DIR = "data/input/pdfs"
+# PDF_DIR = "data/input/pdfs"
 
-def run_batch():
-    extractor = PDFVLMExtractor()
-    pdfs = glob.glob(os.path.join(PDF_DIR, "*.pdf"))
-    for pdf_path in pdfs:
-        provider_id = os.path.splitext(os.path.basename(pdf_path))[0].upper()
-        print(f"\nProcessing: {provider_id}")
-        extractor.run(pdf_path, provider_id)
+# def run_batch():
+#     extractor = PDFVLMExtractor()
+#     pdfs = glob.glob(os.path.join(PDF_DIR, "*.pdf"))
+#     for pdf_path in pdfs:
+#         provider_id = os.path.splitext(os.path.basename(pdf_path))[0].upper()
+#         print(f"\nProcessing: {provider_id}")
+#         extractor.run(pdf_path, provider_id)
 
-if __name__ == "__main__":
-    run_batch()
+# if __name__ == "__main__":
+#     run_batch()

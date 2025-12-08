@@ -16,20 +16,26 @@
     "phone": "",
     "email": "",
     "specializations": "",
-    "experience_years": "",
+    "experience_years": "5",
     "registration_number": "333333"
   },
   "SAMPLE2": {
-    "error": "JSON not found",
-    "raw": "I apologize, but no text was provided for me to extract the healthcare provider data from. Please provide the text so I can process it and return the structured JSON."
+    "name": "",
+    "qualifications": "",
+    "clinic_address": "",
+    "phone": "",
+    "email": "",
+    "specializations": "",
+    "experience_years": "",
+    "registration_number": ""
   },
   "SAMPLE3": {
     "name": "Dr. ABHILASHA ANAND",
-    "qualifications": "DNB, GENERAL SURGERY, FELLOWSHIP HPB",
-    "clinic_address": "Colony, Near Patliputra Golambar, Patna-800001",
+    "qualifications": "DNB,GENERAL SURGERY, FELLOWSHIP HPB",
+    "clinic_address": "Colony, Near Patliputra Golambar, Patna-\u00a30001.",
     "phone": "6202775969",
     "email": "info@ruban.org.in",
-    "specializations": "General Surgery, Laparoscopic Surgery, HPB",
+    "specializations": "GENERAL & LAPAROSCOPIC SURGERY",
     "experience_years": "",
     "registration_number": ""
   }
