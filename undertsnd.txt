@@ -46,3 +46,23 @@ Usage examples:
     python -m agents.data_validation_agent SAMPLE1 --extracted path/to/extracted.json --csv path/to/csv_row.json --show
 """
 hello
+
+
+"""
+services/google_maps_api.py
+
+Google Maps Enrichment Service (Enterprise-Ready)
+-------------------------------------------------
+Core Responsibilities:
+- Clinic existence check (Place Search)
+- Address normalization (Geocoding)
+- Phone & website extraction (Place Details)
+- Confidence scoring
+- Evidence / proof link generation
+- Fuzzy address matching
+- Highly fault-tolerant & retry-safe
+
+NOTE:
+This module NEVER mutates provider records.
+It only returns structured enrichment data to the Enrichment Agent.
+"""

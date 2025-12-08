@@ -1,7 +1,7 @@
 {
   "TEST001": {
     "provider_id": "TEST001",
-    "timestamp_utc": "2025-12-08T18:53:24.763818Z",
+    "timestamp_utc": "2025-12-08T19:08:27.775554Z",
     "source": {
       "csv_provided": false,
       "extracted_provided": true,
@@ -77,7 +77,7 @@
   },
   "SAMPLE1": {
     "provider_id": "SAMPLE1",
-    "timestamp_utc": "2025-12-08T18:53:24.770400Z",
+    "timestamp_utc": "2025-12-08T19:08:27.810793Z",
     "source": {
       "csv_provided": false,
       "extracted_provided": true,
@@ -89,7 +89,7 @@
         "phone": "",
         "email": "",
         "specializations": "",
-        "experience_years": "",
+        "experience_years": "5",
         "registration_number": "333333"
       }
     },
@@ -101,7 +101,7 @@
       "qualifications": [],
       "registration_number": "333333",
       "specializations": [],
-      "experience_years": ""
+      "experience_years": 5
     },
     "format_confidence": {
       "name": 1.0,
@@ -110,7 +110,7 @@
       "address": 0.5,
       "registration": 0.0,
       "qualifications": 0.0,
-      "experience_years": 0.0,
+      "experience_years": 1.0,
       "specializations": 0.0
     },
     "source_confidence": {
@@ -120,7 +120,7 @@
       "address": 0.75,
       "registration": 0.75,
       "qualifications": 0.0,
-      "experience_years": 0.0,
+      "experience_years": 0.75,
       "specializations": 0.0
     },
     "field_confidence": {
@@ -130,7 +130,7 @@
       "address": 0.625,
       "registration": 0.375,
       "qualifications": 0.0,
-      "experience_years": 0.0,
+      "experience_years": 0.875,
       "specializations": 0.0
     },
     "validation_flags": {
@@ -138,14 +138,12 @@
       "email": "low_confidence|format_invalid|source_missing",
       "registration": "low_confidence|format_invalid",
       "qualifications": "low_confidence|format_invalid|source_missing",
-      "experience_years": "low_confidence|format_invalid|source_missing",
       "specializations": "low_confidence|format_invalid|source_missing"
     },
     "missing_fields": [
       "phone",
       "email",
       "qualifications",
-      "experience_years",
       "specializations"
     ],
     "overall_confidence": 0.401,
@@ -153,14 +151,20 @@
   },
   "SAMPLE2": {
     "provider_id": "SAMPLE2",
-    "timestamp_utc": "2025-12-08T18:53:24.805395Z",
+    "timestamp_utc": "2025-12-08T19:08:27.841795Z",
     "source": {
       "csv_provided": false,
       "extracted_provided": true,
       "raw_csv": {},
       "raw_extracted": {
-        "error": "JSON not found",
-        "raw": "I apologize, but no text was provided for me to extract the healthcare provider data from. Please provide the text so I can process it and return the structured JSON."
+        "name": "",
+        "qualifications": "",
+        "clinic_address": "",
+        "phone": "",
+        "email": "",
+        "specializations": "",
+        "experience_years": "",
+        "registration_number": ""
       }
     },
     "normalized": {
@@ -228,18 +232,18 @@
   },
   "SAMPLE3": {
     "provider_id": "SAMPLE3",
-    "timestamp_utc": "2025-12-08T18:53:24.843395Z",
+    "timestamp_utc": "2025-12-08T19:08:27.887589Z",
     "source": {
       "csv_provided": false,
       "extracted_provided": true,
       "raw_csv": {},
       "raw_extracted": {
         "name": "Dr. ABHILASHA ANAND",
-        "qualifications": "DNB, GENERAL SURGERY, FELLOWSHIP HPB",
-        "clinic_address": "Colony, Near Patliputra Golambar, Patna-800001",
+        "qualifications": "DNB,GENERAL SURGERY, FELLOWSHIP HPB",
+        "clinic_address": "Colony, Near Patliputra Golambar, Patna-£0001.",
         "phone": "6202775969",
         "email": "info@ruban.org.in",
-        "specializations": "General Surgery, Laparoscopic Surgery, HPB",
+        "specializations": "GENERAL & LAPAROSCOPIC SURGERY",
         "experience_years": "",
         "registration_number": ""
       }
@@ -248,7 +252,7 @@
       "name": ". Abhilasha Anand",
       "phone": "6202775969",
       "email": "info@ruban.org.in",
-      "address": "Colony, Near Patliputra Golambar, Patna-800001",
+      "address": "Colony, Near Patliputra Golambar, Patna-£0001.",
       "qualifications": [
         "DNB",
         "GENERAL SURGERY",
@@ -256,9 +260,7 @@
       ],
       "registration_number": "",
       "specializations": [
-        "General Surgery",
-        "Laparoscopic Surgery",
-        "HPB"
+        "GENERAL & LAPAROSCOPIC SURGERY"
       ],
       "experience_years": ""
     },
@@ -280,7 +282,7 @@
       "registration": 0.0,
       "qualifications": 0.6,
       "experience_years": 0.0,
-      "specializations": 0.6
+      "specializations": 0.75
     },
     "field_confidence": {
       "name": 0.6,
@@ -290,7 +292,7 @@
       "registration": 0.0,
       "qualifications": 0.8,
       "experience_years": 0.0,
-      "specializations": 0.8
+      "specializations": 0.875
     },
     "validation_flags": {
       "registration": "low_confidence|format_invalid|source_missing",

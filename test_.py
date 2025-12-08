@@ -109,76 +109,156 @@
 
 
 
-import os
+# import os
+# import json
+# import glob
+
+# from agents.data_validation_agent import DataValidationAgent
+
+# # folders
+# CSV_FILE = "data/input/providers.csv"      # optional
+# PDF_EXTRACTED_JSON = "data/processed/enriched_data.json"   # output of PDF extractor
+# VALIDATION_OUTPUT = "data/processed/validated_data.json"
+
+# def load_csv_rows():
+#     """
+#     Loads providers.csv as a dict keyed by provider_id.
+#     If CSV is not used in your project, returns empty dict.
+#     """
+#     if not os.path.exists(CSV_FILE):
+#         print("⚠ No providers.csv found → continuing without CSV rows.")
+#         return {}
+
+#     import csv
+#     rows = {}
+#     with open(CSV_FILE, "r", encoding="utf-8") as f:
+#         reader = csv.DictReader(f)
+#         for r in reader:
+#             pid = (r.get("provider_id") or r.get("id") or "").strip()
+#             if pid:
+#                 rows[pid.upper()] = r
+#     return rows
+
+
+# def load_pdf_extracted():
+#     """
+#     Loads the entire enriched_data.json produced by pdf_vlm_extractor.
+#     Each key: provider_id → extracted fields.
+#     """
+#     if not os.path.exists(PDF_EXTRACTED_JSON):
+#         print("❌ ERROR: enriched_data.json not found. Run pdf_vlm_extractor first.")
+#         return {}
+
+#     return json.load(open(PDF_EXTRACTED_JSON, "r", encoding="utf-8"))
+
+
+# def run_validation_batch():
+#     print("\n🚀 Starting Data Validation Batch...\n")
+
+#     csv_rows = load_csv_rows()
+#     pdf_json_all = load_pdf_extracted()
+
+#     agent = DataValidationAgent()
+#     validated_count = 0
+
+#     for provider_id, extracted_json in pdf_json_all.items():
+#         provider_id = provider_id.upper()
+
+#         csv_row = csv_rows.get(provider_id)
+
+#         print(f"\n🔍 Validating Provider: {provider_id}")
+#         result = agent.run(provider_id, csv_row=csv_row, extracted_json=extracted_json)
+
+#         print("✔ Validation Complete:")
+#         print(json.dumps(result, indent=2, ensure_ascii=False))
+
+#         validated_count += 1
+
+#     print("\n==============================================")
+#     print(f"✅ TOTAL VALIDATED PROVIDERS: {validated_count}")
+#     print(f"📄 Output file: {VALIDATION_OUTPUT}")
+#     print("==============================================\n")
+
+
+# if __name__ == "__main__":
+#     run_validation_batch()
+"""
+test_google_maps.py
+
+Standalone tester for Google Maps Enrichment Service.
+Lets you confirm:
+- API is working
+- Address geocoding works
+- Place search works
+- Place details fetch works
+- Master enrich function works
+
+Run:
+    python test_google_maps.py --name "Ruban Hospital" --address "Patna"
+"""
+
+import argparse
 import json
-import glob
-
-from agents.data_validation_agent import DataValidationAgent
-
-# folders
-CSV_FILE = "data/input/providers.csv"      # optional
-PDF_EXTRACTED_JSON = "data/processed/enriched_data.json"   # output of PDF extractor
-VALIDATION_OUTPUT = "data/processed/validated_data.json"
-
-def load_csv_rows():
-    """
-    Loads providers.csv as a dict keyed by provider_id.
-    If CSV is not used in your project, returns empty dict.
-    """
-    if not os.path.exists(CSV_FILE):
-        print("⚠ No providers.csv found → continuing without CSV rows.")
-        return {}
-
-    import csv
-    rows = {}
-    with open(CSV_FILE, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for r in reader:
-            pid = (r.get("provider_id") or r.get("id") or "").strip()
-            if pid:
-                rows[pid.upper()] = r
-    return rows
+from services.google_maps_api import GoogleMapsService
 
 
-def load_pdf_extracted():
-    """
-    Loads the entire enriched_data.json produced by pdf_vlm_extractor.
-    Each key: provider_id → extracted fields.
-    """
-    if not os.path.exists(PDF_EXTRACTED_JSON):
-        print("❌ ERROR: enriched_data.json not found. Run pdf_vlm_extractor first.")
-        return {}
+def test_geocode(gmaps: GoogleMapsService, address: str):
+    print("\n===============================")
+    print("🔍 TEST 1: GEOCODE ADDRESS")
+    print("===============================")
 
-    return json.load(open(PDF_EXTRACTED_JSON, "r", encoding="utf-8"))
+    result = gmaps.geocode_address(address)
+    print(json.dumps(result, indent=2, ensure_ascii=False))
 
 
-def run_validation_batch():
-    print("\n🚀 Starting Data Validation Batch...\n")
+def test_place_search(gmaps: GoogleMapsService, name: str, address: str):
+    print("\n===============================")
+    print("🔍 TEST 2: PLACE SEARCH")
+    print("===============================")
 
-    csv_rows = load_csv_rows()
-    pdf_json_all = load_pdf_extracted()
+    query = f"{name} {address}".strip()
+    result = gmaps.find_clinic(query)
+    print(json.dumps(result, indent=2, ensure_ascii=False))
 
-    agent = DataValidationAgent()
-    validated_count = 0
+    return result.get("place_id")
 
-    for provider_id, extracted_json in pdf_json_all.items():
-        provider_id = provider_id.upper()
 
-        csv_row = csv_rows.get(provider_id)
+def test_place_details(gmaps: GoogleMapsService, place_id: str):
+    print("\n===============================")
+    print("🔍 TEST 3: PLACE DETAILS")
+    print("===============================")
 
-        print(f"\n🔍 Validating Provider: {provider_id}")
-        result = agent.run(provider_id, csv_row=csv_row, extracted_json=extracted_json)
+    if not place_id:
+        print("⚠ No place_id returned from search — skipping details lookup.")
+        return
 
-        print("✔ Validation Complete:")
-        print(json.dumps(result, indent=2, ensure_ascii=False))
+    result = gmaps.get_place_details(place_id)
+    print(json.dumps(result, indent=2, ensure_ascii=False))
 
-        validated_count += 1
 
-    print("\n==============================================")
-    print(f"✅ TOTAL VALIDATED PROVIDERS: {validated_count}")
-    print(f"📄 Output file: {VALIDATION_OUTPUT}")
-    print("==============================================\n")
+def test_master_enrich(gmaps: GoogleMapsService, name: str, address: str):
+    print("\n===============================")
+    print("🔍 TEST 4: MASTER ENRICH FUNCTION")
+    print("===============================")
+
+    result = gmaps.enrich_provider_location(name, address)
+    print(json.dumps(result, indent=2, ensure_ascii=False))
+
+
+def run_tests(name: str, address: str):
+    gmaps = GoogleMapsService()
+
+    # Run all tests
+    test_geocode(gmaps, address)
+    place_id = test_place_search(gmaps, name, address)
+    test_place_details(gmaps, place_id)
+    test_master_enrich(gmaps, name, address)
 
 
 if __name__ == "__main__":
-    run_validation_batch()
+    parser = argparse.ArgumentParser(description="Google Maps API Tester")
+    parser.add_argument("--name", type=str, required=True, help="Clinic/Provider name (e.g. 'Ruban Hospital')")
+    parser.add_argument("--address", type=str, required=True, help="Address or city (e.g. 'Patna')")
+
+    args = parser.parse_args()
+    run_tests(args.name, args.address)
