@@ -197,69 +197,109 @@ Run:
     python test_google_maps.py --name "Ruban Hospital" --address "Patna"
 """
 
+# import argparse
+# import json
+# from services.google_maps_api import GoogleMapsService
+
+
+# def test_geocode(gmaps: GoogleMapsService, address: str):
+#     print("\n===============================")
+#     print("🔍 TEST 1: GEOCODE ADDRESS")
+#     print("===============================")
+
+#     result = gmaps.geocode_address(address)
+#     print(json.dumps(result, indent=2, ensure_ascii=False))
+
+
+# def test_place_search(gmaps: GoogleMapsService, name: str, address: str):
+#     print("\n===============================")
+#     print("🔍 TEST 2: PLACE SEARCH")
+#     print("===============================")
+
+#     query = f"{name} {address}".strip()
+#     result = gmaps.find_clinic(query)
+#     print(json.dumps(result, indent=2, ensure_ascii=False))
+
+#     return result.get("place_id")
+
+
+# def test_place_details(gmaps: GoogleMapsService, place_id: str):
+#     print("\n===============================")
+#     print("🔍 TEST 3: PLACE DETAILS")
+#     print("===============================")
+
+#     if not place_id:
+#         print("⚠ No place_id returned from search — skipping details lookup.")
+#         return
+
+#     result = gmaps.get_place_details(place_id)
+#     print(json.dumps(result, indent=2, ensure_ascii=False))
+
+
+# def test_master_enrich(gmaps: GoogleMapsService, name: str, address: str):
+#     print("\n===============================")
+#     print("🔍 TEST 4: MASTER ENRICH FUNCTION")
+#     print("===============================")
+
+#     result = gmaps.enrich_provider_location(name, address)
+#     print(json.dumps(result, indent=2, ensure_ascii=False))
+
+
+# def run_tests(name: str, address: str):
+#     gmaps = GoogleMapsService()
+
+#     # Run all tests
+#     test_geocode(gmaps, address)
+#     place_id = test_place_search(gmaps, name, address)
+#     test_place_details(gmaps, place_id)
+#     test_master_enrich(gmaps, name, address)
+
+
+# if __name__ == "__main__":
+#     parser = argparse.ArgumentParser(description="Google Maps API Tester")
+#     parser.add_argument("--name", type=str, required=True, help="Clinic/Provider name (e.g. 'Ruban Hospital')")
+#     parser.add_argument("--address", type=str, required=True, help="Address or city (e.g. 'Patna')")
+
+#     args = parser.parse_args()
+#     run_tests(args.name, args.address)
+
+"""
+test_.py — Tester for WebsiteScraper
+"""
+
 import argparse
 import json
-from services.google_maps_api import GoogleMapsService
+from services.website_scraper import WebsiteScraper
 
 
-def test_geocode(gmaps: GoogleMapsService, address: str):
-    print("\n===============================")
-    print("🔍 TEST 1: GEOCODE ADDRESS")
-    print("===============================")
+def run_scrape(url, provider, name=None, spec=None):
+    print("\n========================================")
+    print("🔍 TEST WEBSITE SCRAPER")
+    print("========================================\n")
 
-    result = gmaps.geocode_address(address)
+    scraper = WebsiteScraper()
+    result = scraper.scrape(
+        url=url,
+        provider_id=provider,
+        doctor_name=name,
+        specialization=spec,
+        save=False
+    )
+
     print(json.dumps(result, indent=2, ensure_ascii=False))
 
 
-def test_place_search(gmaps: GoogleMapsService, name: str, address: str):
-    print("\n===============================")
-    print("🔍 TEST 2: PLACE SEARCH")
-    print("===============================")
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--url", required=True)
+    parser.add_argument("--provider", default="TEST001")
+    parser.add_argument("--name", default=None)
+    parser.add_argument("--spec", default=None)
+    args = parser.parse_args()
 
-    query = f"{name} {address}".strip()
-    result = gmaps.find_clinic(query)
-    print(json.dumps(result, indent=2, ensure_ascii=False))
-
-    return result.get("place_id")
-
-
-def test_place_details(gmaps: GoogleMapsService, place_id: str):
-    print("\n===============================")
-    print("🔍 TEST 3: PLACE DETAILS")
-    print("===============================")
-
-    if not place_id:
-        print("⚠ No place_id returned from search — skipping details lookup.")
-        return
-
-    result = gmaps.get_place_details(place_id)
-    print(json.dumps(result, indent=2, ensure_ascii=False))
-
-
-def test_master_enrich(gmaps: GoogleMapsService, name: str, address: str):
-    print("\n===============================")
-    print("🔍 TEST 4: MASTER ENRICH FUNCTION")
-    print("===============================")
-
-    result = gmaps.enrich_provider_location(name, address)
-    print(json.dumps(result, indent=2, ensure_ascii=False))
-
-
-def run_tests(name: str, address: str):
-    gmaps = GoogleMapsService()
-
-    # Run all tests
-    test_geocode(gmaps, address)
-    place_id = test_place_search(gmaps, name, address)
-    test_place_details(gmaps, place_id)
-    test_master_enrich(gmaps, name, address)
+    run_scrape(args.url, args.provider, args.name, args.spec)
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Google Maps API Tester")
-    parser.add_argument("--name", type=str, required=True, help="Clinic/Provider name (e.g. 'Ruban Hospital')")
-    parser.add_argument("--address", type=str, required=True, help="Address or city (e.g. 'Patna')")
-
-    args = parser.parse_args()
-    run_tests(args.name, args.address)
+    main()
 
