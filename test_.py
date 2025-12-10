@@ -267,38 +267,39 @@ Run:
 # test_.py — Tester for WebsiteScraper
 # """
 
-# import argparse
-# import json
-# from services.website_scraper import WebsiteScraper
+import argparse
+import json
+from services.website_scraper import WebsiteScraper
 
 
-# def run_scrape(url, provider, name=None, spec=None):
-#     print("\n========================================")
-#     print("🔍 TEST WEBSITE SCRAPER")
-#     print("========================================\n")
+def run_scrape(url, provider, name=None, spec=None):
+    print("\n========================================")
+    print("🔍 TEST WEBSITE SCRAPER")
+    print("========================================\n")
 
-#     scraper = WebsiteScraper()
-#     result = scraper.scrape(
-#         url=url,
-#         provider_id=provider,
-#         doctor_name=name,
-#         specialization=spec,
-#         save=False
-#     )
+    scraper = WebsiteScraper()
+    result = scraper.scrape(
+        url=url,
+        provider_id=provider,
+        doctor_name=name,
+        specialization=spec,
+        save=False
+    )
 
-#     print(json.dumps(result, indent=2, ensure_ascii=False))
-
-
-# def main():
-#     parser = argparse.ArgumentParser()
-#     parser.add_argument("--url", required=True)
-#     parser.add_argument("--provider", default="TEST001")
-#     parser.add_argument("--name", default=None)
-#     parser.add_argument("--spec", default=None)
-#     args = parser.parse_args()
-
-#     run_scrape(args.url, args.provider, args.name, args.spec)
+    print(json.dumps(result, indent=2, ensure_ascii=False))
 
 
-# if __name__ == "__main__":
-#     main()
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--url", required=True)
+    parser.add_argument("--provider", default="TEST001")
+    parser.add_argument("--name", default=None)
+    parser.add_argument("--spec", default=None)
+    args = parser.parse_args()
+
+    run_scrape(args.url, args.provider, args.name, args.spec)
+
+
+if __name__ == "__main__":
+    main()
+
