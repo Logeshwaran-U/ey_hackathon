@@ -267,39 +267,77 @@ Run:
 # test_.py — Tester for WebsiteScraper
 # """
 
+# import argparse
+# import json
+# from services.website_scraper import WebsiteScraper
+
+
+# def run_scrape(url, provider, name=None, spec=None):
+#     print("\n========================================")
+#     print("🔍 TEST WEBSITE SCRAPER")
+#     print("========================================\n")
+
+#     scraper = WebsiteScraper()
+#     result = scraper.scrape(
+#         url=url,
+#         provider_id=provider,
+#         doctor_name=name,
+#         specialization=spec,
+#         save=False
+#     )
+
+#     print(json.dumps(result, indent=2, ensure_ascii=False))
+
+
+# def main():
+#     parser = argparse.ArgumentParser()
+#     parser.add_argument("--url", required=True)
+#     parser.add_argument("--provider", default="TEST001")
+#     parser.add_argument("--name", default=None)
+#     parser.add_argument("--spec", default=None)
+#     args = parser.parse_args()
+
+#     run_scrape(args.url, args.provider, args.name, args.spec)
+
+
+# if __name__ == "__main__":
+#     main()
+
+
+# test_.py
+# test_.py
 import argparse
 import json
-from services.website_scraper import WebsiteScraper
-
-
-def run_scrape(url, provider, name=None, spec=None):
-    print("\n========================================")
-    print("🔍 TEST WEBSITE SCRAPER")
-    print("========================================\n")
-
-    scraper = WebsiteScraper()
-    result = scraper.scrape(
-        url=url,
-        provider_id=provider,
-        doctor_name=name,
-        specialization=spec,
-        save=False
-    )
-
-    print(json.dumps(result, indent=2, ensure_ascii=False))
+from services.npi_api import NPIRegistryService
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--url", required=True)
-    parser.add_argument("--provider", default="TEST001")
-    parser.add_argument("--name", default=None)
-    parser.add_argument("--spec", default=None)
+    
+    parser.add_argument("--name", help="Provider full name", default=None)
+    parser.add_argument("--spec", help="Specialization / taxonomy", default=None)
+    parser.add_argument("--state", help="State code (NY, CA, TX etc.)", default=None)
+    parser.add_argument("--address", help="External address (optional)", default=None)
+    parser.add_argument("--phone", help="External phone (optional)", default=None)
+    parser.add_argument("--npi", help="Direct NPI number lookup", default=None)
+
     args = parser.parse_args()
 
-    run_scrape(args.url, args.provider, args.name, args.spec)
+    svc = NPIRegistryService()
+
+    result = svc.get_best_match(
+        provider_name=args.name,
+        specialization=args.spec,
+        state=args.state,
+        external_address=args.address,
+        external_phone=args.phone,
+        npi_number=args.npi
+    )
+
+    print("\n================ NPI LOOKUP RESULT ================\n")
+    print(json.dumps(result, indent=2, ensure_ascii=False))
+    print("\n===================================================\n")
 
 
 if __name__ == "__main__":
     main()
-
