@@ -1,0 +1,157 @@
+{
+  "P001": {
+    "provider_id": "P001",
+    "timestamp_utc": "2025-12-10T18:00:37.425210Z",
+    "source": {
+      "csv_provided": false,
+      "extracted_provided": true,
+      "raw_csv": {},
+      "raw_extracted": {
+        "name": "Dr. ABHILASHA ANAND",
+        "qualifications": "DNB, GENERAL SURGERY, FELLOWSHIP HPB",
+        "clinic_address": "Colony, Near Patliputra Golambar, Patna-800001",
+        "phone": "6202775969",
+        "email": "info@ruban.org.in",
+        "specializations": "General & Laparoscopic Surgery, HPB",
+        "experience_years": null,
+        "registration_number": null
+      }
+    },
+    "normalized": {
+      "name": ". Abhilasha Anand",
+      "phone": "6202775969",
+      "email": "info@ruban.org.in",
+      "address": "Colony, Near Patliputra Golambar, Patna-800001",
+      "qualifications": [
+        "DNB",
+        "GENERAL SURGERY",
+        "FELLOWSHIP HPB"
+      ],
+      "registration_number": "",
+      "specializations": [
+        "General & Laparoscopic Surgery",
+        "HPB"
+      ],
+      "experience_years": ""
+    },
+    "format_confidence": {
+      "name": 1.0,
+      "phone": 1.0,
+      "email": 1.0,
+      "address": 0.5,
+      "registration": 0.0,
+      "qualifications": 1.0,
+      "experience_years": 0.0,
+      "specializations": 1.0
+    },
+    "source_confidence": {
+      "name": 0.6,
+      "phone": 0.75,
+      "email": 0.75,
+      "clinic_address": 0.75,
+      "registration": 0.6,
+      "qualifications": 0.6,
+      "experience_years": 0.6,
+      "specializations": 0.6
+    },
+    "field_confidence": {
+      "name": 0.8,
+      "phone": 0.875,
+      "email": 0.875,
+      "address": 0.25,
+      "registration": 0.3,
+      "qualifications": 0.8,
+      "experience_years": 0.3,
+      "specializations": 0.8
+    },
+    "validation_flags": {
+      "address": "low_confidence|source_missing",
+      "registration": "low_confidence|format_invalid",
+      "experience_years": "low_confidence|format_invalid"
+    },
+    "missing_fields": [],
+    "overall_confidence": 0.659,
+    "status": "PENDING"
+  },
+  "P002": {
+    "provider_id": "P002",
+    "timestamp_utc": "2025-12-10T18:00:37.429334Z",
+    "source": {
+      "csv_provided": false,
+      "extracted_provided": true,
+      "raw_csv": {},
+      "raw_extracted": {
+        "name": "",
+        "qualifications": "",
+        "clinic_address": "",
+        "phone": "",
+        "email": "",
+        "specializations": "",
+        "experience_years": "",
+        "registration_number": ""
+      }
+    },
+    "normalized": {
+      "name": "",
+      "phone": "",
+      "email": "",
+      "address": "",
+      "qualifications": [],
+      "registration_number": "",
+      "specializations": [],
+      "experience_years": ""
+    },
+    "format_confidence": {
+      "name": 0.0,
+      "phone": 0.0,
+      "email": 0.0,
+      "address": 0.0,
+      "registration": 0.0,
+      "qualifications": 0.0,
+      "experience_years": 0.0,
+      "specializations": 0.0
+    },
+    "source_confidence": {
+      "name": 0.0,
+      "phone": 0.0,
+      "email": 0.0,
+      "clinic_address": 0.0,
+      "registration": 0.0,
+      "qualifications": 0.0,
+      "experience_years": 0.0,
+      "specializations": 0.0
+    },
+    "field_confidence": {
+      "name": 0.0,
+      "phone": 0.0,
+      "email": 0.0,
+      "address": 0.0,
+      "registration": 0.0,
+      "qualifications": 0.0,
+      "experience_years": 0.0,
+      "specializations": 0.0
+    },
+    "validation_flags": {
+      "name": "low_confidence|format_invalid|source_missing",
+      "phone": "low_confidence|format_invalid|source_missing",
+      "email": "low_confidence|format_invalid|source_missing",
+      "address": "low_confidence|format_invalid|source_missing",
+      "registration": "low_confidence|format_invalid|source_missing",
+      "qualifications": "low_confidence|format_invalid|source_missing",
+      "experience_years": "low_confidence|format_invalid|source_missing",
+      "specializations": "low_confidence|format_invalid|source_missing"
+    },
+    "missing_fields": [
+      "name",
+      "phone",
+      "email",
+      "address",
+      "registration",
+      "qualifications",
+      "experience_years",
+      "specializations"
+    ],
+    "overall_confidence": 0.0,
+    "status": "PENDING"
+  }
+}

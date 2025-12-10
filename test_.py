@@ -345,46 +345,119 @@ Run:
 
 
 """testing system"""
-import os
-import json
+# import os
+# import json
+# import argparse
+# from services.pdf_vlm_extractor import PDFVLMExtractor
+# from config import settings
+
+# def main():
+#     parser = argparse.ArgumentParser()
+#     parser.add_argument("--provider", required=True, help="Provider ID (string)")
+#     parser.add_argument("--pdf", required=False, help="PDF filename inside data/input/pdfs/")
+#     args = parser.parse_args()
+
+#     provider_id = args.provider
+
+#     # If user gives pdf → use that file
+#     if args.pdf:
+#         pdf_path = os.path.join("data", "input", "pdfs", args.pdf)
+#     else:
+#         print("❗ You must supply --pdf <filename.pdf>")
+#         return
+
+#     if not os.path.exists(pdf_path):
+#         print(f"❌ PDF not found: {pdf_path}")
+#         return
+
+#     print(f"\n📄 Running PDF extractor on: {pdf_path}")
+#     print(f"👤 Provider ID: {provider_id}")
+
+#     extractor = PDFVLMExtractor()
+#     result = extractor.run(pdf_path, provider_id)
+
+#     print("\n================= FINAL EXTRACTED STRUCTURE =================")
+#     print(json.dumps(result, indent=2))
+#     print("================================================================\n")
+
+#     # Print extracted_data.json entry
+#     print("📦 Stored in extracted_data.json as:")
+#     extracted = json.load(open(settings.EXTRACTED_JSON_PATH))
+    
+#     print(json.dumps(extracted.get(provider_id, {}), indent=2))
+
+
+# if __name__ == "__main__":
+#     main()
+#  test_.py
+# import argparse
+# import json
+# from services.npi_api import NPIRegistryService
+
+
+# def main():
+#     parser = argparse.ArgumentParser()
+    
+#     parser.add_argument("--name", help="Provider full name", default=None)
+#     parser.add_argument("--spec", help="Specialization / taxonomy", default=None)
+#     parser.add_argument("--state", help="State code (NY, CA, TX etc.)", default=None)
+#     parser.add_argument("--address", help="External address (optional)", default=None)
+#     parser.add_argument("--phone", help="External phone (optional)", default=None)
+#     parser.add_argument("--npi", help="Direct NPI number lookup", default=None)
+
+#     args = parser.parse_args()
+
+#     svc = NPIRegistryService()
+
+#     result = svc.get_best_match(
+#         provider_name=args.name,
+#         specialization=args.spec,
+#         state=args.state,
+#         external_address=args.address,
+#         external_phone=args.phone,
+#         npi_number=args.npi
+#     )
+
+#     print("\n================ NPI LOOKUP RESULT ================\n")
+#     print(json.dumps(result, indent=2, ensure_ascii=False))
+#     print("\n===================================================\n")
+
+
+# if __name__ == "__main__":
+#     main()
+
+
+
+
+# test_.py
 import argparse
-from services.pdf_vlm_extractor import PDFVLMExtractor
-from config import settings
+import json
+from services.website_scraper import WebsiteScraper
+
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--provider", required=True, help="Provider ID (string)")
-    parser.add_argument("--pdf", required=False, help="PDF filename inside data/input/pdfs/")
+    parser = argparse.ArgumentParser(description="Test Website Scraper")
+    parser.add_argument("--url", required=True, help="Website URL to scrape")
+    parser.add_argument("--provider", required=True, help="Provider ID (P001, P002...)")
+    parser.add_argument("--name", default=None, help="Doctor name (optional)")
+    parser.add_argument("--spec", default=None, help="Specialization (optional)")
+
     args = parser.parse_args()
 
-    provider_id = args.provider
+    scraper = WebsiteScraper()
 
-    # If user gives pdf → use that file
-    if args.pdf:
-        pdf_path = os.path.join("data", "input", "pdfs", args.pdf)
-    else:
-        print("❗ You must supply --pdf <filename.pdf>")
-        return
+    print("\n🔍 Running website scraper...\n")
 
-    if not os.path.exists(pdf_path):
-        print(f"❌ PDF not found: {pdf_path}")
-        return
+    result = scraper.scrape(
+        url=args.url,
+        provider_id=args.provider,
+        doctor_name=args.name,
+        specialization=args.spec
+    )
 
-    print(f"\n📄 Running PDF extractor on: {pdf_path}")
-    print(f"👤 Provider ID: {provider_id}")
-
-    extractor = PDFVLMExtractor()
-    result = extractor.run(pdf_path, provider_id)
-
-    print("\n================= FINAL EXTRACTED STRUCTURE =================")
-    print(json.dumps(result, indent=2))
-    print("================================================================\n")
-
-    # Print extracted_data.json entry
-    print("📦 Stored in extracted_data.json as:")
-    extracted = json.load(open(settings.EXTRACTED_JSON_PATH))
-    
-    print(json.dumps(extracted.get(provider_id, {}), indent=2))
+    print("=========== SCRAPER OUTPUT ===========\n")
+    print(json.dumps(result, indent=2, ensure_ascii=False))
+    print("\n=======================================\n")
 
 
 if __name__ == "__main__":
