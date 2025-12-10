@@ -263,9 +263,9 @@ Run:
 #     args = parser.parse_args()
 #     run_tests(args.name, args.address)
 
-"""
-test_.py — Tester for WebsiteScraper
-"""
+# """
+# test_.py — Tester for WebsiteScraper
+# """
 
 # import argparse
 # import json
@@ -304,17 +304,7 @@ test_.py — Tester for WebsiteScraper
 #     main()
 
 
-
-"""
-test_npi.py
-
-Usage examples:
-  python test_npi.py --name "John Smith" --spec "Cardiology"
-  python test_npi.py --name "John Smith" --npi 1234567890
-  python test_npi.py --name "John Smith" --local_csv data/npi_fallback.csv
-"""
-"""npi chekcin"""
-
+# test_.py
 # test_.py
 # import argparse
 # import json

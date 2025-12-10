@@ -31,6 +31,7 @@ OUTPUT_DIR = os.path.join(DATA_DIR, "output")
 CSV_INPUT_PATH = os.path.join(INPUT_DIR, "providers.csv")
 
 # processed data
+EXTRACTED_JSON_PATH = os.path.join(PROCESSED_DIR, "extracted_data.json")  
 VALIDATED_JSON = os.path.join(PROCESSED_DIR, "validated_data.json")
 ENRICHED_JSON = os.path.join(PROCESSED_DIR, "enriched_data.json")
 
