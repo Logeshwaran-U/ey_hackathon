@@ -429,36 +429,40 @@ Run:
 
 
 
-# test_.py
-import argparse
-import json
-from services.website_scraper import WebsiteScraper
+# # test_.py
+# import argparse
+# import json
+# from services.website_scraper import WebsiteScraper
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Test Website Scraper")
-    parser.add_argument("--url", required=True, help="Website URL to scrape")
-    parser.add_argument("--provider", required=True, help="Provider ID (P001, P002...)")
-    parser.add_argument("--name", default=None, help="Doctor name (optional)")
-    parser.add_argument("--spec", default=None, help="Specialization (optional)")
+# def main():
+#     parser = argparse.ArgumentParser(description="Test Website Scraper")
+#     parser.add_argument("--url", required=True, help="Website URL to scrape")
+#     parser.add_argument("--provider", required=True, help="Provider ID (P001, P002...)")
+#     parser.add_argument("--name", default=None, help="Doctor name (optional)")
+#     parser.add_argument("--spec", default=None, help="Specialization (optional)")
 
-    args = parser.parse_args()
+#     args = parser.parse_args()
 
-    scraper = WebsiteScraper()
+#     scraper = WebsiteScraper()
 
-    print("\n🔍 Running website scraper...\n")
+#     print("\n🔍 Running website scraper...\n")
 
-    result = scraper.scrape(
-        url=args.url,
-        provider_id=args.provider,
-        doctor_name=args.name,
-        specialization=args.spec
-    )
+#     result = scraper.scrape(
+#         url=args.url,
+#         provider_id=args.provider,
+#         doctor_name=args.name,
+#         specialization=args.spec
+#     )
 
-    print("=========== SCRAPER OUTPUT ===========\n")
-    print(json.dumps(result, indent=2, ensure_ascii=False))
-    print("\n=======================================\n")
+#     print("=========== SCRAPER OUTPUT ===========\n")
+#     print(json.dumps(result, indent=2, ensure_ascii=False))
+#     print("\n=======================================\n")
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
+
+# test_pdf_vlm.py
+from services.pdf_vlm_extractor import PDFVLMExtractor; import sys, json; 
+e=PDFVLMExtractor(); print(json.dumps(e.run(sys.argv[1], sys.argv[2]), indent=2))

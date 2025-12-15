@@ -1,21 +1,13 @@
 {
   "P001": {
-    "name": "Dr. ABHILASHA ANAND",
-    "qualifications": "DNB, GENERAL SURGERY, FELLOWSHIP HPB",
-    "clinic_address": "Colony, Near Patliputra Golambar, Patna-800001",
-    "phone": "6202775969",
-    "email": "info@ruban.org.in",
-    "specializations": "General & Laparoscopic Surgery, HPB",
-    "experience_years": null,
-    "registration_number": null
-  },
-  "P002": {
-    "name": "",
-    "qualifications": "",
-    "clinic_address": "",
-    "phone": "",
-    "email": "",
-    "specializations": "",
+    "hospital_name": "",
+    "hospital_address": "",
+    "hospital_phone": "",
+    "hospital_email": "",
+    "website": "",
+    "doctor_name": "",
+    "doctor_qualifications": "",
+    "specialization": "",
     "experience_years": "",
     "registration_number": ""
   }
