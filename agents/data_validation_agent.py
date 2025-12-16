@@ -1,113 +1,94 @@
-# agents/data_validation_agent.py  (EY-CORRECT, FROM SCRATCH)
+# agents/data_validation_agent.py  (EY-HACKATHON FINAL – DECISION-CORRECT)
 
-import os, json, re, tempfile
-from datetime import datetime, date
+from __future__ import annotations
+import json, os, re, tempfile
+from datetime import datetime
 
 PROCESSED_DIR = "data/processed"
 VALIDATED_JSON = os.path.join(PROCESSED_DIR, "validated_data.json")
 os.makedirs(PROCESSED_DIR, exist_ok=True)
 
-# ---------- helpers ----------
-def clean(x): return x.strip() if isinstance(x, str) else ""
-def is_present(x): return bool(clean(x))
-def parse_date(x):
-    try:
-        return datetime.strptime(x.strip(), "%B %d, %Y").date()
-    except Exception:
-        return None
+DIGITS = re.compile(r"\d+")
 
-def atomic_write(path, data):
+def norm_name(x): return re.sub(r"\s+", " ", str(x or "")).strip().title()
+def norm_phone(x): return "".join(DIGITS.findall(str(x))) if x else ""
+def norm_addr(x): return re.sub(r"\s+", " ", str(x or "")).strip()
+def safe(x): return str(x).strip() if x else ""
+
+def _atomic_write(path, data):
     fd, tmp = tempfile.mkstemp(dir=os.path.dirname(path))
     with os.fdopen(fd, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
         f.flush(); os.fsync(f.fileno())
     os.replace(tmp, path)
 
-def safe_load(path):
-    if not os.path.exists(path): return {}
-    try:
-        txt = open(path, "r", encoding="utf-8").read().strip()
-        return json.loads(txt) if txt else {}
-    except Exception:
-        return {}
-
-# ---------- CORE AGENT ----------
 class DataValidationAgent:
-    """
-    EY RULES:
-    PASS:
-      - license_number present
-      - license_status == ACTIVE
-      - expiry_date >= today
 
-    PASS_WITH_GAPS:
-      - license valid
-      - optional fields missing (NPI, phone, address)
+    def _load(self):
+        if not os.path.exists(VALIDATED_JSON): return {}
+        try:
+            with open(VALIDATED_JSON, "r", encoding="utf-8") as f:
+                t = f.read().strip()
+                return json.loads(t) if t else {}
+        except:
+            return {}
 
-    FAIL_NEEDS_REVIEW:
-      - license missing OR
-      - license_status != ACTIVE OR
-      - expiry_date expired
-    """
+    def run(self, provider_id: str, csv_row: dict, pdf_row: dict | None):
 
-    def run(self, provider_id, csv_row, pdf_row):
-        src = {}
-        if csv_row: src.update(csv_row)
-        if pdf_row: src.update(pdf_row)
-
-        # -------- normalized --------
-        name = clean(src.get("name") or src.get("Name") or src.get("registered_name"))
-        phone = re.sub(r"\D", "", clean(src.get("phone") or src.get("Phone_No")))
-        address = clean(src.get("address") or src.get("Address") or src.get("registered_address"))
-        npi = clean(src.get("npi") or src.get("NPI_ID") or src.get("National Provider Identifier"))
-
-        license_number = clean(src.get("license_number") or src.get("registration_number"))
-        license_status = clean(src.get("license_status"))
-        issue_date_raw = clean(src.get("issue_date"))
-        expiry_date_raw = clean(src.get("expiry_date"))
-
-        issue_date = parse_date(issue_date_raw)
-        expiry_date = parse_date(expiry_date_raw)
-        today = date.today()
-
-        # -------- mandatory license checks --------
-        license_missing = []
-        if not is_present(license_number): license_missing.append("license_number")
-        if not is_present(license_status): license_missing.append("license_status")
-        if not issue_date: license_missing.append("issue_date")
-        if not expiry_date: license_missing.append("expiry_date")
-
-        license_invalid = (
-            is_present(license_status) and license_status.upper() != "ACTIVE"
-        ) or (
-            expiry_date and expiry_date < today
+        name = norm_name(
+            (pdf_row or {}).get("registered_name") or
+            csv_row.get("Name") or csv_row.get("name")
         )
 
-        # -------- decision --------
-        if license_missing or license_invalid:
-            status = "FAIL_NEEDS_REVIEW"
+        phone = norm_phone(
+            (pdf_row or {}).get("phone") or
+            csv_row.get("Phone_No") or csv_row.get("phone")
+        )
+
+        address = norm_addr(
+            (pdf_row or {}).get("registered_address") or
+            csv_row.get("Address") or csv_row.get("address")
+        )
+
+        npi = safe(
+            (pdf_row or {}).get("npi") or
+            csv_row.get("NPI_ID")
+        )
+
+        # ---- LICENSE FIELDS (ONLY REQUIRED IF PDF EXISTS) ----
+        registration = safe((pdf_row or {}).get("license_number"))
+        license_status = safe((pdf_row or {}).get("license_status"))
+        issue_date = safe((pdf_row or {}).get("issue_date"))
+        expiry_date = safe((pdf_row or {}).get("expiry_date"))
+
+        missing = []
+
+        if not name: missing.append("name")
+        if not phone: missing.append("phone")
+        if not address: missing.append("address")
+
+        if pdf_row:
+            if not registration: missing.append("registration_number")
+            if not license_status: missing.append("license_status")
+            if not issue_date: missing.append("issue_date")
+            if not expiry_date: missing.append("expiry_date")
+
+        score = 0.0
+        score += 0.25 if name else 0
+        score += 0.20 if phone else 0
+        score += 0.25 if address else 0
+        score += 0.15 if npi else 0
+        if pdf_row:
+            score += 0.15 if registration else 0
+
+        score = round(score, 2)
+
+        if score >= 0.8 and not missing:
+            status = "PASS"
+        elif score >= 0.5:
+            status = "PASS_WITH_GAPS"
         else:
-            optional_missing = []
-            if not is_present(npi): optional_missing.append("npi")
-            if not is_present(phone): optional_missing.append("phone")
-            if not is_present(address): optional_missing.append("address")
-
-            status = "PASS" if not optional_missing else "PASS_WITH_GAPS"
-
-        # -------- missing fields (STRICT) --------
-        missing_fields = []
-        if status != "PASS":
-            if not is_present(license_number): missing_fields.append("license_number")
-            if not is_present(license_status): missing_fields.append("license_status")
-            if not issue_date: missing_fields.append("issue_date")
-            if not expiry_date: missing_fields.append("expiry_date")
-
-        # -------- confidence (simple & honest) --------
-        overall_confidence = (
-            1.0 if status == "PASS" else
-            0.7 if status == "PASS_WITH_GAPS" else
-            0.2
-        )
+            status = "FAIL_NEEDS_REVIEW"
 
         record = {
             "provider_id": provider_id,
@@ -116,18 +97,19 @@ class DataValidationAgent:
                 "name": name,
                 "phone": phone,
                 "address": address,
-                "npi": npi,
-                "license_number": license_number,
+                "registration_number": registration,
                 "license_status": license_status,
-                "issue_date": issue_date_raw,
-                "expiry_date": expiry_date_raw,
+                "issue_date": issue_date,
+                "expiry_date": expiry_date,
+                "npi": npi
             },
-            "missing_fields": missing_fields,
-            "overall_confidence": overall_confidence,
+            "missing_fields": missing,
+            "overall_confidence": score,
             "validation_status": status
         }
 
-        data = safe_load(VALIDATED_JSON)
+        data = self._load()
         data[provider_id] = record
-        atomic_write(VALIDATED_JSON, data)
+        _atomic_write(VALIDATED_JSON, data)
         return record
+                                               

@@ -1,662 +1,512 @@
 {
   "1": {
     "provider_id": "1",
-    "timestamp_utc": "2025-12-16T19:15:16.609452Z",
+    "timestamp_utc": "2025-12-16T19:34:31.688622Z",
     "normalized": {
-      "name": "BALQISA MOHAMUD ABDI",
+      "name": "Balqisa Mohamud Abdi",
       "phone": "6515001998",
-      "address": "1516 W LAKE ST STE 104\nMINNEAPOLIS, MN 55408\nUnited States",
-      "npi": "1740961333",
-      "license_number": "",
+      "address": "1516 W LAKE ST STE 104 MINNEAPOLIS, MN 55408 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1740961333"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "2": {
     "provider_id": "2",
-    "timestamp_utc": "2025-12-16T19:15:16.612477Z",
+    "timestamp_utc": "2025-12-16T19:34:31.707196Z",
     "normalized": {
-      "name": "Dr. MITHUN MAMOOTTIL ABRAHAM DPT",
+      "name": "Dr. Mithun Mamoottil Abraham Dpt",
       "phone": "5168290030",
-      "address": "475 NORTHERN BLVD STE 11\nGREAT NECK, NY 11021\nUnited States",
-      "npi": "1033689781",
-      "license_number": "",
+      "address": "475 NORTHERN BLVD STE 11 GREAT NECK, NY 11021 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1033689781"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "3": {
     "provider_id": "3",
-    "timestamp_utc": "2025-12-16T19:15:16.626428Z",
+    "timestamp_utc": "2025-12-16T19:34:31.722211Z",
     "normalized": {
-      "name": "JOHN AARON MD",
+      "name": "John Aaron Md",
       "phone": "9312457094",
-      "address": "PO BOX 3799\nCLARKSVILLE, TN 37043\nUnited States",
-      "npi": "1629019922",
-      "license_number": "",
+      "address": "PO BOX 3799 CLARKSVILLE, TN 37043 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1629019922"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "4": {
     "provider_id": "4",
-    "timestamp_utc": "2025-12-16T19:15:16.637941Z",
+    "timestamp_utc": "2025-12-16T19:34:31.737564Z",
     "normalized": {
-      "name": "LAWRENCE E ADDISON O.D.",
+      "name": "Lawrence E Addison O.D.",
       "phone": "7152412020",
-      "address": "4009 COMMUNITY CENTER DR\nWESTON, WI 54476-4139\nUnited States",
-      "npi": "1760794697",
-      "license_number": "",
+      "address": "4009 COMMUNITY CENTER DR WESTON, WI 54476-4139 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1760794697"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "5": {
     "provider_id": "5",
-    "timestamp_utc": "2025-12-16T19:15:16.650632Z",
+    "timestamp_utc": "2025-12-16T19:34:31.750029Z",
     "normalized": {
-      "name": "Dr. BILL ABBO DDS MS",
+      "name": "Dr. Bill Abbo Dds Ms",
       "phone": "3059450909",
-      "address": "3031 NE 163RD ST\nNORTH MIAMI BEACH, FL 33160-4462\nUnited States",
-      "npi": "1720147853",
-      "license_number": "",
+      "address": "3031 NE 163RD ST NORTH MIAMI BEACH, FL 33160-4462 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1720147853"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "6": {
     "provider_id": "6",
-    "timestamp_utc": "2025-12-16T19:15:16.664210Z",
+    "timestamp_utc": "2025-12-16T19:34:31.766166Z",
     "normalized": {
-      "name": "RAGUNATH APPASAMY MD PhD",
+      "name": "Ragunath Appasamy, Md, Phd",
       "phone": "2153498222",
-      "address": "3400 SPRUCE STREET 3 DULLES BUILDING PHILADELPHIA, PA 19104-4206 United States",
-      "npi": "1467401976",
-      "license_number": "",
-      "license_status": "",
-      "issue_date": "",
-      "expiry_date": ""
+      "address": "3400 Spruce Street, 3 Dulles Building Philadelphia, PA 19104-4206, United States",
+      "registration_number": "PA-MD-778945",
+      "license_status": "ACTIVE",
+      "issue_date": "June 12, 2015",
+      "expiry_date": "June 30, 2026",
+      "npi": "1467401976"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 1.0,
+    "validation_status": "PASS"
   },
   "7": {
     "provider_id": "7",
-    "timestamp_utc": "2025-12-16T19:15:16.677518Z",
+    "timestamp_utc": "2025-12-16T19:34:31.779842Z",
     "normalized": {
-      "name": "ESTHER AARINOLA RBT",
+      "name": "Esther Aarinola Rbt",
       "phone": "6789047053",
-      "address": "190 HANDLEY RD\nTYRONE, GA 30290-2178\nUnited States",
-      "npi": "1063192243",
-      "license_number": "",
+      "address": "190 HANDLEY RD TYRONE, GA 30290-2178 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1063192243"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "8": {
     "provider_id": "8",
-    "timestamp_utc": "2025-12-16T19:15:16.689528Z",
+    "timestamp_utc": "2025-12-16T19:34:31.793479Z",
     "normalized": {
-      "name": "Dr. ESPIR J ABAJI DDS",
+      "name": "Dr. Espir J Abaji Dds",
       "phone": "3146566615",
-      "address": "12221 SAINT CHARLES ROCK RD\nBRIDGETON, MO 63044-2502\nUnited States",
-      "npi": "1356965289",
-      "license_number": "",
+      "address": "12221 SAINT CHARLES ROCK RD BRIDGETON, MO 63044-2502 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1356965289"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "9": {
     "provider_id": "9",
-    "timestamp_utc": "2025-12-16T19:15:16.702876Z",
+    "timestamp_utc": "2025-12-16T19:34:31.804643Z",
     "normalized": {
-      "name": "ESKINDER ABASSERAN COTA",
+      "name": "Eskinder Abasseran Cota",
       "phone": "4252425671",
-      "address": "2424 156TH AVE NE\nBELLEVUE, WA 98007-3814\nUnited States",
-      "npi": "1811763980",
-      "license_number": "",
+      "address": "2424 156TH AVE NE BELLEVUE, WA 98007-3814 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1811763980"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "10": {
     "provider_id": "10",
-    "timestamp_utc": "2025-12-16T19:15:16.713610Z",
+    "timestamp_utc": "2025-12-16T19:34:31.816659Z",
     "normalized": {
-      "name": "ESTELA MARIA ABICH MD",
+      "name": "Estela Maria Abich Md",
       "phone": "4073541202",
-      "address": "9430 TURKEY LAKE RD STE 114\nORLANDO, FL 32819-8015\nUnited States",
-      "npi": "1821583287",
-      "license_number": "",
+      "address": "9430 TURKEY LAKE RD STE 114 ORLANDO, FL 32819-8015 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1821583287"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "11": {
     "provider_id": "11",
-    "timestamp_utc": "2025-12-16T19:15:16.725554Z",
+    "timestamp_utc": "2025-12-16T19:34:31.828658Z",
     "normalized": {
-      "name": "ESTREYA ESTHER ABOUD",
+      "name": "Estreya Esther Aboud",
       "phone": "7186863700",
-      "address": "1312 38TH ST\nBROOKLYN, NY 11218-3612\nUnited States",
-      "npi": "1437750635",
-      "license_number": "",
+      "address": "1312 38TH ST BROOKLYN, NY 11218-3612 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1437750635"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "12": {
     "provider_id": "12",
-    "timestamp_utc": "2025-12-16T19:15:16.737614Z",
+    "timestamp_utc": "2025-12-16T19:34:31.840516Z",
     "normalized": {
-      "name": "ESCARLET ACABAL",
+      "name": "Escarlet Acabal",
       "phone": "3105532695",
-      "address": "7335 VAN NUYS BLVD\nVAN NUYS, CA 91405-1998\nUnited States",
-      "npi": "1396402988",
-      "license_number": "",
+      "address": "7335 VAN NUYS BLVD VAN NUYS, CA 91405-1998 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1396402988"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "13": {
     "provider_id": "13",
-    "timestamp_utc": "2025-12-16T19:15:16.749188Z",
+    "timestamp_utc": "2025-12-16T19:34:31.855305Z",
     "normalized": {
-      "name": "GAYATRI AACHI",
+      "name": "Gayatri Aachi",
       "phone": "9252947022",
-      "address": "300 PULLMAN ST BLDG A1\nLIVERMORE, CA 94551-9756\nUnited States",
-      "npi": "1235660754",
-      "license_number": "",
+      "address": "300 PULLMAN ST BLDG A1 LIVERMORE, CA 94551-9756 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1235660754"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "14": {
     "provider_id": "14",
-    "timestamp_utc": "2025-12-16T19:15:16.760592Z",
+    "timestamp_utc": "2025-12-16T19:34:31.870229Z",
     "normalized": {
-      "name": "GABRIELA ABADAL",
+      "name": "Gabriela Abadal",
       "phone": "7024287910",
-      "address": "4904 SANTO AVE\nLAS VEGAS, NV 89108-1331\nUnited States",
-      "npi": "",
-      "license_number": "",
+      "address": "4904 SANTO AVE LAS VEGAS, NV 89108-1331 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": ""
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.7,
+    "validation_status": "PASS_WITH_GAPS"
   },
   "15": {
     "provider_id": "15",
-    "timestamp_utc": "2025-12-16T19:15:16.772585Z",
+    "timestamp_utc": "2025-12-16T19:34:31.882813Z",
     "normalized": {
-      "name": "GANI ABAZI MD, MPH",
+      "name": "Gani Abazi Md, Mph",
       "phone": "2019674000",
-      "address": "230 E RIDGEWOOD AVE\nPARAMUS, NJ 07652-4142\nUnited States",
-      "npi": "",
-      "license_number": "",
+      "address": "230 E RIDGEWOOD AVE PARAMUS, NJ 07652-4142 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": ""
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.7,
+    "validation_status": "PASS_WITH_GAPS"
   },
   "16": {
     "provider_id": "16",
-    "timestamp_utc": "2025-12-16T19:15:16.785000Z",
+    "timestamp_utc": "2025-12-16T19:34:31.896525Z",
     "normalized": {
-      "name": "GAMBO ABDULLAHI",
+      "name": "Gambo Abdullahi",
       "phone": "4046410505",
-      "address": "2118 CUMBERLAND CREEK TRL SW\nMARIETTA, GA 30008-4457\nUnited States",
-      "npi": "",
-      "license_number": "",
+      "address": "2118 CUMBERLAND CREEK TRL SW MARIETTA, GA 30008-4457 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": ""
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.7,
+    "validation_status": "PASS_WITH_GAPS"
   },
   "17": {
     "provider_id": "17",
-    "timestamp_utc": "2025-12-16T19:15:16.796512Z",
+    "timestamp_utc": "2025-12-16T19:34:31.910530Z",
     "normalized": {
-      "name": "KIMBERLY ANN A'HEARN PT",
+      "name": "Kimberly Ann A'Hearn Pt",
       "phone": "4232387217",
-      "address": "508 E MORRIS ST\nDALTON, GA 30721-3403\nUnited States",
-      "npi": "",
-      "license_number": "",
+      "address": "508 E MORRIS ST DALTON, GA 30721-3403 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": ""
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.7,
+    "validation_status": "PASS_WITH_GAPS"
   },
   "18": {
     "provider_id": "18",
-    "timestamp_utc": "2025-12-16T19:15:16.807799Z",
+    "timestamp_utc": "2025-12-16T19:34:31.923093Z",
     "normalized": {
-      "name": "KIMBERLY AARON",
+      "name": "Kimberly Aaron",
       "phone": "5613675258",
-      "address": "9329 NC HWY 33E\nCHAPEL HILL, OH 27517\nUnited States",
-      "npi": "",
-      "license_number": "",
+      "address": "9329 NC HWY 33E CHAPEL HILL, OH 27517 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": ""
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.7,
+    "validation_status": "PASS_WITH_GAPS"
   },
   "19": {
     "provider_id": "19",
-    "timestamp_utc": "2025-12-16T19:15:16.820028Z",
+    "timestamp_utc": "2025-12-16T19:34:31.936096Z",
     "normalized": {
-      "name": "KIAN S ABDUL-BAKI DO",
+      "name": "Kian S Abdul-Baki Do",
       "phone": "4097471883",
-      "address": "UNIVERSITY OF TEXAS MEDICAL BRANCH 301 UNIVERSITY BLVD\nGALVESTON, TX 77555-0001\nUnited States",
-      "npi": "",
-      "license_number": "",
+      "address": "UNIVERSITY OF TEXAS MEDICAL BRANCH 301 UNIVERSITY BLVD GALVESTON, TX 77555-0001 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": ""
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.7,
+    "validation_status": "PASS_WITH_GAPS"
   },
   "20": {
     "provider_id": "20",
-    "timestamp_utc": "2025-12-16T19:15:16.831494Z",
+    "timestamp_utc": "2025-12-16T19:34:31.948595Z",
     "normalized": {
-      "name": "MARIE A LITTLE",
+      "name": "Marie A Little",
       "phone": "5133065098",
-      "address": "15 GLEN ESTE PL\nCINCINNATI, OH 45217-2162\nUnited States",
-      "npi": "",
-      "license_number": "",
+      "address": "15 GLEN ESTE PL CINCINNATI, OH 45217-2162 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": ""
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.7,
+    "validation_status": "PASS_WITH_GAPS"
   },
   "21": {
     "provider_id": "21",
-    "timestamp_utc": "2025-12-16T19:15:16.843614Z",
+    "timestamp_utc": "2025-12-16T19:34:31.961136Z",
     "normalized": {
-      "name": "MARTHA H AARON",
+      "name": "Martha H Aaron",
       "phone": "5033704950",
-      "address": "4747 SKYLINE RD S # 180\nSALEM, OR 97306-4200\nUnited States",
-      "npi": "",
-      "license_number": "",
+      "address": "4747 SKYLINE RD S # 180 SALEM, OR 97306-4200 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": ""
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.7,
+    "validation_status": "PASS_WITH_GAPS"
   },
   "22": {
     "provider_id": "22",
-    "timestamp_utc": "2025-12-16T19:15:16.856613Z",
+    "timestamp_utc": "2025-12-16T19:34:31.973143Z",
     "normalized": {
-      "name": "Dr. MARK K AASEN",
+      "name": "Dr. Mark K Aasen",
       "phone": "4143257246",
-      "address": "4131 W. LOOMIS RD\nSTE 300\nGREENFIELD, WI 53221-2059\nUnited States",
-      "npi": "",
-      "license_number": "",
+      "address": "4131 W. LOOMIS RD STE 300 GREENFIELD, WI 53221-2059 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": ""
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.7,
+    "validation_status": "PASS_WITH_GAPS"
   },
   "23": {
     "provider_id": "23",
-    "timestamp_utc": "2025-12-16T19:15:16.868955Z",
+    "timestamp_utc": "2025-12-16T19:34:31.984657Z",
     "normalized": {
-      "name": "Dr. PUYA ABBASSI D.O.",
+      "name": "Dr. Puya Abbassi D.O.",
       "phone": "4088855000",
-      "address": "751 S BASCOM AVE\nSAN JOSE, CA 95128-2699\nUnited States",
-      "npi": "",
-      "license_number": "",
+      "address": "751 S BASCOM AVE SAN JOSE, CA 95128-2699 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": ""
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.7,
+    "validation_status": "PASS_WITH_GAPS"
   },
   "24": {
     "provider_id": "24",
-    "timestamp_utc": "2025-12-16T19:15:16.881956Z",
+    "timestamp_utc": "2025-12-16T19:34:31.996330Z",
     "normalized": {
-      "name": "PUYA ALIKHANI",
+      "name": "Puya Alikhani",
       "phone": "8132590965",
-      "address": "2 TAMPA GENERAL CIR\n7TH FLOOR\nTAMPA, FL 33606-3603\nUnited States",
-      "npi": "",
-      "license_number": "",
+      "address": "2 TAMPA GENERAL CIR 7TH FLOOR TAMPA, FL 33606-3603 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": ""
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.7,
+    "validation_status": "PASS_WITH_GAPS"
   },
   "25": {
     "provider_id": "25",
-    "timestamp_utc": "2025-12-16T19:15:16.895487Z",
+    "timestamp_utc": "2025-12-16T19:34:32.008338Z",
     "normalized": {
-      "name": "Dr. PURITA EPISCOPE AMBAT DMD",
+      "name": "Dr. Purita Episcope Ambat Dmd",
       "phone": "7183887007",
-      "address": "749 GRAND STREET\nBROOKLYN, NY 11211\nUnited States",
-      "npi": "",
-      "license_number": "",
+      "address": "749 GRAND STREET BROOKLYN, NY 11211 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": ""
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.7,
+    "validation_status": "PASS_WITH_GAPS"
   },
   "26": {
     "provider_id": "26",
-    "timestamp_utc": "2025-12-16T19:15:16.913737Z",
+    "timestamp_utc": "2025-12-16T19:34:32.022331Z",
     "normalized": {
-      "name": "Dr. CHITRA SADASIWAN BHOSEKAR M.D",
+      "name": "Dr. Chitra Sadasiwan Bhosekar M.D",
       "phone": "9204457222",
-      "address": "PO BOX 22487\nGREEN BAY, WI 54305-2487\nUnited States",
-      "npi": "1114144466",
-      "license_number": "",
+      "address": "PO BOX 22487 GREEN BAY, WI 54305-2487 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1114144466"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "27": {
     "provider_id": "27",
-    "timestamp_utc": "2025-12-16T19:15:16.926198Z",
+    "timestamp_utc": "2025-12-16T19:34:32.034330Z",
     "normalized": {
-      "name": "JORDAN M ABEL MD",
+      "name": "Jordan M Abel Md",
       "phone": "3608278400",
-      "address": "18313 PAULSON ST SW\nROCHESTER, WA 98579-9262\nUnited States",
-      "npi": "1821438029",
-      "license_number": "",
+      "address": "18313 PAULSON ST SW ROCHESTER, WA 98579-9262 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1821438029"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "28": {
     "provider_id": "28",
-    "timestamp_utc": "2025-12-16T19:15:16.938204Z",
+    "timestamp_utc": "2025-12-16T19:34:32.045996Z",
     "normalized": {
-      "name": "ROOKMINI SINGH FNP",
+      "name": "Rookmini Singh Fnp",
       "phone": "6469622700",
-      "address": "520 E 70TH ST\nNEW YORK, NY 10021-9800\nUnited States",
-      "npi": "1912475377",
-      "license_number": "",
+      "address": "520 E 70TH ST NEW YORK, NY 10021-9800 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1912475377"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "29": {
     "provider_id": "29",
-    "timestamp_utc": "2025-12-16T19:15:16.949569Z",
+    "timestamp_utc": "2025-12-16T19:34:32.057490Z",
     "normalized": {
-      "name": "MALAK S AL-ALAWI",
+      "name": "Malak S Al-Alawi",
       "phone": "2484364400",
-      "address": "27777 INKSTER RD\nFARMINGTON HILLS, MI 48334-5326\nUnited States",
-      "npi": "1437794203",
-      "license_number": "",
+      "address": "27777 INKSTER RD FARMINGTON HILLS, MI 48334-5326 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1437794203"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   },
   "30": {
     "provider_id": "30",
-    "timestamp_utc": "2025-12-16T19:15:16.962951Z",
+    "timestamp_utc": "2025-12-16T19:34:32.069567Z",
     "normalized": {
-      "name": "NANINE BEAL",
+      "name": "Nanine Beal",
       "phone": "7072682990",
-      "address": "720 WOOD ST\nEUREKA, CA 95501-4413\nUnited States",
-      "npi": "1871365379",
-      "license_number": "",
+      "address": "720 WOOD ST EUREKA, CA 95501-4413 United States",
+      "registration_number": "",
       "license_status": "",
       "issue_date": "",
-      "expiry_date": ""
+      "expiry_date": "",
+      "npi": "1871365379"
     },
-    "missing_fields": [
-      "license_number",
-      "license_status",
-      "issue_date",
-      "expiry_date"
-    ],
-    "overall_confidence": 0.2,
-    "validation_status": "FAIL_NEEDS_REVIEW"
+    "missing_fields": [],
+    "overall_confidence": 0.85,
+    "validation_status": "PASS"
   }
 }
