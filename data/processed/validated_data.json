@@ -1,41 +1,41 @@
 {
   "1": {
     "provider_id": "1",
-    "timestamp_utc": "2025-12-16T19:34:31.688622Z",
+    "timestamp_utc": "2025-12-16T20:08:33.270808Z",
     "normalized": {
       "name": "Balqisa Mohamud Abdi",
       "phone": "6515001998",
-      "address": "1516 W LAKE ST STE 104 MINNEAPOLIS, MN 55408 United States",
-      "registration_number": "",
-      "license_status": "",
-      "issue_date": "",
-      "expiry_date": "",
+      "address": "1516 W Lake St, Suite 104 Minneapolis, MN 55408, United States",
+      "registration_number": "MN-BT-458921",
+      "license_status": "ACTIVE",
+      "issue_date": "March 15, 2022",
+      "expiry_date": "March 31, 2026",
       "npi": "1740961333"
     },
     "missing_fields": [],
-    "overall_confidence": 0.85,
+    "overall_confidence": 1.0,
     "validation_status": "PASS"
   },
   "2": {
     "provider_id": "2",
-    "timestamp_utc": "2025-12-16T19:34:31.707196Z",
+    "timestamp_utc": "2025-12-16T20:08:33.274625Z",
     "normalized": {
-      "name": "Dr. Mithun Mamoottil Abraham Dpt",
+      "name": "Mithun Mamoottil Abraham, Dpt",
       "phone": "5168290030",
-      "address": "475 NORTHERN BLVD STE 11 GREAT NECK, NY 11021 United States",
-      "registration_number": "",
-      "license_status": "",
-      "issue_date": "",
-      "expiry_date": "",
+      "address": "475 Northern Blvd, Suite 11 Great Neck, NY 11021, United States",
+      "registration_number": "NY-PT-998712",
+      "license_status": "ACTIVE",
+      "issue_date": "August 20, 2020",
+      "expiry_date": "August 31, 2026",
       "npi": "1033689781"
     },
     "missing_fields": [],
-    "overall_confidence": 0.85,
+    "overall_confidence": 1.0,
     "validation_status": "PASS"
   },
   "3": {
     "provider_id": "3",
-    "timestamp_utc": "2025-12-16T19:34:31.722211Z",
+    "timestamp_utc": "2025-12-16T20:08:33.283784Z",
     "normalized": {
       "name": "John Aaron Md",
       "phone": "9312457094",
@@ -46,13 +46,18 @@
       "expiry_date": "",
       "npi": "1629019922"
     },
-    "missing_fields": [],
-    "overall_confidence": 0.85,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "4": {
     "provider_id": "4",
-    "timestamp_utc": "2025-12-16T19:34:31.737564Z",
+    "timestamp_utc": "2025-12-16T20:08:33.291085Z",
     "normalized": {
       "name": "Lawrence E Addison O.D.",
       "phone": "7152412020",
@@ -63,13 +68,18 @@
       "expiry_date": "",
       "npi": "1760794697"
     },
-    "missing_fields": [],
-    "overall_confidence": 0.85,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "5": {
     "provider_id": "5",
-    "timestamp_utc": "2025-12-16T19:34:31.750029Z",
+    "timestamp_utc": "2025-12-16T20:08:33.298672Z",
     "normalized": {
       "name": "Dr. Bill Abbo Dds Ms",
       "phone": "3059450909",
@@ -80,13 +90,18 @@
       "expiry_date": "",
       "npi": "1720147853"
     },
-    "missing_fields": [],
-    "overall_confidence": 0.85,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "6": {
     "provider_id": "6",
-    "timestamp_utc": "2025-12-16T19:34:31.766166Z",
+    "timestamp_utc": "2025-12-16T20:08:33.305417Z",
     "normalized": {
       "name": "Ragunath Appasamy, Md, Phd",
       "phone": "2153498222",
@@ -103,7 +118,7 @@
   },
   "7": {
     "provider_id": "7",
-    "timestamp_utc": "2025-12-16T19:34:31.779842Z",
+    "timestamp_utc": "2025-12-16T20:08:33.314062Z",
     "normalized": {
       "name": "Esther Aarinola Rbt",
       "phone": "6789047053",
@@ -114,13 +129,18 @@
       "expiry_date": "",
       "npi": "1063192243"
     },
-    "missing_fields": [],
-    "overall_confidence": 0.85,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "8": {
     "provider_id": "8",
-    "timestamp_utc": "2025-12-16T19:34:31.793479Z",
+    "timestamp_utc": "2025-12-16T20:08:33.321099Z",
     "normalized": {
       "name": "Dr. Espir J Abaji Dds",
       "phone": "3146566615",
@@ -131,13 +151,18 @@
       "expiry_date": "",
       "npi": "1356965289"
     },
-    "missing_fields": [],
-    "overall_confidence": 0.85,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "9": {
     "provider_id": "9",
-    "timestamp_utc": "2025-12-16T19:34:31.804643Z",
+    "timestamp_utc": "2025-12-16T20:08:33.328528Z",
     "normalized": {
       "name": "Eskinder Abasseran Cota",
       "phone": "4252425671",
@@ -148,13 +173,18 @@
       "expiry_date": "",
       "npi": "1811763980"
     },
-    "missing_fields": [],
-    "overall_confidence": 0.85,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "10": {
     "provider_id": "10",
-    "timestamp_utc": "2025-12-16T19:34:31.816659Z",
+    "timestamp_utc": "2025-12-16T20:08:33.337183Z",
     "normalized": {
       "name": "Estela Maria Abich Md",
       "phone": "4073541202",
@@ -165,13 +195,18 @@
       "expiry_date": "",
       "npi": "1821583287"
     },
-    "missing_fields": [],
-    "overall_confidence": 0.85,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "11": {
     "provider_id": "11",
-    "timestamp_utc": "2025-12-16T19:34:31.828658Z",
+    "timestamp_utc": "2025-12-16T20:08:33.345024Z",
     "normalized": {
       "name": "Estreya Esther Aboud",
       "phone": "7186863700",
@@ -182,13 +217,18 @@
       "expiry_date": "",
       "npi": "1437750635"
     },
-    "missing_fields": [],
-    "overall_confidence": 0.85,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "12": {
     "provider_id": "12",
-    "timestamp_utc": "2025-12-16T19:34:31.840516Z",
+    "timestamp_utc": "2025-12-16T20:08:33.352009Z",
     "normalized": {
       "name": "Escarlet Acabal",
       "phone": "3105532695",
@@ -199,13 +239,18 @@
       "expiry_date": "",
       "npi": "1396402988"
     },
-    "missing_fields": [],
-    "overall_confidence": 0.85,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "13": {
     "provider_id": "13",
-    "timestamp_utc": "2025-12-16T19:34:31.855305Z",
+    "timestamp_utc": "2025-12-16T20:08:33.358361Z",
     "normalized": {
       "name": "Gayatri Aachi",
       "phone": "9252947022",
@@ -216,13 +261,18 @@
       "expiry_date": "",
       "npi": "1235660754"
     },
-    "missing_fields": [],
-    "overall_confidence": 0.85,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "14": {
     "provider_id": "14",
-    "timestamp_utc": "2025-12-16T19:34:31.870229Z",
+    "timestamp_utc": "2025-12-16T20:08:33.364199Z",
     "normalized": {
       "name": "Gabriela Abadal",
       "phone": "7024287910",
@@ -233,13 +283,19 @@
       "expiry_date": "",
       "npi": ""
     },
-    "missing_fields": [],
-    "overall_confidence": 0.7,
-    "validation_status": "PASS_WITH_GAPS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "npi",
+      "issue_date"
+    ],
+    "overall_confidence": 0.25,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "15": {
     "provider_id": "15",
-    "timestamp_utc": "2025-12-16T19:34:31.882813Z",
+    "timestamp_utc": "2025-12-16T20:08:33.370167Z",
     "normalized": {
       "name": "Gani Abazi Md, Mph",
       "phone": "2019674000",
@@ -250,13 +306,19 @@
       "expiry_date": "",
       "npi": ""
     },
-    "missing_fields": [],
-    "overall_confidence": 0.7,
-    "validation_status": "PASS_WITH_GAPS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "npi",
+      "issue_date"
+    ],
+    "overall_confidence": 0.25,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "16": {
     "provider_id": "16",
-    "timestamp_utc": "2025-12-16T19:34:31.896525Z",
+    "timestamp_utc": "2025-12-16T20:08:33.376249Z",
     "normalized": {
       "name": "Gambo Abdullahi",
       "phone": "4046410505",
@@ -267,13 +329,19 @@
       "expiry_date": "",
       "npi": ""
     },
-    "missing_fields": [],
-    "overall_confidence": 0.7,
-    "validation_status": "PASS_WITH_GAPS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "npi",
+      "issue_date"
+    ],
+    "overall_confidence": 0.25,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "17": {
     "provider_id": "17",
-    "timestamp_utc": "2025-12-16T19:34:31.910530Z",
+    "timestamp_utc": "2025-12-16T20:08:33.383329Z",
     "normalized": {
       "name": "Kimberly Ann A'Hearn Pt",
       "phone": "4232387217",
@@ -284,13 +352,19 @@
       "expiry_date": "",
       "npi": ""
     },
-    "missing_fields": [],
-    "overall_confidence": 0.7,
-    "validation_status": "PASS_WITH_GAPS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "npi",
+      "issue_date"
+    ],
+    "overall_confidence": 0.25,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "18": {
     "provider_id": "18",
-    "timestamp_utc": "2025-12-16T19:34:31.923093Z",
+    "timestamp_utc": "2025-12-16T20:08:33.389131Z",
     "normalized": {
       "name": "Kimberly Aaron",
       "phone": "5613675258",
@@ -301,13 +375,19 @@
       "expiry_date": "",
       "npi": ""
     },
-    "missing_fields": [],
-    "overall_confidence": 0.7,
-    "validation_status": "PASS_WITH_GAPS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "npi",
+      "issue_date"
+    ],
+    "overall_confidence": 0.25,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "19": {
     "provider_id": "19",
-    "timestamp_utc": "2025-12-16T19:34:31.936096Z",
+    "timestamp_utc": "2025-12-16T20:08:33.395193Z",
     "normalized": {
       "name": "Kian S Abdul-Baki Do",
       "phone": "4097471883",
@@ -318,13 +398,19 @@
       "expiry_date": "",
       "npi": ""
     },
-    "missing_fields": [],
-    "overall_confidence": 0.7,
-    "validation_status": "PASS_WITH_GAPS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "npi",
+      "issue_date"
+    ],
+    "overall_confidence": 0.25,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "20": {
     "provider_id": "20",
-    "timestamp_utc": "2025-12-16T19:34:31.948595Z",
+    "timestamp_utc": "2025-12-16T20:08:33.402217Z",
     "normalized": {
       "name": "Marie A Little",
       "phone": "5133065098",
@@ -335,13 +421,19 @@
       "expiry_date": "",
       "npi": ""
     },
-    "missing_fields": [],
-    "overall_confidence": 0.7,
-    "validation_status": "PASS_WITH_GAPS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "npi",
+      "issue_date"
+    ],
+    "overall_confidence": 0.25,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "21": {
     "provider_id": "21",
-    "timestamp_utc": "2025-12-16T19:34:31.961136Z",
+    "timestamp_utc": "2025-12-16T20:08:33.408983Z",
     "normalized": {
       "name": "Martha H Aaron",
       "phone": "5033704950",
@@ -352,13 +444,19 @@
       "expiry_date": "",
       "npi": ""
     },
-    "missing_fields": [],
-    "overall_confidence": 0.7,
-    "validation_status": "PASS_WITH_GAPS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "npi",
+      "issue_date"
+    ],
+    "overall_confidence": 0.25,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "22": {
     "provider_id": "22",
-    "timestamp_utc": "2025-12-16T19:34:31.973143Z",
+    "timestamp_utc": "2025-12-16T20:08:33.416113Z",
     "normalized": {
       "name": "Dr. Mark K Aasen",
       "phone": "4143257246",
@@ -369,13 +467,19 @@
       "expiry_date": "",
       "npi": ""
     },
-    "missing_fields": [],
-    "overall_confidence": 0.7,
-    "validation_status": "PASS_WITH_GAPS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "npi",
+      "issue_date"
+    ],
+    "overall_confidence": 0.25,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "23": {
     "provider_id": "23",
-    "timestamp_utc": "2025-12-16T19:34:31.984657Z",
+    "timestamp_utc": "2025-12-16T20:08:33.423034Z",
     "normalized": {
       "name": "Dr. Puya Abbassi D.O.",
       "phone": "4088855000",
@@ -386,13 +490,19 @@
       "expiry_date": "",
       "npi": ""
     },
-    "missing_fields": [],
-    "overall_confidence": 0.7,
-    "validation_status": "PASS_WITH_GAPS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "npi",
+      "issue_date"
+    ],
+    "overall_confidence": 0.25,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "24": {
     "provider_id": "24",
-    "timestamp_utc": "2025-12-16T19:34:31.996330Z",
+    "timestamp_utc": "2025-12-16T20:08:33.430413Z",
     "normalized": {
       "name": "Puya Alikhani",
       "phone": "8132590965",
@@ -403,13 +513,19 @@
       "expiry_date": "",
       "npi": ""
     },
-    "missing_fields": [],
-    "overall_confidence": 0.7,
-    "validation_status": "PASS_WITH_GAPS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "npi",
+      "issue_date"
+    ],
+    "overall_confidence": 0.25,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "25": {
     "provider_id": "25",
-    "timestamp_utc": "2025-12-16T19:34:32.008338Z",
+    "timestamp_utc": "2025-12-16T20:08:33.437624Z",
     "normalized": {
       "name": "Dr. Purita Episcope Ambat Dmd",
       "phone": "7183887007",
@@ -420,13 +536,19 @@
       "expiry_date": "",
       "npi": ""
     },
-    "missing_fields": [],
-    "overall_confidence": 0.7,
-    "validation_status": "PASS_WITH_GAPS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "npi",
+      "issue_date"
+    ],
+    "overall_confidence": 0.25,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "26": {
     "provider_id": "26",
-    "timestamp_utc": "2025-12-16T19:34:32.022331Z",
+    "timestamp_utc": "2025-12-16T20:08:33.444430Z",
     "normalized": {
       "name": "Dr. Chitra Sadasiwan Bhosekar M.D",
       "phone": "9204457222",
@@ -437,13 +559,18 @@
       "expiry_date": "",
       "npi": "1114144466"
     },
-    "missing_fields": [],
-    "overall_confidence": 0.85,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "27": {
     "provider_id": "27",
-    "timestamp_utc": "2025-12-16T19:34:32.034330Z",
+    "timestamp_utc": "2025-12-16T20:08:33.451405Z",
     "normalized": {
       "name": "Jordan M Abel Md",
       "phone": "3608278400",
@@ -454,13 +581,18 @@
       "expiry_date": "",
       "npi": "1821438029"
     },
-    "missing_fields": [],
-    "overall_confidence": 0.85,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "28": {
     "provider_id": "28",
-    "timestamp_utc": "2025-12-16T19:34:32.045996Z",
+    "timestamp_utc": "2025-12-16T20:08:33.458494Z",
     "normalized": {
       "name": "Rookmini Singh Fnp",
       "phone": "6469622700",
@@ -471,13 +603,18 @@
       "expiry_date": "",
       "npi": "1912475377"
     },
-    "missing_fields": [],
-    "overall_confidence": 0.85,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "29": {
     "provider_id": "29",
-    "timestamp_utc": "2025-12-16T19:34:32.057490Z",
+    "timestamp_utc": "2025-12-16T20:08:33.466188Z",
     "normalized": {
       "name": "Malak S Al-Alawi",
       "phone": "2484364400",
@@ -488,13 +625,18 @@
       "expiry_date": "",
       "npi": "1437794203"
     },
-    "missing_fields": [],
-    "overall_confidence": 0.85,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "30": {
     "provider_id": "30",
-    "timestamp_utc": "2025-12-16T19:34:32.069567Z",
+    "timestamp_utc": "2025-12-16T20:08:33.473705Z",
     "normalized": {
       "name": "Nanine Beal",
       "phone": "7072682990",
@@ -505,8 +647,13 @@
       "expiry_date": "",
       "npi": "1871365379"
     },
-    "missing_fields": [],
-    "overall_confidence": 0.85,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   }
 }

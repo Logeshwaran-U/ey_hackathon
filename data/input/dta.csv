@@ -1,10 +1,10 @@
 Provider_ID,Name,Address,Phone_No,Speciality,NPI_ID,Pdf
 1,BALQISA MOHAMUD ABDI,"1516 W LAKE ST STE 104
 MINNEAPOLIS, MN 55408
-United States",651-500-1998,Behavior Technician,1740961333,
+United States",651-500-1998,Behavior Technician,1740961333,data/input/pdfs/sample_balqisa_license.pdf
 2,Dr. MITHUN MAMOOTTIL ABRAHAM DPT,"475 NORTHERN BLVD STE 11
 GREAT NECK, NY 11021
-United States",516-829-0030,Physical Therapist - Orthopedic,1033689781,
+United States",516-829-0030,Physical Therapist - Orthopedic,1033689781,data/input/pdfs/sample_mithun_license.pdf
 3,"JOHN AARON MD
 
 ","PO BOX 3799

@@ -8,9 +8,18 @@
       "Phone_No": "651-500-1998",
       "Speciality": "Behavior Technician",
       "NPI_ID": "1740961333",
-      "Pdf": ""
+      "Pdf": "data/input/pdfs/sample_balqisa_license.pdf"
     },
-    "pdf_data": null
+    "pdf_data": {
+      "registered_name": "Balqisa Mohamud Abdi",
+      "license_number": "MN-BT-458921",
+      "license_type": "Behavior Technician",
+      "issuing_authority": "STATE OF MINNESOTA BOARD OF BEHAVIORAL HEALTH",
+      "issue_date": "March 15, 2022",
+      "expiry_date": "March 31, 2026",
+      "license_status": "ACTIVE",
+      "registered_address": "1516 W Lake St, Suite 104\nMinneapolis, MN 55408, United States"
+    }
   },
   "2": {
     "provider_id": "2",
@@ -21,9 +30,18 @@
       "Phone_No": "516-829-0030",
       "Speciality": "Physical Therapist - Orthopedic",
       "NPI_ID": "1033689781",
-      "Pdf": ""
+      "Pdf": "data/input/pdfs/sample_mithun_license.pdf"
     },
-    "pdf_data": null
+    "pdf_data": {
+      "registered_name": "Mithun Mamoottil Abraham, DPT",
+      "license_number": "NY-PT-998712",
+      "license_type": "Physical Therapy \u2013 Orthopedic License",
+      "issuing_authority": "STATE OF NEW YORK STATE BOARD OF PHYSICAL THERAPY",
+      "issue_date": "August 20, 2020",
+      "expiry_date": "August 31, 2026",
+      "license_status": "ACTIVE",
+      "registered_address": "475 Northern Blvd, Suite 11 Great Neck, NY 11021, United States"
+    }
   },
   "3": {
     "provider_id": "3",
