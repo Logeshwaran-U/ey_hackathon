@@ -1,157 +1,452 @@
 {
-  "P001": {
-    "provider_id": "P001",
-    "timestamp_utc": "2025-12-10T18:00:37.425210Z",
-    "source": {
-      "csv_provided": false,
-      "extracted_provided": true,
-      "raw_csv": {},
-      "raw_extracted": {
-        "name": "Dr. ABHILASHA ANAND",
-        "qualifications": "DNB, GENERAL SURGERY, FELLOWSHIP HPB",
-        "clinic_address": "Colony, Near Patliputra Golambar, Patna-800001",
-        "phone": "6202775969",
-        "email": "info@ruban.org.in",
-        "specializations": "General & Laparoscopic Surgery, HPB",
-        "experience_years": null,
-        "registration_number": null
-      }
-    },
+  "1": {
+    "provider_id": "1",
+    "timestamp_utc": "2025-12-16T02:25:35.890570Z",
     "normalized": {
-      "name": ". Abhilasha Anand",
-      "phone": "6202775969",
-      "email": "info@ruban.org.in",
-      "address": "Colony, Near Patliputra Golambar, Patna-800001",
-      "qualifications": [
-        "DNB",
-        "GENERAL SURGERY",
-        "FELLOWSHIP HPB"
-      ],
-      "registration_number": "",
-      "specializations": [
-        "General & Laparoscopic Surgery",
-        "HPB"
-      ],
-      "experience_years": ""
-    },
-    "format_confidence": {
-      "name": 1.0,
-      "phone": 1.0,
-      "email": 1.0,
-      "address": 0.5,
-      "registration": 0.0,
-      "qualifications": 1.0,
-      "experience_years": 0.0,
-      "specializations": 1.0
-    },
-    "source_confidence": {
-      "name": 0.6,
-      "phone": 0.75,
-      "email": 0.75,
-      "clinic_address": 0.75,
-      "registration": 0.6,
-      "qualifications": 0.6,
-      "experience_years": 0.6,
-      "specializations": 0.6
-    },
-    "field_confidence": {
-      "name": 0.8,
-      "phone": 0.875,
-      "email": 0.875,
-      "address": 0.25,
-      "registration": 0.3,
-      "qualifications": 0.8,
-      "experience_years": 0.3,
-      "specializations": 0.8
-    },
-    "validation_flags": {
-      "address": "low_confidence|source_missing",
-      "registration": "low_confidence|format_invalid",
-      "experience_years": "low_confidence|format_invalid"
-    },
-    "missing_fields": [],
-    "overall_confidence": 0.659,
-    "status": "PENDING"
-  },
-  "P002": {
-    "provider_id": "P002",
-    "timestamp_utc": "2025-12-10T18:00:37.429334Z",
-    "source": {
-      "csv_provided": false,
-      "extracted_provided": true,
-      "raw_csv": {},
-      "raw_extracted": {
-        "name": "",
-        "qualifications": "",
-        "clinic_address": "",
-        "phone": "",
-        "email": "",
-        "specializations": "",
-        "experience_years": "",
-        "registration_number": ""
-      }
-    },
-    "normalized": {
-      "name": "",
-      "phone": "",
-      "email": "",
-      "address": "",
-      "qualifications": [],
-      "registration_number": "",
-      "specializations": [],
-      "experience_years": ""
-    },
-    "format_confidence": {
-      "name": 0.0,
-      "phone": 0.0,
-      "email": 0.0,
-      "address": 0.0,
-      "registration": 0.0,
-      "qualifications": 0.0,
-      "experience_years": 0.0,
-      "specializations": 0.0
-    },
-    "source_confidence": {
-      "name": 0.0,
-      "phone": 0.0,
-      "email": 0.0,
-      "clinic_address": 0.0,
-      "registration": 0.0,
-      "qualifications": 0.0,
-      "experience_years": 0.0,
-      "specializations": 0.0
-    },
-    "field_confidence": {
-      "name": 0.0,
-      "phone": 0.0,
-      "email": 0.0,
-      "address": 0.0,
-      "registration": 0.0,
-      "qualifications": 0.0,
-      "experience_years": 0.0,
-      "specializations": 0.0
-    },
-    "validation_flags": {
-      "name": "low_confidence|format_invalid|source_missing",
-      "phone": "low_confidence|format_invalid|source_missing",
-      "email": "low_confidence|format_invalid|source_missing",
-      "address": "low_confidence|format_invalid|source_missing",
-      "registration": "low_confidence|format_invalid|source_missing",
-      "qualifications": "low_confidence|format_invalid|source_missing",
-      "experience_years": "low_confidence|format_invalid|source_missing",
-      "specializations": "low_confidence|format_invalid|source_missing"
+      "name": "Balqisa Mohamud Abdi",
+      "phone": "6515001998",
+      "address": "1516 W LAKE ST STE 104 MINNEAPOLIS, MN 55408 United States",
+      "registration_number": ""
     },
     "missing_fields": [
-      "name",
-      "phone",
-      "email",
-      "address",
-      "registration",
-      "qualifications",
-      "experience_years",
-      "specializations"
+      "registration"
     ],
-    "overall_confidence": 0.0,
-    "status": "PENDING"
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "2": {
+    "provider_id": "2",
+    "timestamp_utc": "2025-12-16T02:25:35.900109Z",
+    "normalized": {
+      "name": "Mithun Mamoottil Abraham Dpt",
+      "phone": "5168290030",
+      "address": "475 NORTHERN BLVD STE 11 GREAT NECK, NY 11021 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "3": {
+    "provider_id": "3",
+    "timestamp_utc": "2025-12-16T02:25:35.926041Z",
+    "normalized": {
+      "name": "John Aaron Md",
+      "phone": "9312457094",
+      "address": "PO BOX 3799 CLARKSVILLE, TN 37043 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "4": {
+    "provider_id": "4",
+    "timestamp_utc": "2025-12-16T02:25:35.944370Z",
+    "normalized": {
+      "name": "Lawrence E Addison O.D.",
+      "phone": "7152412020",
+      "address": "4009 COMMUNITY CENTER DR WESTON, WI 54476-4139 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "5": {
+    "provider_id": "5",
+    "timestamp_utc": "2025-12-16T02:25:35.964773Z",
+    "normalized": {
+      "name": "Bill Abbo Dds",
+      "phone": "3059450909",
+      "address": "3031 NE 163RD ST NORTH MIAMI BEACH, FL 33160-4462 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "6": {
+    "provider_id": "6",
+    "timestamp_utc": "2025-12-16T02:25:35.984810Z",
+    "normalized": {
+      "name": "Ragunath Appasamy Md Phd",
+      "phone": "2153498222",
+      "address": "3400 SPRUCE STREET 3 DULLES BUILDING PHILADELPHIA, PA 19104-4206 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "7": {
+    "provider_id": "7",
+    "timestamp_utc": "2025-12-16T02:25:36.003552Z",
+    "normalized": {
+      "name": "Esther Aarinola Rbt",
+      "phone": "6789047053",
+      "address": "190 HANDLEY RD TYRONE, GA 30290-2178 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "8": {
+    "provider_id": "8",
+    "timestamp_utc": "2025-12-16T02:25:36.023659Z",
+    "normalized": {
+      "name": "Espir J Abaji Dds",
+      "phone": "3146566615",
+      "address": "12221 SAINT CHARLES ROCK RD BRIDGETON, MO 63044-2502 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "9": {
+    "provider_id": "9",
+    "timestamp_utc": "2025-12-16T02:25:36.043577Z",
+    "normalized": {
+      "name": "Eskinder Abasseran Cota",
+      "phone": "4252425671",
+      "address": "2424 156TH AVE NE BELLEVUE, WA 98007-3814 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "10": {
+    "provider_id": "10",
+    "timestamp_utc": "2025-12-16T02:25:36.063794Z",
+    "normalized": {
+      "name": "Estela Maria Abich Md",
+      "phone": "4073541202",
+      "address": "9430 TURKEY LAKE RD STE 114 ORLANDO, FL 32819-8015 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "11": {
+    "provider_id": "11",
+    "timestamp_utc": "2025-12-16T02:25:36.083777Z",
+    "normalized": {
+      "name": "Estreya Esther Aboud",
+      "phone": "7186863700",
+      "address": "1312 38TH ST BROOKLYN, NY 11218-3612 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "12": {
+    "provider_id": "12",
+    "timestamp_utc": "2025-12-16T02:25:36.099043Z",
+    "normalized": {
+      "name": "Escarlet Acabal",
+      "phone": "3105532695",
+      "address": "7335 VAN NUYS BLVD VAN NUYS, CA 91405-1998 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "13": {
+    "provider_id": "13",
+    "timestamp_utc": "2025-12-16T02:25:36.135072Z",
+    "normalized": {
+      "name": "Gayatri Aachi",
+      "phone": "9252947022",
+      "address": "300 PULLMAN ST BLDG A1 LIVERMORE, CA 94551-9756 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "14": {
+    "provider_id": "14",
+    "timestamp_utc": "2025-12-16T02:25:36.169406Z",
+    "normalized": {
+      "name": "Gabriela Abadal",
+      "phone": "7024287910",
+      "address": "4904 SANTO AVE LAS VEGAS, NV 89108-1331 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "15": {
+    "provider_id": "15",
+    "timestamp_utc": "2025-12-16T02:25:36.202765Z",
+    "normalized": {
+      "name": "Gani Abazi Md, Mph",
+      "phone": "2019674000",
+      "address": "230 E RIDGEWOOD AVE PARAMUS, NJ 07652-4142 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "16": {
+    "provider_id": "16",
+    "timestamp_utc": "2025-12-16T02:25:36.237803Z",
+    "normalized": {
+      "name": "Gambo Abdullahi",
+      "phone": "4046410505",
+      "address": "2118 CUMBERLAND CREEK TRL SW MARIETTA, GA 30008-4457 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "17": {
+    "provider_id": "17",
+    "timestamp_utc": "2025-12-16T02:25:36.271575Z",
+    "normalized": {
+      "name": "Kimberly Ann A'Hearn Pt",
+      "phone": "4232387217",
+      "address": "508 E MORRIS ST DALTON, GA 30721-3403 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "18": {
+    "provider_id": "18",
+    "timestamp_utc": "2025-12-16T02:25:36.299406Z",
+    "normalized": {
+      "name": "Kimberly Aaron",
+      "phone": "5613675258",
+      "address": "9329 NC HWY 33E CHAPEL HILL, OH 27517 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "19": {
+    "provider_id": "19",
+    "timestamp_utc": "2025-12-16T02:25:36.333012Z",
+    "normalized": {
+      "name": "Kian S Abdul-Baki Do",
+      "phone": "4097471883",
+      "address": "UNIVERSITY OF TEXAS MEDICAL BRANCH 301 UNIVERSITY BLVD GALVESTON, TX 77555-0001 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "20": {
+    "provider_id": "20",
+    "timestamp_utc": "2025-12-16T02:25:36.368242Z",
+    "normalized": {
+      "name": "Marie A Little",
+      "phone": "5133065098",
+      "address": "15 GLEN ESTE PL CINCINNATI, OH 45217-2162 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "21": {
+    "provider_id": "21",
+    "timestamp_utc": "2025-12-16T02:25:36.403587Z",
+    "normalized": {
+      "name": "Martha H Aaron",
+      "phone": "5033704950",
+      "address": "4747 SKYLINE RD S # 180 SALEM, OR 97306-4200 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "22": {
+    "provider_id": "22",
+    "timestamp_utc": "2025-12-16T02:25:36.436984Z",
+    "normalized": {
+      "name": "Mark K Aasen",
+      "phone": "4143257246",
+      "address": "4131 W. LOOMIS RD STE 300 GREENFIELD, WI 53221-2059 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "23": {
+    "provider_id": "23",
+    "timestamp_utc": "2025-12-16T02:25:36.473924Z",
+    "normalized": {
+      "name": "Puya Abbassi D.O.",
+      "phone": "4088855000",
+      "address": "751 S BASCOM AVE SAN JOSE, CA 95128-2699 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "24": {
+    "provider_id": "24",
+    "timestamp_utc": "2025-12-16T02:25:36.510937Z",
+    "normalized": {
+      "name": "Puya Alikhani",
+      "phone": "8132590965",
+      "address": "2 TAMPA GENERAL CIR 7TH FLOOR TAMPA, FL 33606-3603 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "25": {
+    "provider_id": "25",
+    "timestamp_utc": "2025-12-16T02:25:36.546869Z",
+    "normalized": {
+      "name": "Purita Episcope Ambat Dmd",
+      "phone": "7183887007",
+      "address": "749 GRAND STREET BROOKLYN, NY 11211 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "26": {
+    "provider_id": "26",
+    "timestamp_utc": "2025-12-16T02:25:36.581319Z",
+    "normalized": {
+      "name": "Chitra Sadasiwan Bhosekar M.D",
+      "phone": "9204457222",
+      "address": "PO BOX 22487 GREEN BAY, WI 54305-2487 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "27": {
+    "provider_id": "27",
+    "timestamp_utc": "2025-12-16T02:25:36.616927Z",
+    "normalized": {
+      "name": "Jordan M Abel Md",
+      "phone": "3608278400",
+      "address": "18313 PAULSON ST SW ROCHESTER, WA 98579-9262 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "28": {
+    "provider_id": "28",
+    "timestamp_utc": "2025-12-16T02:25:36.651991Z",
+    "normalized": {
+      "name": "Rookmini Singh Fnp",
+      "phone": "6469622700",
+      "address": "520 E 70TH ST NEW YORK, NY 10021-9800 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "29": {
+    "provider_id": "29",
+    "timestamp_utc": "2025-12-16T02:25:36.688163Z",
+    "normalized": {
+      "name": "Malak S Al-Alawi",
+      "phone": "2484364400",
+      "address": "27777 INKSTER RD FARMINGTON HILLS, MI 48334-5326 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
+  },
+  "30": {
+    "provider_id": "30",
+    "timestamp_utc": "2025-12-16T02:25:36.720419Z",
+    "normalized": {
+      "name": "Nanine Beal",
+      "phone": "7072682990",
+      "address": "720 WOOD ST EUREKA, CA 95501-4413 United States",
+      "registration_number": ""
+    },
+    "missing_fields": [
+      "registration"
+    ],
+    "overall_confidence": 0.8,
+    "validation_status": "PASS_WITH_GAPS"
   }
 }
