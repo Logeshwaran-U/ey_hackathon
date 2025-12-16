@@ -209,22 +209,37 @@ class Enricher:
         npi_result = None
         if ENABLE_NPI and self.npi:
             try:
-                # if a registration number is present in validated_record, try as direct override
-                reg = validated_record.get("normalized", {}).get("registration_number") or validated_record.get("source", {}).get("raw_extracted", {}).get("registration_number")
-                npi_result = self._safe_call(
-                    self.npi.get_best_match,
-                    provider_name,
-                    specialization,
-                    state=None,
-                    external_address=address,
-                    external_phone=phone,
-                    npi_number=reg
+                # 1️⃣ extract NPI from ALL possible sources
+                npi_number = (
+                    validated_record.get("normalized", {}).get("npi")
+                    or validated_record.get("source", {}).get("raw_csv", {}).get("NPI_ID")
+                    or validated_record.get("source", {}).get("raw_extracted", {}).get("npi")
+                    or validated_record.get("source", {}).get("raw_extracted", {}).get("registration_number")
                 )
-                if isinstance(npi_result, dict):
-                    # The service returns match_confidence in 0..1 when available
-                    npi_score = float(npi_result.get("match_confidence") or 0.0)
+
+                # 2️⃣ if NPI exists → DIRECT lookup (authoritative)
+                if npi_number:
+                    npi_result = self._safe_call(
+                        self.npi.get_by_npi,
+                        npi_number
+                    )
+                    if isinstance(npi_result, dict) and npi_result.get("status") == "Active":
+                        npi_score = 1.0
+                    else:
+                        npi_score = 0.0
+
+                # 3️⃣ else → fallback to fuzzy match
                 else:
-                    npi_score = 0.0
+                    npi_result = self._safe_call(
+                        self.npi.get_best_match,
+                        provider_name,
+                        specialization,
+                        state=None,
+                        external_address=address,
+                        external_phone=phone
+                    )
+                    if isinstance(npi_result, dict):
+                        npi_score = float(npi_result.get("match_confidence") or 0.0)
             except Exception:
                 npi_score = 0.0
         out["npi"] = npi_result
