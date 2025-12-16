@@ -1,96 +1,113 @@
-# agents/data_validation_agent.py  (FULLY CORRECTED + SAFE)
+# agents/data_validation_agent.py  (EY-CORRECT, FROM SCRATCH)
 
-from __future__ import annotations
-import argparse, json, os, re, tempfile
-from datetime import datetime
+import os, json, re, tempfile
+from datetime import datetime, date
 
-# ---------------- SETTINGS ----------------
-try:
-    from config import settings as SETTINGS
-except Exception:
-    class _S:
-        PROCESSED_DIR = os.path.join("data", "processed")
-        VALIDATED_JSON = os.path.join(PROCESSED_DIR, "validated_data.json")
-    SETTINGS = _S()
+PROCESSED_DIR = "data/processed"
+VALIDATED_JSON = os.path.join(PROCESSED_DIR, "validated_data.json")
+os.makedirs(PROCESSED_DIR, exist_ok=True)
 
-os.makedirs(SETTINGS.PROCESSED_DIR, exist_ok=True)
+# ---------- helpers ----------
+def clean(x): return x.strip() if isinstance(x, str) else ""
+def is_present(x): return bool(clean(x))
+def parse_date(x):
+    try:
+        return datetime.strptime(x.strip(), "%B %d, %Y").date()
+    except Exception:
+        return None
 
-# ---------------- REGEX ----------------
-DIGITS_RE = re.compile(r"\d+")
-REGNO_RE = re.compile(r"[A-Za-z0-9\/\-\s]+")
-
-# ---------------- NORMALIZERS ----------------
-def normalize_name(x):
-    return re.sub(r"\s+", " ", re.sub(r"\b(dr|mr|ms|mrs|prof)\b\.?", "", (x or ""), flags=re.I)).strip().title()
-
-def normalize_phone(x):
-    return "".join(DIGITS_RE.findall(str(x))) if x else ""
-
-def normalize_address(x):
-    return re.sub(r"\s+", " ", str(x)).strip() if x else ""
-
-def normalize_reg(x):
-    return "".join(REGNO_RE.findall(str(x))) if x else ""
-
-# ---------------- ATOMIC WRITE ----------------
-def _atomic_write(path, data):
-    d = os.path.dirname(path)
-    os.makedirs(d, exist_ok=True)
-    fd, tmp = tempfile.mkstemp(dir=d)
+def atomic_write(path, data):
+    fd, tmp = tempfile.mkstemp(dir=os.path.dirname(path))
     with os.fdopen(fd, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
-        f.flush()
-        os.fsync(f.fileno())
+        f.flush(); os.fsync(f.fileno())
     os.replace(tmp, path)
 
-# ---------------- AGENT ----------------
+def safe_load(path):
+    if not os.path.exists(path): return {}
+    try:
+        txt = open(path, "r", encoding="utf-8").read().strip()
+        return json.loads(txt) if txt else {}
+    except Exception:
+        return {}
+
+# ---------- CORE AGENT ----------
 class DataValidationAgent:
+    """
+    EY RULES:
+    PASS:
+      - license_number present
+      - license_status == ACTIVE
+      - expiry_date >= today
 
-    def __init__(self, out_path=SETTINGS.VALIDATED_JSON):
-        self.out_path = out_path
+    PASS_WITH_GAPS:
+      - license valid
+      - optional fields missing (NPI, phone, address)
 
-    def _load(self):
-        if not os.path.exists(self.out_path):
-            return {}
-        try:
-            with open(self.out_path, "r", encoding="utf-8") as f:
-                txt = f.read().strip()
-                return json.loads(txt) if txt else {}
-        except Exception:
-            return {}
+    FAIL_NEEDS_REVIEW:
+      - license missing OR
+      - license_status != ACTIVE OR
+      - expiry_date expired
+    """
 
-    def run(self, provider_id: str, csv_row: dict, pdf_row: dict):
-
+    def run(self, provider_id, csv_row, pdf_row):
         src = {}
         if csv_row: src.update(csv_row)
         if pdf_row: src.update(pdf_row)
 
-        name = normalize_name(src.get("Name") or src.get("name") or src.get("registered_name"))
-        phone = normalize_phone(src.get("Phone_No") or src.get("phone"))
-        address = normalize_address(src.get("Address") or src.get("address") or src.get("registered_address"))
-        reg = normalize_reg(src.get("registration_number"))
+        # -------- normalized --------
+        name = clean(src.get("name") or src.get("Name") or src.get("registered_name"))
+        phone = re.sub(r"\D", "", clean(src.get("phone") or src.get("Phone_No")))
+        address = clean(src.get("address") or src.get("Address") or src.get("registered_address"))
+        npi = clean(src.get("npi") or src.get("NPI_ID") or src.get("National Provider Identifier"))
 
-        missing = [k for k, v in {
-            "name": name,
-            "phone": phone,
-            "address": address,
-            "registration": reg
-        }.items() if not v]
+        license_number = clean(src.get("license_number") or src.get("registration_number"))
+        license_status = clean(src.get("license_status"))
+        issue_date_raw = clean(src.get("issue_date"))
+        expiry_date_raw = clean(src.get("expiry_date"))
 
-        overall = round(
-            (1 if name else 0) * 0.3 +
-            (1 if phone else 0) * 0.2 +
-            (1 if address else 0) * 0.3 +
-            (1 if reg else 0) * 0.2,
-            2
+        issue_date = parse_date(issue_date_raw)
+        expiry_date = parse_date(expiry_date_raw)
+        today = date.today()
+
+        # -------- mandatory license checks --------
+        license_missing = []
+        if not is_present(license_number): license_missing.append("license_number")
+        if not is_present(license_status): license_missing.append("license_status")
+        if not issue_date: license_missing.append("issue_date")
+        if not expiry_date: license_missing.append("expiry_date")
+
+        license_invalid = (
+            is_present(license_status) and license_status.upper() != "ACTIVE"
+        ) or (
+            expiry_date and expiry_date < today
         )
 
-        if overall >= 0.8 and not missing:
-            status = "PASS"
-        elif overall >= 0.5:
-            status = "PASS_WITH_GAPS"
-        else:
+        # -------- decision --------
+        if license_missing or license_invalid:
             status = "FAIL_NEEDS_REVIEW"
+        else:
+            optional_missing = []
+            if not is_present(npi): optional_missing.append("npi")
+            if not is_present(phone): optional_missing.append("phone")
+            if not is_present(address): optional_missing.append("address")
+
+            status = "PASS" if not optional_missing else "PASS_WITH_GAPS"
+
+        # -------- missing fields (STRICT) --------
+        missing_fields = []
+        if status != "PASS":
+            if not is_present(license_number): missing_fields.append("license_number")
+            if not is_present(license_status): missing_fields.append("license_status")
+            if not issue_date: missing_fields.append("issue_date")
+            if not expiry_date: missing_fields.append("expiry_date")
+
+        # -------- confidence (simple & honest) --------
+        overall_confidence = (
+            1.0 if status == "PASS" else
+            0.7 if status == "PASS_WITH_GAPS" else
+            0.2
+        )
 
         record = {
             "provider_id": provider_id,
@@ -99,33 +116,18 @@ class DataValidationAgent:
                 "name": name,
                 "phone": phone,
                 "address": address,
-                "registration_number": reg
+                "npi": npi,
+                "license_number": license_number,
+                "license_status": license_status,
+                "issue_date": issue_date_raw,
+                "expiry_date": expiry_date_raw,
             },
-            "missing_fields": missing,
-            "overall_confidence": overall,
+            "missing_fields": missing_fields,
+            "overall_confidence": overall_confidence,
             "validation_status": status
         }
 
-        data = self._load()
+        data = safe_load(VALIDATED_JSON)
         data[provider_id] = record
-        _atomic_write(self.out_path, data)
+        atomic_write(VALIDATED_JSON, data)
         return record
-
-# ---------------- CLI ----------------
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("provider_id")
-    ap.add_argument("--csv", required=True)
-    ap.add_argument("--pdf")
-    ap.add_argument("--show", action="store_true")
-    args = ap.parse_args()
-
-    csv_row = json.load(open(args.csv))
-    pdf_row = json.load(open(args.pdf)) if args.pdf else None
-
-    out = DataValidationAgent().run(args.provider_id, csv_row, pdf_row)
-    if args.show:
-        print(json.dumps(out, indent=2))
-
-if __name__ == "__main__":
-    main()
