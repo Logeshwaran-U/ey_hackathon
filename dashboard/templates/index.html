@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EY Provider Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ---------- UPLOAD CARD ---------- */
+        .card {
+            background: rgba(255, 255, 255, 0.96);
+            width: 100%;
+            max-width: 420px;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+            text-align: center;
+            z-index: 1;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #2c5364;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 22px;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px dashed #bbb;
+            border-radius: 10px;
+            cursor: pointer;
+            background: #fafafa;
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #2c5364, #203a43);
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        /* ---------- LOADING OVERLAY ---------- */
+        .loading {
+            display: none;   /* ✅ JS controls visibility */
+            position: fixed;
+            inset: 0;
+            background: rgba(255, 255, 255, 0.97);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+        }
+.loading {
+    display: none;              /* JS controls this */
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        #0f2027,
+        #203a43,
+        #2c5364
+    );                           /* ✅ SAME AS UPLOAD PAGE */
+    z-index: 9999;
+}
+        /* ---------- LOADING CARD ---------- */
+        .wrapper {
+            background: rgba(255, 255, 255, 0.96);
+            width: 100%;
+            max-width: 520px;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+            text-align: center;
+        }
+
+        .spinner {
+            width: 52px;
+            height: 52px;
+            border: 5px solid #ddd;
+            border-top: 5px solid #2c5364;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .steps {
+            text-align: left;
+            margin-top: 25px;
+            font-size: 14px;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            color: #555;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: #bbb;
+            border-radius: 50%;
+            margin-right: 10px;
+            animation: pulse 1.4s infinite;
+        }
+
+        .step:nth-child(2) .dot { animation-delay: 0.2s; }
+        .step:nth-child(3) .dot { animation-delay: 0.4s; }
+        .step:nth-child(4) .dot { animation-delay: 0.6s; }
+
+        @keyframes pulse {
+            0% { opacity: 0.3; }
+            50% { opacity: 1; }
+            100% { opacity: 0.3; }
+        }
+
+        .note {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #888;
+        }
+    </style>
+
+    <script>
+        function handleSubmit() {
+            const fileInput = document.getElementById("csv");
+            const loading = document.getElementById("loading");
+            const card = document.getElementById("card");
+            const btn = document.getElementById("submitBtn");
+
+            // ❌ No file → let browser validation run
+            if (!fileInput.files || fileInput.files.length === 0) {
+                return true;
+            }
+
+            // ✅ File selected → show loader
+            loading.style.display = "flex";
+            card.style.display = "none";
+            btn.disabled = true;
+
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+
+<!-- UPLOAD CARD -->
+<div class="card" id="card">
+    <div class="logo">EY</div>
+    <h2>Provider Validation</h2>
+    <p class="subtitle">Upload the provider CSV file to run automated validation</p>
+
+    {% if error %}
+        <div style="color:red; margin-bottom:10px;">{{ error }}</div>
+    {% endif %}
+
+    <form method="POST" enctype="multipart/form-data" onsubmit="return handleSubmit()">
+        <input type="file" id="csv" name="csv" accept=".csv" required>
+        <button type="submit" id="submitBtn">Run Validation</button>
+    </form>
+</div>
+
+<!-- LOADING OVERLAY -->
+<div class="loading" id="loading">
+    <div class="wrapper">
+        <div class="logo">EY</div>
+
+        <h2>Validating Providers</h2>
+        <p class="subtitle">
+            Please wait while we analyze and verify the submitted data
+        </p>
+
+        <div class="spinner"></div>
+
+        <div class="steps">
+            <div class="step"><span class="dot"></span>Reading provider CSV</div>
+            <div class="step"><span class="dot"></span>Validating licenses &amp; credentials</div>
+            <div class="step"><span class="dot"></span>Checking NPI registry</div>
+            <div class="step"><span class="dot"></span>Running quality assurance checks</div>
+        </div>
+
+        <div class="note">
+            This may take a few moments depending on file size.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

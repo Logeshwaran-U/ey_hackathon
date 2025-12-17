@@ -1,28 +1,207 @@
 {
+  "1": {
+    "provider_id": "1",
+    "timestamp_utc": "2025-12-17T17:27:36.090153+00:00",
+    "base_validation": {
+      "provider_id": "1",
+      "timestamp_utc": "2025-12-17T17:26:40.230063Z",
+      "normalized": {
+        "name": "Balqisa Mohamud Abdi",
+        "phone": "6515001998",
+        "address": "1516 W Lake St, Suite 104 Minneapolis, MN 55408, United States",
+        "registration_number": "MN-BT-458921",
+        "license_status": "ACTIVE",
+        "issue_date": "March 15, 2022",
+        "expiry_date": "March 31, 2026",
+        "npi": "1740961333"
+      },
+      "missing_fields": [],
+      "overall_confidence": 1.0,
+      "validation_status": "PASS"
+    },
+    "enriched": {
+      "npi": {
+        "match_found": true,
+        "npi": "1740961333",
+        "basic": {
+          "first_name": "BALQISA",
+          "last_name": "ABDI",
+          "middle_name": "MOHAMUD",
+          "sole_proprietor": "NO",
+          "sex": "F",
+          "enumeration_date": "2023-07-27",
+          "last_updated": "2023-07-27",
+          "certification_date": "2023-07-27",
+          "status": "A"
+        },
+        "addresses": [
+          {
+            "country_code": "US",
+            "country_name": "United States",
+            "address_purpose": "LOCATION",
+            "address_type": "DOM",
+            "address_1": "1516 W LAKE ST STE 104",
+            "city": "MINNEAPOLIS",
+            "state": "MN",
+            "postal_code": "55408",
+            "telephone_number": "651-500-1998"
+          },
+          {
+            "country_code": "US",
+            "country_name": "United States",
+            "address_purpose": "MAILING",
+            "address_type": "DOM",
+            "address_1": "1516 W LAKE ST STE 104",
+            "city": "MINNEAPOLIS",
+            "state": "MN",
+            "postal_code": "554086600"
+          }
+        ],
+        "taxonomies": [
+          {
+            "code": "106S00000X",
+            "taxonomy_group": "",
+            "desc": "Behavior Technician",
+            "state": null,
+            "license": null,
+            "primary": true
+          }
+        ],
+        "match_confidence": 1.0,
+        "signals": {
+          "direct_npi": true,
+          "from_api": true
+        }
+      },
+      "maps": {
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
+      }
+    },
+    "signals": {},
+    "confidence": 0.4,
+    "status": "PENDING"
+  },
+  "2": {
+    "provider_id": "2",
+    "timestamp_utc": "2025-12-17T17:27:40.390120+00:00",
+    "base_validation": {
+      "provider_id": "2",
+      "timestamp_utc": "2025-12-17T17:26:40.405054Z",
+      "normalized": {
+        "name": "Mithun Mamoottil Abraham, Dpt",
+        "phone": "5168290030",
+        "address": "475 Northern Blvd, Suite 11 Great Neck, NY 11021, United States",
+        "registration_number": "NY-PT-998712",
+        "license_status": "ACTIVE",
+        "issue_date": "August 20, 2020",
+        "expiry_date": "August 31, 2026",
+        "npi": "1033689781"
+      },
+      "missing_fields": [],
+      "overall_confidence": 1.0,
+      "validation_status": "PASS"
+    },
+    "enriched": {
+      "npi": {
+        "match_found": true,
+        "npi": "1033689781",
+        "basic": {
+          "first_name": "MITHUN",
+          "last_name": "ABRAHAM",
+          "middle_name": "MAMOOTTIL",
+          "credential": "DPT",
+          "sole_proprietor": "NO",
+          "sex": "M",
+          "enumeration_date": "2018-11-26",
+          "last_updated": "2019-10-17",
+          "status": "A",
+          "name_prefix": "Dr."
+        },
+        "addresses": [
+          {
+            "country_code": "US",
+            "country_name": "United States",
+            "address_purpose": "MAILING",
+            "address_type": "DOM",
+            "address_1": "475 NORTHERN BLVD STE 27",
+            "city": "GREAT NECK",
+            "state": "NY",
+            "postal_code": "110214802",
+            "telephone_number": "516-829-0030",
+            "fax_number": "516-466-7723"
+          },
+          {
+            "country_code": "US",
+            "country_name": "United States",
+            "address_purpose": "LOCATION",
+            "address_type": "DOM",
+            "address_1": "475 NORTHERN BLVD STE 11",
+            "city": "GREAT NECK",
+            "state": "NY",
+            "postal_code": "11021",
+            "telephone_number": "516-829-0030",
+            "fax_number": "516-466-7723"
+          }
+        ],
+        "taxonomies": [
+          {
+            "code": "225100000X",
+            "taxonomy_group": "",
+            "desc": "Physical Therapist",
+            "state": "NY",
+            "license": "043684-1",
+            "primary": true
+          },
+          {
+            "code": "2251X0800X",
+            "taxonomy_group": "",
+            "desc": "Physical Therapist, Orthopedic",
+            "state": "NY",
+            "license": "043684-1",
+            "primary": false
+          }
+        ],
+        "match_confidence": 1.0,
+        "signals": {
+          "direct_npi": true,
+          "from_api": true
+        }
+      },
+      "maps": {
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
+      }
+    },
+    "signals": {},
+    "confidence": 0.4,
+    "status": "PENDING"
+  },
   "4": {
     "provider_id": "4",
-    "timestamp_utc": "2025-12-17T02:19:58.131824+00:00",
+    "timestamp_utc": "2025-12-17T17:26:40.787973+00:00",
     "base_validation": {
       "provider_id": "4",
-      "timestamp_utc": "2025-12-16T20:14:06.607245Z",
+      "timestamp_utc": "2025-12-17T17:26:40.498584Z",
       "normalized": {
-        "name": "Lawrence E Addison O.D.",
+        "name": "Lawrence E Addison, O.D.",
         "phone": "7152412020",
-        "address": "4009 COMMUNITY CENTER DR WESTON, WI 54476-4139 United States",
-        "registration_number": "",
-        "license_status": "",
-        "issue_date": "",
-        "expiry_date": "",
+        "address": "4009 Community Center Dr, Weston, WI 54476-4139, United States",
+        "registration_number": "WI-OD-614782",
+        "license_status": "ACTIVE",
+        "issue_date": "August 18, 2014",
+        "expiry_date": "December 31, 2026",
         "npi": "1760794697"
       },
-      "missing_fields": [
-        "license_number",
-        "license_status",
-        "expiry_date",
-        "issue_date"
-      ],
-      "overall_confidence": 0.4,
-      "validation_status": "FAIL_NEEDS_REVIEW"
+      "missing_fields": [],
+      "overall_confidence": 1.0,
+      "validation_status": "PASS"
     },
     "enriched": {
       "npi": {
@@ -84,239 +263,101 @@
         }
       },
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "Lawrence E. Addison, OD",
-        "google_place_address": "4009 Community Center Dr, Weston, WI 54476, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJEQpknrwlAIgR4tC-6j-R-mQ",
-        "match_score": 0.7928890694839495,
-        "details_found": true,
-        "formatted_address": "4009 Community Center Dr, Weston, WI 54476, USA",
-        "google_phone": "(715) 241-2020",
-        "website": null,
-        "lat": 44.8978,
-        "lng": -89.57336959999999,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJEQpknrwlAIgR4tC-6j-R-mQ",
-        "name_fuzzy_match": 0.913,
-        "address_fuzzy_match": 0.841
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.678,
-    "status": "REVIEW"
+    "confidence": 0.4,
+    "status": "PENDING"
   },
-  "3": {
-    "provider_id": "3",
-    "timestamp_utc": "2025-12-17T02:19:58.131824+00:00",
+  "5": {
+    "provider_id": "5",
+    "timestamp_utc": "2025-12-17T17:26:40.787973+00:00",
     "base_validation": {
-      "provider_id": "3",
-      "timestamp_utc": "2025-12-16T20:14:06.588638Z",
+      "provider_id": "5",
+      "timestamp_utc": "2025-12-17T17:26:40.032305Z",
       "normalized": {
-        "name": "John Aaron Md",
-        "phone": "9312457094",
-        "address": "PO BOX 3799 CLARKSVILLE, TN 37043 United States",
-        "registration_number": "",
-        "license_status": "",
-        "issue_date": "",
-        "expiry_date": "",
-        "npi": "1629019922"
+        "name": "Bill Abbo, Dds, Ms",
+        "phone": "3059450909",
+        "address": "3031 NE 163rd St, North Miami Beach, FL 33160-4462, United States",
+        "registration_number": "FL-DDS-884210",
+        "license_status": "ACTIVE",
+        "issue_date": "July 21, 2014",
+        "expiry_date": "July 31, 2025",
+        "npi": "1720147853"
       },
-      "missing_fields": [
-        "license_number",
-        "license_status",
-        "expiry_date",
-        "issue_date"
-      ],
-      "overall_confidence": 0.4,
+      "missing_fields": [],
+      "overall_confidence": 1.0,
       "validation_status": "FAIL_NEEDS_REVIEW"
     },
     "enriched": {
       "npi": {
         "match_found": true,
-        "npi": "1629019922",
+        "npi": "1720147853",
         "basic": {
-          "first_name": "JOHN",
-          "last_name": "AARON",
-          "credential": "MD",
+          "first_name": "BILL",
+          "last_name": "ABBO",
+          "credential": "DDS MS",
           "sole_proprietor": "NO",
           "sex": "M",
-          "enumeration_date": "2006-06-09",
-          "last_updated": "2008-03-20",
+          "enumeration_date": "2006-12-06",
+          "last_updated": "2022-01-19",
+          "certification_date": "2022-01-19",
           "status": "A",
-          "name_prefix": "--",
-          "name_suffix": "--"
+          "name_prefix": "Dr."
         },
         "addresses": [
           {
             "country_code": "US",
             "country_name": "United States",
-            "address_purpose": "MAILING",
+            "address_purpose": "LOCATION",
             "address_type": "DOM",
-            "address_1": "PO BOX 3799",
-            "city": "CLARKSVILLE",
-            "state": "TN",
-            "postal_code": "37043",
-            "telephone_number": "931-245-7094",
-            "fax_number": "931-245-7069"
+            "address_1": "3031 NE 163RD ST",
+            "city": "NORTH MIAMI BEACH",
+            "state": "FL",
+            "postal_code": "331604462",
+            "telephone_number": "305-945-0909",
+            "fax_number": "305-945-0907"
           },
           {
             "country_code": "US",
             "country_name": "United States",
-            "address_purpose": "LOCATION",
+            "address_purpose": "MAILING",
             "address_type": "DOM",
-            "address_1": "2147 WILMA RUDOLPH BLVD",
-            "city": "CLARKSVILLE",
-            "state": "TN",
-            "postal_code": "37040",
-            "telephone_number": "931-245-8300",
-            "fax_number": "931-245-8360"
+            "address_1": "19331 NE 19TH PL",
+            "city": "NORTH MIAMI BEACH",
+            "state": "FL",
+            "postal_code": "331793611",
+            "telephone_number": "305-710-3129"
           }
         ],
         "taxonomies": [
           {
-            "code": "207Q00000X",
+            "code": "122300000X",
             "taxonomy_group": "",
-            "desc": "Family Medicine",
-            "state": "MS",
-            "license": "16845",
+            "desc": "Dentist",
+            "state": "MI",
+            "license": "2901019307",
             "primary": false
           },
           {
-            "code": "207R00000X",
+            "code": "1223P0700X",
             "taxonomy_group": "",
-            "desc": "Internal Medicine",
-            "state": "TN",
-            "license": "42101",
-            "primary": true
-          }
-        ],
-        "match_confidence": 1.0,
-        "signals": {
-          "direct_npi": true,
-          "from_api": true
-        }
-      },
-      "maps": {
-        "google_place_found": true,
-        "google_place_name": "Dr. John Aaron, MD",
-        "google_place_address": "2147 Wilma Rudolph Blvd Suite 102, Clarksville, TN 37040, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJb2VklrDYZIgRYnFDZtTEevI",
-        "match_score": 0.8520011947431303,
-        "details_found": true,
-        "formatted_address": "2147 Wilma Rudolph Blvd Suite 102, Clarksville, TN 37040, USA",
-        "google_phone": "(931) 245-8300",
-        "website": "http://premiermed.com/",
-        "lat": 36.5642248,
-        "lng": -87.3097671,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJb2VklrDYZIgRYnFDZtTEevI",
-        "name_fuzzy_match": 0.839,
-        "address_fuzzy_match": 0.537
-      },
-      "website": {
-        "provider_id": "3",
-        "url": "http://premiermed.com/",
-        "status": "fail",
-        "signals": {
-          "is_js_heavy": false,
-          "is_parked_likely": false,
-          "parked_indicators": [],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [],
-          "phones": [],
-          "addresses": [],
-          "score": 0.0
-        },
-        "doctor": {
-          "name": "John Aaron Md",
-          "doctor_page_found": false,
-          "doctor_pages": [],
-          "doctor_emails": [],
-          "doctor_phones": [],
-          "structured_profile": null,
-          "score": 0.0
-        },
-        "website_trust_score": 0.0,
-        "error": "Blocked by robots.txt",
-        "trace": []
-      }
-    },
-    "signals": {},
-    "confidence": 0.698,
-    "status": "REVIEW"
-  },
-  "7": {
-    "provider_id": "7",
-    "timestamp_utc": "2025-12-17T02:20:04.752527+00:00",
-    "base_validation": {
-      "provider_id": "7",
-      "timestamp_utc": "2025-12-16T20:14:06.649810Z",
-      "normalized": {
-        "name": "Esther Aarinola Rbt",
-        "phone": "6789047053",
-        "address": "190 HANDLEY RD TYRONE, GA 30290-2178 United States",
-        "registration_number": "",
-        "license_status": "",
-        "issue_date": "",
-        "expiry_date": "",
-        "npi": "1063192243"
-      },
-      "missing_fields": [
-        "license_number",
-        "license_status",
-        "expiry_date",
-        "issue_date"
-      ],
-      "overall_confidence": 0.4,
-      "validation_status": "FAIL_NEEDS_REVIEW"
-    },
-    "enriched": {
-      "npi": {
-        "match_found": true,
-        "npi": "1063192243",
-        "basic": {
-          "first_name": "ESTHER",
-          "last_name": "AARINOLA",
-          "credential": "RBT",
-          "sole_proprietor": "NO",
-          "sex": "F",
-          "enumeration_date": "2023-07-21",
-          "last_updated": "2023-07-21",
-          "certification_date": "2023-07-21",
-          "status": "A"
-        },
-        "addresses": [
-          {
-            "country_code": "US",
-            "country_name": "United States",
-            "address_purpose": "MAILING",
-            "address_type": "DOM",
-            "address_1": "644 TALLULAH TRL",
-            "city": "WARNER ROBINS",
-            "state": "GA",
-            "postal_code": "310887625",
-            "telephone_number": "678-904-7053",
-            "fax_number": "678-369-9540"
+            "desc": "Dentist, Prosthodontics",
+            "state": "FL",
+            "license": "DN17781",
+            "primary": false
           },
           {
-            "country_code": "US",
-            "country_name": "United States",
-            "address_purpose": "LOCATION",
-            "address_type": "DOM",
-            "address_1": "190 HANDLEY RD",
-            "city": "TYRONE",
-            "state": "GA",
-            "postal_code": "302902178",
-            "telephone_number": "678-904-7053"
-          }
-        ],
-        "taxonomies": [
-          {
-            "code": "106S00000X",
+            "code": "1223G0001X",
             "taxonomy_group": "",
-            "desc": "Behavior Technician",
-            "state": "GA",
-            "license": "RBT-23-258591",
+            "desc": "Dentist, General Practice",
+            "state": "FL",
+            "license": "dn17781",
             "primary": true
           }
         ],
@@ -327,61 +368,23 @@
         }
       },
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "Women's Medical Center",
-        "google_place_address": "190 Handley Rd A, Tyrone, GA 30290, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJ5_Su42ro9IgROT4nkfi4JFU",
-        "match_score": 0.7954097012880241,
-        "details_found": true,
-        "formatted_address": "190 Handley Rd A, Tyrone, GA 30290, USA",
-        "google_phone": "(770) 997-5714",
-        "website": "http://www.womensmedical.com/",
-        "lat": 33.4797662,
-        "lng": -84.5831364,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJ5_Su42ro9IgROT4nkfi4JFU",
-        "name_fuzzy_match": 0.244,
-        "address_fuzzy_match": 0.787
-      },
-      "website": {
-        "provider_id": "7",
-        "url": "http://www.womensmedical.com/",
-        "status": "fail",
-        "signals": {
-          "is_js_heavy": false,
-          "is_parked_likely": false,
-          "parked_indicators": [],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [],
-          "phones": [],
-          "addresses": [],
-          "score": 0.0
-        },
-        "doctor": {
-          "name": "Esther Aarinola Rbt",
-          "doctor_page_found": false,
-          "doctor_pages": [],
-          "doctor_emails": [],
-          "doctor_phones": [],
-          "structured_profile": null,
-          "score": 0.0
-        },
-        "website_trust_score": 0.0,
-        "error": "Blocked by robots.txt",
-        "trace": []
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.678,
-    "status": "REVIEW"
+    "confidence": 0.4,
+    "status": "PENDING"
   },
   "8": {
     "provider_id": "8",
-    "timestamp_utc": "2025-12-17T02:20:05.580328+00:00",
+    "timestamp_utc": "2025-12-17T17:26:40.787973+00:00",
     "base_validation": {
       "provider_id": "8",
-      "timestamp_utc": "2025-12-16T20:14:06.667810Z",
+      "timestamp_utc": "2025-12-17T17:26:38.479617Z",
       "normalized": {
         "name": "Dr. Espir J Abaji Dds",
         "phone": "3146566615",
@@ -474,32 +477,219 @@
         }
       },
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "Espir Abaji",
-        "google_place_address": "12221 St Charles Rock Rd, Bridgeton, MO 630442502, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJAQDEUpEx34cRZBVf__2WnZw",
-        "match_score": 0.7541666666666668,
-        "details_found": true,
-        "formatted_address": "12221 St Charles Rock Rd, Bridgeton, MO 630442502, USA",
-        "google_phone": "(314) 656-6615",
-        "website": null,
-        "lat": 38.7516907,
-        "lng": -90.4261612,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJAQDEUpEx34cRZBVf__2WnZw",
-        "name_fuzzy_match": 0.688,
-        "address_fuzzy_match": 0.867
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.664,
-    "status": "REVIEW"
+    "confidence": 0.4,
+    "status": "PENDING"
+  },
+  "3": {
+    "provider_id": "3",
+    "timestamp_utc": "2025-12-17T17:26:40.786952+00:00",
+    "base_validation": {
+      "provider_id": "3",
+      "timestamp_utc": "2025-12-17T17:26:38.424644Z",
+      "normalized": {
+        "name": "John Aaron Md",
+        "phone": "9312457094",
+        "address": "PO BOX 3799 CLARKSVILLE, TN 37043 United States",
+        "registration_number": "",
+        "license_status": "",
+        "issue_date": "",
+        "expiry_date": "",
+        "npi": "1629019922"
+      },
+      "missing_fields": [
+        "license_number",
+        "license_status",
+        "expiry_date",
+        "issue_date"
+      ],
+      "overall_confidence": 0.4,
+      "validation_status": "FAIL_NEEDS_REVIEW"
+    },
+    "enriched": {
+      "npi": {
+        "match_found": true,
+        "npi": "1629019922",
+        "basic": {
+          "first_name": "JOHN",
+          "last_name": "AARON",
+          "credential": "MD",
+          "sole_proprietor": "NO",
+          "sex": "M",
+          "enumeration_date": "2006-06-09",
+          "last_updated": "2008-03-20",
+          "status": "A",
+          "name_prefix": "--",
+          "name_suffix": "--"
+        },
+        "addresses": [
+          {
+            "country_code": "US",
+            "country_name": "United States",
+            "address_purpose": "MAILING",
+            "address_type": "DOM",
+            "address_1": "PO BOX 3799",
+            "city": "CLARKSVILLE",
+            "state": "TN",
+            "postal_code": "37043",
+            "telephone_number": "931-245-7094",
+            "fax_number": "931-245-7069"
+          },
+          {
+            "country_code": "US",
+            "country_name": "United States",
+            "address_purpose": "LOCATION",
+            "address_type": "DOM",
+            "address_1": "2147 WILMA RUDOLPH BLVD",
+            "city": "CLARKSVILLE",
+            "state": "TN",
+            "postal_code": "37040",
+            "telephone_number": "931-245-8300",
+            "fax_number": "931-245-8360"
+          }
+        ],
+        "taxonomies": [
+          {
+            "code": "207Q00000X",
+            "taxonomy_group": "",
+            "desc": "Family Medicine",
+            "state": "MS",
+            "license": "16845",
+            "primary": false
+          },
+          {
+            "code": "207R00000X",
+            "taxonomy_group": "",
+            "desc": "Internal Medicine",
+            "state": "TN",
+            "license": "42101",
+            "primary": true
+          }
+        ],
+        "match_confidence": 1.0,
+        "signals": {
+          "direct_npi": true,
+          "from_api": true
+        }
+      },
+      "maps": {
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
+      }
+    },
+    "signals": {},
+    "confidence": 0.4,
+    "status": "PENDING"
+  },
+  "7": {
+    "provider_id": "7",
+    "timestamp_utc": "2025-12-17T17:26:40.787973+00:00",
+    "base_validation": {
+      "provider_id": "7",
+      "timestamp_utc": "2025-12-17T17:26:38.438039Z",
+      "normalized": {
+        "name": "Esther Aarinola Rbt",
+        "phone": "6789047053",
+        "address": "190 HANDLEY RD TYRONE, GA 30290-2178 United States",
+        "registration_number": "",
+        "license_status": "",
+        "issue_date": "",
+        "expiry_date": "",
+        "npi": "1063192243"
+      },
+      "missing_fields": [
+        "license_number",
+        "license_status",
+        "expiry_date",
+        "issue_date"
+      ],
+      "overall_confidence": 0.4,
+      "validation_status": "FAIL_NEEDS_REVIEW"
+    },
+    "enriched": {
+      "npi": {
+        "match_found": true,
+        "npi": "1063192243",
+        "basic": {
+          "first_name": "ESTHER",
+          "last_name": "AARINOLA",
+          "credential": "RBT",
+          "sole_proprietor": "NO",
+          "sex": "F",
+          "enumeration_date": "2023-07-21",
+          "last_updated": "2023-07-21",
+          "certification_date": "2023-07-21",
+          "status": "A"
+        },
+        "addresses": [
+          {
+            "country_code": "US",
+            "country_name": "United States",
+            "address_purpose": "MAILING",
+            "address_type": "DOM",
+            "address_1": "644 TALLULAH TRL",
+            "city": "WARNER ROBINS",
+            "state": "GA",
+            "postal_code": "310887625",
+            "telephone_number": "678-904-7053",
+            "fax_number": "678-369-9540"
+          },
+          {
+            "country_code": "US",
+            "country_name": "United States",
+            "address_purpose": "LOCATION",
+            "address_type": "DOM",
+            "address_1": "190 HANDLEY RD",
+            "city": "TYRONE",
+            "state": "GA",
+            "postal_code": "302902178",
+            "telephone_number": "678-904-7053"
+          }
+        ],
+        "taxonomies": [
+          {
+            "code": "106S00000X",
+            "taxonomy_group": "",
+            "desc": "Behavior Technician",
+            "state": "GA",
+            "license": "RBT-23-258591",
+            "primary": true
+          }
+        ],
+        "match_confidence": 1.0,
+        "signals": {
+          "direct_npi": true,
+          "from_api": true
+        }
+      },
+      "maps": {
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
+      }
+    },
+    "signals": {},
+    "confidence": 0.4,
+    "status": "PENDING"
   },
   "9": {
     "provider_id": "9",
-    "timestamp_utc": "2025-12-17T02:20:09.466384+00:00",
+    "timestamp_utc": "2025-12-17T17:26:40.787973+00:00",
     "base_validation": {
       "provider_id": "9",
-      "timestamp_utc": "2025-12-16T20:14:06.691816Z",
+      "timestamp_utc": "2025-12-17T17:26:38.551566Z",
       "normalized": {
         "name": "Eskinder Abasseran Cota",
         "phone": "4252425671",
@@ -576,297 +766,32 @@
         }
       },
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "2424 156th Ave NE",
-        "google_place_address": "2424 156th Ave NE, Bellevue, WA 98008, USA",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJ5SqKfKBtkFQRkDPslbiLMVQ",
-        "match_score": 0.6461855670103094,
-        "details_found": true,
-        "formatted_address": "2424 156th Ave NE, Bellevue, WA 98008, USA",
-        "google_phone": null,
-        "website": null,
-        "lat": 47.6324807,
-        "lng": -122.1317562,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJ5SqKfKBtkFQRkDPslbiLMVQ",
-        "name_fuzzy_match": 0.2,
-        "address_fuzzy_match": 0.825
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.626,
-    "status": "REVIEW"
+    "confidence": 0.4,
+    "status": "PENDING"
   },
-  "2": {
-    "provider_id": "2",
-    "timestamp_utc": "2025-12-17T02:19:58.130825+00:00",
+  "12": {
+    "provider_id": "12",
+    "timestamp_utc": "2025-12-17T17:26:54.098089+00:00",
     "base_validation": {
-      "provider_id": "2",
-      "timestamp_utc": "2025-12-16T20:14:06.571120Z",
+      "provider_id": "12",
+      "timestamp_utc": "2025-12-17T17:26:38.687331Z",
       "normalized": {
-        "name": "Mithun Mamoottil Abraham, Dpt",
-        "phone": "5168290030",
-        "address": "475 Northern Blvd, Suite 11 Great Neck, NY 11021, United States",
-        "registration_number": "NY-PT-998712",
-        "license_status": "ACTIVE",
-        "issue_date": "August 20, 2020",
-        "expiry_date": "August 31, 2026",
-        "npi": "1033689781"
-      },
-      "missing_fields": [],
-      "overall_confidence": 1.0,
-      "validation_status": "PASS"
-    },
-    "enriched": {
-      "npi": {
-        "match_found": true,
-        "npi": "1033689781",
-        "basic": {
-          "first_name": "MITHUN",
-          "last_name": "ABRAHAM",
-          "middle_name": "MAMOOTTIL",
-          "credential": "DPT",
-          "sole_proprietor": "NO",
-          "sex": "M",
-          "enumeration_date": "2018-11-26",
-          "last_updated": "2019-10-17",
-          "status": "A",
-          "name_prefix": "Dr."
-        },
-        "addresses": [
-          {
-            "country_code": "US",
-            "country_name": "United States",
-            "address_purpose": "MAILING",
-            "address_type": "DOM",
-            "address_1": "475 NORTHERN BLVD STE 27",
-            "city": "GREAT NECK",
-            "state": "NY",
-            "postal_code": "110214802",
-            "telephone_number": "516-829-0030",
-            "fax_number": "516-466-7723"
-          },
-          {
-            "country_code": "US",
-            "country_name": "United States",
-            "address_purpose": "LOCATION",
-            "address_type": "DOM",
-            "address_1": "475 NORTHERN BLVD STE 11",
-            "city": "GREAT NECK",
-            "state": "NY",
-            "postal_code": "11021",
-            "telephone_number": "516-829-0030",
-            "fax_number": "516-466-7723"
-          }
-        ],
-        "taxonomies": [
-          {
-            "code": "225100000X",
-            "taxonomy_group": "",
-            "desc": "Physical Therapist",
-            "state": "NY",
-            "license": "043684-1",
-            "primary": true
-          },
-          {
-            "code": "2251X0800X",
-            "taxonomy_group": "",
-            "desc": "Physical Therapist, Orthopedic",
-            "state": "NY",
-            "license": "043684-1",
-            "primary": false
-          }
-        ],
-        "match_confidence": 1.0,
-        "signals": {
-          "direct_npi": true,
-          "from_api": true
-        }
-      },
-      "maps": {
-        "google_place_found": true,
-        "google_place_name": "Reddy Care Physical & Occupational Therapy",
-        "google_place_address": "475 Northern Blvd #11, Great Neck, NY 11021, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJF8bGgzqJwokRsXuSyZGiB7o",
-        "match_score": 0.7910100241086157,
-        "details_found": true,
-        "formatted_address": "475 Northern Blvd #11, Great Neck, NY 11021, USA",
-        "google_phone": "(516) 829-0030",
-        "website": "https://www.reddycare.net/",
-        "lat": 40.7800381,
-        "lng": -73.7218779,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJF8bGgzqJwokRsXuSyZGiB7o",
-        "name_fuzzy_match": 0.169,
-        "address_fuzzy_match": 0.829
-      },
-      "website": {
-        "provider_id": "2",
-        "url": "https://www.reddycare.net/",
-        "status": "ok",
-        "signals": {
-          "is_js_heavy": false,
-          "is_parked_likely": false,
-          "parked_indicators": [],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [],
-          "phones": [
-            "5168290030",
-            "5164667723",
-            "+117355164202900",
-            "+110215168290030",
-            "+110055163440030",
-            "+117975163671111",
-            "+117296312430247",
-            "+113607182248480",
-            "+115725169922282",
-            "+100252125800125",
-            "+117066314461480",
-            "+117016315320906",
-            "5164202900",
-            "5163440030",
-            "5163671111",
-            "6312430247",
-            "7182248480"
-          ],
-          "addresses": [
-            "Reddy Care Physical & Occupational Therapy: Physical Therapists: throughout New York State",
-            ",  Fax Referrals to 516-466-7723.",
-            "Request Appointment",
-            "Mission Statement",
-            "Hospital Grade Air Purifier",
-            "Hospital-Grade Air Purifier",
-            "New York/Upper Westside",
-            "Testimonials & Reviews",
-            "Post Operative Rehabilitation",
-            "Balance Disorders",
-            "Vestibular Rehab",
-            "Electric Stimulation",
-            "Clinic Patient Info/Forms",
-            "Appointment Request Form",
-            "Physical Therapy and Occupational Therapy located throughout New York State",
-            "Our clinics in Farmingdale, Great Neck, North Shore Towers, Oceanside, Woodbury, Bayside, Deer Park, Amityville, Bay Shore, and Upper Westside of New York City are open along with Telehealth services & In Home Therapy!",
-            "Reddy Care Physical Therapy makes the 2020 Inc. 5000 list of the fastest-growing private companies in America! Thank you to everyone who has trusted us with their care and has made getting on this list for the fourth year possible!",
-            "\"The most professional PT business I have ever encountered.\"",
-            "\"Reddy care is amazing and the best physical therapy place I've been to ever.\"",
-            "\"After just five sessions at Reddy Care Physical Therapy I'm already feeling better.\"",
-            "\"I have improved greatly and would recommend Reddy Care services to family and friends.\"",
-            "Testimonial videos",
-            "New York City",
-            "The ethos at Reddy Care Physical & Occupational Therapy is that patients are the key element in the physical therapy process, and the therapists are committed to helping patients take control of their health and well-being. Each patient has a unique treatment plan tailored to their specific needs, and patients are fully involved with every stage of the rehabilitation process.",
-            "The healing process continues to reduce inflammation for up to 24 hours after. Reddy Care Physical & Occupational Therapy touts top-of-the-line facilities at their clinics and also provides in home therapy services for patients who are unable to travel in the Nassau, Suffolk, Queens, and NYC region.",
-            "We offer a Virtual Reality Balance System. Call us to learn more.",
-            "Our home therapy program covers all of Long Island, Queens, Staten Island, Brooklyn, and Manhattan. Contact us today!",
-            "I've been a part of the company for over twelve years. I have never been apart of something so inspiring. Absolutely a fast-paced company headed by forward-thinking management.",
-            "This is a place where the employees truly care about their patients care, customer service, and results.",
-            "- Stephanie",
-            "Reddy Care physical therapy provides a positive, fast-paced work environment. The leadership encourages employee growth and opportunity through education and professional development training.",
-            "Blog Posts",
-            "Sciatica is one of the most common causes of lower back pain, often affecting people who spend long hours sitting, lifting heavy objects, or experiencing poor posture. This condition occurs when the sciatic nerve, the largest nerve in the human body, becom",
-            "Restoring Strength and Balance in Huntington’s Disease",
-            "Huntington’s Disease is a rare, inherited neurological disorder that leads to the gradual breakdown of nerve cells in the brain. Over time, this degeneration affects a person’s ability to move, think, and control emotions.",
-            "Understanding Infant Torticollis and How Physical Therapy Can Help",
-            "Testimonials",
-            "Words from our patients",
-            "I have been coming to Reddy Care for about a month for therapy after my hip replacement.  The people at Reddy Care are very professional, caring, and they love their jobs",
-            "Best physical therapy place. The therapist work one on-one with the patients. They have a plethora of machines, three different types of treadmills and different bikes",
-            "I have had a great experience with Reddy Care! There were numerous issues going on with my back and we were able to work through them.",
-            "309 Northwest Drive, Farmingdale, NY 11735",
-            "475 Northern Blvd #11, Great Neck, NY 11021",
-            "272-78 Grand Central Parkway, Queens, NY 11005",
-            "150 Woodbury Road, Woodbury, NY 11797",
-            "2024  Deer Park Ave, Deer Park, NY 11729",
-            "208-32 Cross Island Parkway Suite 32, Bayside, NY 11360",
-            "2421 S Long Beach Rd., Oceanside, NY 11572",
-            "250 W 93rd Street, New York, NY 10025",
-            "1470 Sunrise Hwy, Bay Shore, NY 11706",
-            "565 Albany Ave, Amityville, NY 11701",
-            "2-30 Beach 102nd St., Rockaway Park, NY 11694",
-            "309 Northwest Drive,",
-            "475 Northern Blvd, #11,",
-            "272-78 Grand Central Parkway,",
-            "150 Woodbury Road,",
-            "2024  Deer Park Ave,",
-            "208-32 Cross Island Parkway, Suite 32,",
-            "4.91/5 Star Rating"
-          ],
-          "score": 0.67
-        },
-        "doctor": {
-          "name": "Mithun Mamoottil Abraham, Dpt",
-          "doctor_page_found": false,
-          "doctor_pages": [
-            "https://www.reddycare.net/provider",
-            "javascript:void(0);",
-            "https://www.reddycare.net/contents/about-us/our-team2/your-rehabilitation-team",
-            "https://www.reddycare.net/contents/about-us/join-our-team"
-          ],
-          "doctor_emails": [],
-          "doctor_phones": [
-            "5168290030",
-            "5164667723",
-            "5164202900",
-            "5163440030",
-            "5163671111",
-            "6312430247",
-            "7182248480",
-            "+117355164202900",
-            "+110215168290030",
-            "+110055163440030",
-            "+117975163671111",
-            "+117296312430247",
-            "+113607182248480",
-            "+115725169922282",
-            "+100252125800125",
-            "+117066314461480",
-            "+117016315320906"
-          ],
-          "structured_profile": {
-            "qualifications": [
-              "“My desire to work in a rewarding profession and have the chance to make a positive difference to someone’s quality of life is what attracted me towards a career in Physical Therapy. For me, it’s a wonderful feeling to wake up and do something I am truly passionate about. I get just as excited, if not more when a patient does or tells me something they have been able to accomplish/improve since starting PT. Personally, working as an In Home Physical Therapist has helped me professionally grow and become more independent, liable and organized. RCPT, however, has made my In Home Therapy experience a great one. From day one, everyone at RCPT has presented themselves with a positive and friendly attitude. Also, as an In Home Physical Therapist, we rely a lot on collaborative teamwork, and so far, everyone at RCPT has been very dependable whenever I have needed assistance.”",
-              "I became a physical therapist to connect with people and help them reach their functional goals. Creating positive results in people's lives is the most rewarding and fulfilling part of being a physical therapist. After graduating from Rutgers University 3 years ago, I set my sights on doing home therapy with Reddy Care because I work best under close interactions with my clients. I find a great sense of purpose and fulfillment in helping people realize that they can do so much more than they think they can. Physical therapy is a diverse and rapidly growing profession and I cannot wait to see what else is in store for me and my clients in the future."
-            ],
-            "colleges": [
-              "I graduated from Manhattan College with my undergraduate in 2014, where I received my BS in Exercise Science with a Biology minor. I was a Division 1 athlete on the women’s lacrosse team, where I began to find my passion for sports injuries and rehabilitation of orthopedic injuries. I completed my graduate at CUNY Hunter College, where I received my Doctorate of Physical Therapy in 2017. Since graduating, I have been working in an outpatient setting with varying age levels and orthopedic injuries. I have recently moved from my home in northern New Jersey to Long Island, and am excited about my next chapter here on the island! Prior to working for Reddy Care, I was working at an outpatient orthopedic clinic with high-level athletes on return-to-sport rehabilitation at both the high school and collegiate level. I enjoy working with patients of all ages and am interested in orthopedic injuries of all kinds.",
-              "I have been a therapist since 1992 primarily in private practice specializing in general orthopedic care with a focus on neck and back-related issues. I graduated from SUNY at Stony Brook for Physical Therapy and hold degrees in Physical from Adelphi University and the Wingate Institute in Israel. I speak Hebrew, Spanish and French which is helpful in communicating with my patients. Having a varied background of living abroad, serving in the military and participating in different sports helps me understand people better and put them more at ease. As I get closer in age to my patients, I understand where they are coming from better and what they want to maintain in their functional abilities to stay active and vital.",
-              "I became a physical therapist to connect with people and help them reach their functional goals. Creating positive results in people's lives is the most rewarding and fulfilling part of being a physical therapist. After graduating from Rutgers University 3 years ago, I set my sights on doing home therapy with Reddy Care because I work best under close interactions with my clients. I find a great sense of purpose and fulfillment in helping people realize that they can do so much more than they think they can. Physical therapy is a diverse and rapidly growing profession and I cannot wait to see what else is in store for me and my clients in the future."
-            ],
-            "work_experience": [
-              "“Fastest Growing Private Practice Small Businesses” in 2014, 2015, 2016, 2017 & 2020 by Inc. 5000",
-              "Reddy Care has been in practice since 2003 and has been featured on INC 5000’s list of the fastest growing companies in the country for the past four years and counting. We have grown to 60 physical & occupational therapists in the past year and expect to reach 75 physical & occupational therapists by years end. We pride ourselves on offering a friendly and encouraging environment with many opportunities for professional growth and advancement. New graduates are also welcome to apply, as each position includes a comprehensive training program that involves a manageable caseload and plenty of shadowing opportunities.",
-              "Our team of experienced Physical & Occupational Therapists specialize in a variety of manual techniques and hold advanced certifications in multiple specialties. Cases are generally out-patient orthopedic, post-op, neuro, deconditioning and gait training.",
-              "“I started working for Reddy Care Physical & Occupational Therapy, May 2009. I was 17 at the time and just completing my final year of high school. When I took the job, it was just supposed to be a summer position. Fast forward 9 years later and I am now a Doctor of Physical Therapy and the Clinical Director of our Great Neck office. What I have learned the past 9 years is invaluable. Not only have I excelled clinically in my field with numerous certifications, but I have built stronger interpersonal skills and learned how to run a business.\"",
-              "“My desire to work in a rewarding profession and have the chance to make a positive difference to someone’s quality of life is what attracted me towards a career in Physical Therapy. For me, it’s a wonderful feeling to wake up and do something I am truly passionate about. I get just as excited, if not more when a patient does or tells me something they have been able to accomplish/improve since starting PT. Personally, working as an In Home Physical Therapist has helped me professionally grow and become more independent, liable and organized. RCPT, however, has made my In Home Therapy experience a great one. From day one, everyone at RCPT has presented themselves with a positive and friendly attitude. Also, as an In Home Physical Therapist, we rely a lot on collaborative teamwork, and so far, everyone at RCPT has been very dependable whenever I have needed assistance.”",
-              "I graduated from Manhattan College with my undergraduate degree in 2014, where I received my BS in Exercise Science with a Biology minor. I was a Division 1 athlete on the women’s lacrosse team, where I began to find my passion for sports injuries and rehabilitation of orthopedic injuries. I completed my graduate education at CUNY Hunter College, where I received my Doctorate of Physical Therapy in 2017. Since graduating, I have been working in an outpatient setting with varying age levels and orthopedic injuries. I have recently moved from my home in northern New Jersey to Long Island, and am excited about my next chapter here on the island! Prior to working for Reddy Care, I was working at an outpatient orthopedic clinic with high-level athletes on return-to-sport rehabilitation at both the high school and collegiate level. I enjoy working with patients of all ages and am interested in orthopedic injuries of all kinds.",
-              "I have been a therapist since 1992 primarily in private practice specializing in general orthopedic care with a focus on neck and back-related issues. I graduated from SUNY at Stony Brook for Physical Therapy and hold degrees in Physical Education from Adelphi University and the Wingate Institute in Israel. I speak Hebrew, Spanish and French which is helpful in communicating with my patients. Having a varied background of living abroad, serving in the military and participating in different sports helps me understand people better and put them more at ease. As I get closer in age to my patients, I understand where they are coming from better and what they want to maintain in their functional abilities to stay active and vital.",
-              "I became a physical therapist to connect with people and help them reach their functional goals. Creating positive results in people's lives is the most rewarding and fulfilling part of being a physical therapist. After graduating from Rutgers University 3 years ago, I set my sights on doing home therapy with Reddy Care because I work best under close interactions with my clients. I find a great sense of purpose and fulfillment in helping people realize that they can do so much more than they think they can. Physical therapy is a diverse and rapidly growing profession and I cannot wait to see what else is in store for me and my clients in the future."
-            ],
-            "working_location": ""
-          },
-          "score": 0
-        },
-        "website_trust_score": 0.402
-      }
-    },
-    "signals": {},
-    "confidence": 0.777,
-    "status": "REVIEW"
-  },
-  "5": {
-    "provider_id": "5",
-    "timestamp_utc": "2025-12-17T02:19:58.132823+00:00",
-    "base_validation": {
-      "provider_id": "5",
-      "timestamp_utc": "2025-12-16T20:14:06.621949Z",
-      "normalized": {
-        "name": "Dr. Bill Abbo Dds Ms",
-        "phone": "3059450909",
-        "address": "3031 NE 163RD ST NORTH MIAMI BEACH, FL 33160-4462 United States",
+        "name": "Escarlet Acabal",
+        "phone": "3105532695",
+        "address": "7335 VAN NUYS BLVD VAN NUYS, CA 91405-1998 United States",
         "registration_number": "",
         "license_status": "",
         "issue_date": "",
         "expiry_date": "",
-        "npi": "1720147853"
+        "npi": "1396402988"
       },
       "missing_fields": [
         "license_number",
@@ -880,399 +805,138 @@
     "enriched": {
       "npi": {
         "match_found": true,
-        "npi": "1720147853",
+        "npi": "1396402988",
         "basic": {
-          "first_name": "BILL",
-          "last_name": "ABBO",
-          "credential": "DDS MS",
-          "sole_proprietor": "NO",
-          "sex": "M",
-          "enumeration_date": "2006-12-06",
-          "last_updated": "2022-01-19",
-          "certification_date": "2022-01-19",
-          "status": "A",
-          "name_prefix": "Dr."
-        },
-        "addresses": [
-          {
-            "country_code": "US",
-            "country_name": "United States",
-            "address_purpose": "LOCATION",
-            "address_type": "DOM",
-            "address_1": "3031 NE 163RD ST",
-            "city": "NORTH MIAMI BEACH",
-            "state": "FL",
-            "postal_code": "331604462",
-            "telephone_number": "305-945-0909",
-            "fax_number": "305-945-0907"
-          },
-          {
-            "country_code": "US",
-            "country_name": "United States",
-            "address_purpose": "MAILING",
-            "address_type": "DOM",
-            "address_1": "19331 NE 19TH PL",
-            "city": "NORTH MIAMI BEACH",
-            "state": "FL",
-            "postal_code": "331793611",
-            "telephone_number": "305-710-3129"
-          }
-        ],
-        "taxonomies": [
-          {
-            "code": "122300000X",
-            "taxonomy_group": "",
-            "desc": "Dentist",
-            "state": "MI",
-            "license": "2901019307",
-            "primary": false
-          },
-          {
-            "code": "1223P0700X",
-            "taxonomy_group": "",
-            "desc": "Dentist, Prosthodontics",
-            "state": "FL",
-            "license": "DN17781",
-            "primary": false
-          },
-          {
-            "code": "1223G0001X",
-            "taxonomy_group": "",
-            "desc": "Dentist, General Practice",
-            "state": "FL",
-            "license": "dn17781",
-            "primary": true
-          }
-        ],
-        "match_confidence": 1.0,
-        "signals": {
-          "direct_npi": true,
-          "from_api": true
-        }
-      },
-      "maps": {
-        "google_place_found": true,
-        "google_place_name": "Dr. Abbo Advanced Dentistry",
-        "google_place_address": "3031 NE 163rd St, North Miami Beach, FL 33160, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJpbVSVgit2YgR5272FKyUJSQ",
-        "match_score": 0.8645170401054416,
-        "details_found": true,
-        "formatted_address": "3031 NE 163rd St, North Miami Beach, FL 33160, USA",
-        "google_phone": "(305) 945-0909",
-        "website": "http://www.drabbo.com/",
-        "lat": 25.9270859,
-        "lng": -80.1398373,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJpbVSVgit2YgR5272FKyUJSQ",
-        "name_fuzzy_match": 0.511,
-        "address_fuzzy_match": 0.85
-      },
-      "website": {
-        "provider_id": "5",
-        "url": "http://www.drabbo.com/",
-        "status": "ok",
-        "signals": {
-          "is_js_heavy": true,
-          "is_parked_likely": false,
-          "parked_indicators": [],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [],
-          "phones": [
-            "3059450909"
-          ],
-          "addresses": [
-            "North Miami Beach Dentist Near You | Dr. Abbo | Dental Clinic",
-            "Meet the Dentists",
-            "General Dentistry",
-            "TMJ Disorder",
-            "Cosmetic Dentistry",
-            "Restorative Dentistry",
-            "Testimonials",
-            "Dentist in North Miami Beach, FL",
-            "Advanced Dentistry—Your Smile is Our Top Priority",
-            "Prosthodontics",
-            "Do you dream of a smile that radiates confidence and reflects your inner vitality? At Dr. Abbo Advanced Dentistry with the best",
-            "dentist in North Miami Beach, FL",
-            "We welcome individuals and families from nearby Aventura, Sunny Isles Beach, and Hallandale Beach. Ready to embark on your journey to a healthy smile without driving to Miami for big city care at a higher cost? Call",
-            "to schedule your dental visit with the best",
-            "Our Advanced Dentistry Services Near You",
-            "Joe’s Stone Crab",
-            ", just a short drive from our North Miami Beach dental office. Your enhanced smile will be a source of joy in all your local experiences.",
-            "Patients Stories",
-            "I had an excellent experience getting my wisdom tooth extracted at this clinic. From the reception to the medical staff, everyone was very kind and professional. I especially want to…",
-            "The best dentist in Miami. I have been patient of Dr. Gallego for over 5 years. The most gentle , knowledgeable dentist I ever met . Also, the whole office…",
-            "Words alone cannot express my gratitude and appreciation for doctor Eli Abbo. He addressed my situation with great concern , patience and his professionalism is above and beyond of any…",
-            "Best dental experience I’ve ever had. Had a tooth extracted and gums stitched and I feel great. Highly recommend using this dental practice.",
-            "An excellent place to take care of your teeth. Very professional, attentive, kind, and with outstanding service. Highly recommended!",
-            "I can honestly say that I have never felt so well cared for and confident that I was receiving the appropriate dental treatment as at Dr Abbo’s office.",
-            "esther benatar",
-            "The personnel is always welcoming and friendly and Dr. Eli Abbo is exceptional at making the patient feel comfortable and in good hands. He answers all your questions diligently and…",
-            ". Your smile is priceless, and we’re here to help make achieving it affordable.",
-            "Understanding Your Dental Care Investment",
-            "Following your initial consultation at our North Miami Beach office, you’ll receive a clear outline of your recommended treatment plan and associated costs. This allows us to discuss payment options that suit your individual needs.",
-            "We accept cash, checks, and most dental insurance plans, with deductibles and co-pays due at the time of service. We encourage you to contact your insurance provider beforehand so we can help you maximize your benefits.",
-            "Flexible Third-Party Financing with CareCredit®",
-            "To make quality dental care even more accessible in North Miami Beach, Dr. Abbo Advanced Dentistry partners with leading third-party financing providers like CareCredit®. CareCredit® offers various low-interest payment plans for dental procedures, including more extensive treatments like dental implants and orthodontics.",
-            "Applying online is quick and easy, and you may qualify for financing regardless of your insurance status. Our dental team is happy to assist you with the CareCredit® application process. Just give us a call at",
-            "At Dr. Abbo Advanced Dentistry, we believe in leveraging technology to provide the best dental experience. Our state-of-the-art facility is equipped with advanced diagnostic tools, including",
-            "Where is Dr. Abbo Advanced Dentistry located?",
-            "Dr. Abbo Advanced Dentistry is conveniently located at 3031 NE 163rd St. North Miami Beach, FL. For your convenience, we offer ample complimentary parking directly in front of our office. You will find our parking lot easily accessible, allowing for an easy arrival and departure for your appointments.",
-            "How do I schedule an appointment at Dr. Abbo Advanced Dentistry?",
-            "What if I don’t have dental insurance? Can I still get care?",
-            "Absolutely! Dr. Abbo Advanced Dentistry in North Miami Beach believes that everyone deserves access to quality dental care, regardless of their insurance situation. We understand navigating the costs of dental treatment without insurance can feel overwhelming, and we are happy to discuss various payment options to help you receive the care you need.",
-            "What if I have dental anxiety or haven’t been to the dentist in years?",
-            "Whether it’s been six months or several years since your last appointment, we are here to support you on your journey to better oral health without judgment.",
-            "We’re More Than a Dental Office– We’re Your One-Stop Practice for the Smile of Your Dreams",
-            "Imagine a future filled with confident smiles, free from discomfort and radiating health. Picture yourself enjoying your favorite foods without hesitation and laughing freely without a second thought. This vision can become your reality. Take the first step towards a healthier, more beautiful smile today. Call Dr. Abbo Advanced Dentistry at",
-            "We welcome patients of all ages from Aventura, Sunny Isles Beach, and Hallandale Beach to experience the exceptional care provided by Dr. Abbo and our dedicated team. Your journey to a confident smile starts now!",
-            "Contact us today to schedule your consultation with one of our experienced dentists.",
-            "3031 NE 163rd St.",
-            "North Miami Beach, FL 33160",
-            "North Miami Beach Dentists, Dr. Bill Abbo, Dr. Eli Abbo, and Dr. Gallego of Dr. Abbo Advanced Dentistry are dedicated to cosmetic dentistry, prosthodontics, North Miami dental implants and more. We look forward to serving you.",
-            "© 2025 Dr. Abbo Advanced Dentistry. All Rights Reserved. Designed & Developed by",
-            "keyboard_arrow_up"
-          ],
-          "score": 0.67
-        },
-        "doctor": {
-          "name": "Dr. Bill Abbo Dds Ms",
-          "doctor_page_found": false,
-          "doctor_pages": [
-            "https://www.drabbo.com/meet-the-doctors/",
-            "https://www.drabbo.com/services/general-dentistry/dental-exams-cleanings/",
-            "https://www.drabbo.com/services/periodontal-disease/symptoms/",
-            "https://www.drabbo.com/patient-forms/"
-          ],
-          "doctor_emails": [
-            "abbo@drabbo.com"
-          ],
-          "doctor_phones": [
-            "3059450909"
-          ],
-          "structured_profile": {
-            "qualifications": [],
-            "colleges": [
-              "Dr. Eli Abbo graduated from dental school in 1974 in Venezuela and completed his postgraduate studies in periodontology at Tufts University in 1976 where he was appointed Clinical Instructor. Returning to Venezuela he started his private clinical practice and was appointed Assistant Professor and Clinical Instructor at the Periondontology Department at the University of Zulia in 1978.",
-              "Highly skilled dentist with a comprehensive background in implants and prosthodontics, trained at the University of Michigan. Initially graduated as a dentist in Caracas, Venezuela, and went on to complete advanced specialty training in the U.S. Served as a faculty member at the University of Michigan for two years, imparting knowledge and honing expertise in dental implants and prosthetic dentistry. Currently running a successful private practice in Miami, FL, delivering patient-centered care with a focus on advanced restorative procedures and long-term oral health. Passionate about continuing and applying the latest dental technologies to enhance patient outcomes.",
-              "Dr. Gallego then moved to Boston and completed a three-year postgraduate program in Prosthodontics at Boston University. After graduation She moved to Florida and join private practice specializing in prosthodontics, restorative, cosmetic dentistry and dental implants."
-            ],
-            "work_experience": [
-              "305-945-0909",
-              "Our Practice",
-              ", our team of dentists in North Miami Beach, FL has the knowledge and experience to provide you with the specialized dental care your smile deserves. We’re passionate about being your first choice when it comes to safeguarding your oral health, using advanced",
-              "to streamline your overall experience. Whether you’re looking for a",
-              "Dr. Eli Abbo graduated from dental school in 1974 in Venezuela and completed his postgraduate studies in periodontology at Tufts University in 1976 where he was appointed Clinical Instructor. Returning to Venezuela he started his private clinical practice and was appointed Assistant Professor and Clinical Instructor at the Periondontology Department at the University of Zulia in 1978.",
-              "Dr. Abbo has over 30 years of experience in dentistry. He has taught dentistry, participated in research and had his own private practice for more than 30 years. Through specialty continuing education courses he stays up to date with the latest advancements in dentistry as well as the most current technologies.",
-              "Highly skilled dentist with a comprehensive background in implants and prosthodontics, trained at the University of Michigan. Initially graduated as a dentist in Caracas, Venezuela, and went on to complete advanced specialty training in the U.S. Served as a faculty member at the University of Michigan for two years, imparting knowledge and honing expertise in dental implants and prosthetic dentistry. Currently running a successful private practice in Miami, FL, delivering patient-centered care with a focus on advanced restorative procedures and long-term oral health. Passionate about continuing education and applying the latest dental technologies to enhance patient outcomes.",
-              "Dr. Gallego Earned her dental degree from Universidad Santa Maria in Caracas, Venezuela in 2008. She worked in a private practice that specialized in cosmetic dentistry and dental implants, where she had the opportunity to discover and fall in love with Prosthodontics.",
-              "Dr. Gallego then moved to Boston and completed a three-year postgraduate program in Prosthodontics at Boston University. After graduation She moved to Florida and join private practice specializing in prosthodontics, restorative, cosmetic dentistry and dental implants.",
-              "The best dentist in Miami. I have been patient of Dr. Gallego for over 5 years. The most gentle , knowledgeable dentist I ever met . Also, the whole office…",
-              "Best dental experience I’ve ever had. Had a tooth extracted and gums stitched and I feel great. Highly recommend using this dental practice.",
-              "I had an excellent experience getting my wisdom tooth extracted at this clinic. From the reception to the medical staff, everyone was very kind and professional. I especially want to…",
-              "It’s important to look for a dentist that’s both knowledgeable about the field and passionate about providing you with the best dental care possible. A good dentist is someone who’s not only dedicated to helping you achieve your unique smile goals but has the experience needed to conduct a variety of procedures."
-            ],
-            "working_location": ""
-          },
-          "score": 0
-        },
-        "website_trust_score": 0.352
-      }
-    },
-    "signals": {},
-    "confidence": 0.791,
-    "status": "REVIEW"
-  },
-  "6": {
-    "provider_id": "6",
-    "timestamp_utc": "2025-12-17T02:19:58.133831+00:00",
-    "base_validation": {
-      "provider_id": "6",
-      "timestamp_utc": "2025-12-16T20:14:06.635810Z",
-      "normalized": {
-        "name": "Ragunath Appasamy, Md, Phd",
-        "phone": "2153498222",
-        "address": "3400 Spruce Street, 3 Dulles Building, Philadelphia, PA 19104-4206, United States",
-        "registration_number": "PA-MD-778945",
-        "license_status": "ACTIVE",
-        "issue_date": "June 12, 2015",
-        "expiry_date": "June 30, 2026",
-        "npi": "1467401976"
-      },
-      "missing_fields": [],
-      "overall_confidence": 1.0,
-      "validation_status": "PASS"
-    },
-    "enriched": {
-      "npi": {
-        "match_found": true,
-        "npi": "1467401976",
-        "basic": {
-          "first_name": "RAGUNATH",
-          "last_name": "APPASAMY",
-          "credential": "MD PhD",
-          "sole_proprietor": "NO",
-          "sex": "M",
-          "enumeration_date": "2006-05-10",
-          "last_updated": "2022-02-21",
-          "certification_date": "2022-02-21",
-          "status": "A"
-        },
-        "addresses": [
-          {
-            "country_code": "US",
-            "country_name": "United States",
-            "address_purpose": "LOCATION",
-            "address_type": "DOM",
-            "address_1": "3400 SPRUCE STREET",
-            "address_2": "3 DULLES BUILDING",
-            "city": "PHILADELPHIA",
-            "state": "PA",
-            "postal_code": "191044206",
-            "telephone_number": "215-349-8222",
-            "fax_number": "215-349-5915"
-          },
-          {
-            "country_code": "US",
-            "country_name": "United States",
-            "address_purpose": "MAILING",
-            "address_type": "DOM",
-            "address_1": "3400 SPRUCE STREET",
-            "address_2": "3 DULLES BUILDING",
-            "city": "PHILADELPHIA",
-            "state": "PA",
-            "postal_code": "191044206",
-            "telephone_number": "215-349-8222",
-            "fax_number": "215-349-5915"
-          }
-        ],
-        "taxonomies": [
-          {
-            "code": "207RG0100X",
-            "taxonomy_group": "",
-            "desc": "Internal Medicine, Gastroenterology",
-            "state": "PA",
-            "license": "MD041058L",
-            "primary": true
-          }
-        ],
-        "match_confidence": 1.0,
-        "signals": {
-          "direct_npi": true,
-          "from_api": true
-        }
-      },
-      "maps": {
-        "google_place_found": true,
-        "google_place_name": "Ragunath Appasamy, MD, PhD",
-        "google_place_address": "Perelman Center for Advanced Medicine, 3400 Civic Center Blvd, Philadelphia, PA 19104, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJJ_NJo4vHxokRJ3wyCqwp23s",
-        "match_score": 0.8728070175438597,
-        "details_found": true,
-        "formatted_address": "Perelman Center for Advanced Medicine, 3400 Civic Center Blvd, Philadelphia, PA 19104, USA",
-        "google_phone": "(215) 349-8222",
-        "website": "https://www.pennmedicine.org/providers/ragunath-appasamy?utm_source=google-my-business&utm_medium=referral&utm_campaign=penn-medicine&utm_term=ragunath-appasamy&y_source=1_MzU0MTU4MzgtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
-        "lat": 39.9481769,
-        "lng": -75.1926849,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJJ_NJo4vHxokRJ3wyCqwp23s",
-        "name_fuzzy_match": 1.0,
-        "address_fuzzy_match": 0.491
-      },
-      "website": {
-        "provider_id": "6",
-        "url": "https://www.pennmedicine.org/providers/ragunath-appasamy?utm_source=google-my-business&utm_medium=referral&utm_campaign=penn-medicine&utm_term=ragunath-appasamy&y_source=1_MzU0MTU4MzgtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
-        "status": "ok",
-        "signals": {
-          "is_js_heavy": false,
-          "is_parked_likely": false,
-          "parked_indicators": [],
-          "not_medical_site": true
-        },
-        "hospital": {
-          "emails": [],
-          "phones": [],
-          "addresses": [],
-          "score": 0.0
-        },
-        "doctor": {
-          "name": "Ragunath Appasamy, Md, Phd",
-          "doctor_page_found": false,
-          "doctor_pages": [],
-          "doctor_emails": [],
-          "doctor_phones": [],
-          "structured_profile": null,
-          "score": 0
-        },
-        "website_trust_score": 0.0
-      }
-    },
-    "signals": {},
-    "confidence": 0.705,
-    "status": "REVIEW"
-  },
-  "1": {
-    "provider_id": "1",
-    "timestamp_utc": "2025-12-17T02:19:58.128832+00:00",
-    "base_validation": {
-      "provider_id": "1",
-      "timestamp_utc": "2025-12-16T20:14:06.562975Z",
-      "normalized": {
-        "name": "Balqisa Mohamud Abdi",
-        "phone": "6515001998",
-        "address": "1516 W Lake St, Suite 104 Minneapolis, MN 55408, United States",
-        "registration_number": "MN-BT-458921",
-        "license_status": "ACTIVE",
-        "issue_date": "March 15, 2022",
-        "expiry_date": "March 31, 2026",
-        "npi": "1740961333"
-      },
-      "missing_fields": [],
-      "overall_confidence": 1.0,
-      "validation_status": "PASS"
-    },
-    "enriched": {
-      "npi": {
-        "match_found": true,
-        "npi": "1740961333",
-        "basic": {
-          "first_name": "BALQISA",
-          "last_name": "ABDI",
-          "middle_name": "MOHAMUD",
+          "first_name": "ESCARLET",
+          "last_name": "ACABAL",
           "sole_proprietor": "NO",
           "sex": "F",
-          "enumeration_date": "2023-07-27",
-          "last_updated": "2023-07-27",
-          "certification_date": "2023-07-27",
+          "enumeration_date": "2021-11-18",
+          "last_updated": "2021-11-18",
+          "certification_date": "2021-11-18",
           "status": "A"
         },
         "addresses": [
           {
             "country_code": "US",
             "country_name": "United States",
+            "address_purpose": "MAILING",
+            "address_type": "DOM",
+            "address_1": "7335 VAN NUYS BLVD",
+            "city": "VAN NUYS",
+            "state": "CA",
+            "postal_code": "914051998",
+            "telephone_number": "310-553-2695"
+          },
+          {
+            "country_code": "US",
+            "country_name": "United States",
             "address_purpose": "LOCATION",
             "address_type": "DOM",
-            "address_1": "1516 W LAKE ST STE 104",
-            "city": "MINNEAPOLIS",
-            "state": "MN",
-            "postal_code": "55408",
-            "telephone_number": "651-500-1998"
-          },
+            "address_1": "7335 VAN NUYS BLVD",
+            "city": "VAN NUYS",
+            "state": "CA",
+            "postal_code": "914051998",
+            "telephone_number": "310-553-2695"
+          }
+        ],
+        "taxonomies": [
+          {
+            "code": "2355S0801X",
+            "taxonomy_group": "",
+            "desc": "Specialist/Technologist, Speech-Language Assistant",
+            "state": "CA",
+            "license": "6373",
+            "primary": true
+          }
+        ],
+        "match_confidence": 1.0,
+        "signals": {
+          "direct_npi": true,
+          "from_api": true
+        }
+      },
+      "maps": {
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
+      }
+    },
+    "signals": {},
+    "confidence": 0.4,
+    "status": "PENDING"
+  },
+  "11": {
+    "provider_id": "11",
+    "timestamp_utc": "2025-12-17T17:26:53.898223+00:00",
+    "base_validation": {
+      "provider_id": "11",
+      "timestamp_utc": "2025-12-17T17:26:38.652377Z",
+      "normalized": {
+        "name": "Estreya Esther Aboud",
+        "phone": "7186863700",
+        "address": "1312 38TH ST BROOKLYN, NY 11218-3612 United States",
+        "registration_number": "",
+        "license_status": "",
+        "issue_date": "",
+        "expiry_date": "",
+        "npi": "1437750635"
+      },
+      "missing_fields": [
+        "license_number",
+        "license_status",
+        "expiry_date",
+        "issue_date"
+      ],
+      "overall_confidence": 0.4,
+      "validation_status": "FAIL_NEEDS_REVIEW"
+    },
+    "enriched": {
+      "npi": {
+        "match_found": true,
+        "npi": "1437750635",
+        "basic": {
+          "first_name": "ESTREYA",
+          "last_name": "ABOUD",
+          "middle_name": "ESTHER",
+          "sole_proprietor": "NO",
+          "sex": "F",
+          "enumeration_date": "2020-11-04",
+          "last_updated": "2020-11-04",
+          "certification_date": "2020-11-04",
+          "status": "A"
+        },
+        "addresses": [
           {
             "country_code": "US",
             "country_name": "United States",
             "address_purpose": "MAILING",
             "address_type": "DOM",
-            "address_1": "1516 W LAKE ST STE 104",
-            "city": "MINNEAPOLIS",
-            "state": "MN",
-            "postal_code": "554086600"
+            "address_1": "1312 38TH ST",
+            "city": "BROOKLYN",
+            "state": "NY",
+            "postal_code": "112183612",
+            "telephone_number": "718-686-3700"
+          },
+          {
+            "country_code": "US",
+            "country_name": "United States",
+            "address_purpose": "LOCATION",
+            "address_type": "DOM",
+            "address_1": "1312 38TH ST",
+            "city": "BROOKLYN",
+            "state": "NY",
+            "postal_code": "112183612",
+            "telephone_number": "718-686-3700"
           }
         ],
         "taxonomies": [
           {
-            "code": "106S00000X",
+            "code": "174400000X",
             "taxonomy_group": "",
-            "desc": "Behavior Technician",
+            "desc": "Specialist",
             "state": null,
             "license": null,
             "primary": true
@@ -1285,68 +949,23 @@
         }
       },
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "Fellowship Recovery LLC",
-        "google_place_address": "1516 W Lake St, Minneapolis, MN 55408, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJC9_6K30n9ocRnnhkmrDbsHw",
-        "match_score": 0.7984347048300536,
-        "details_found": true,
-        "formatted_address": "1516 W Lake St, Minneapolis, MN 55408, USA",
-        "google_phone": "(612) 723-6749",
-        "website": "http://www.fellowshiprecovery.com/",
-        "lat": 44.9485969,
-        "lng": -93.30183489999999,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJC9_6K30n9ocRnnhkmrDbsHw",
-        "name_fuzzy_match": 0.233,
-        "address_fuzzy_match": 0.808
-      },
-      "website": {
-        "provider_id": "1",
-        "url": "http://www.fellowshiprecovery.com/",
-        "status": "ok",
-        "signals": {
-          "is_js_heavy": true,
-          "is_parked_likely": false,
-          "parked_indicators": [],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [],
-          "phones": [],
-          "addresses": [
-            "Join many others in our intensive outpatient programs. All programs at Fellowship Recovery offer co-occurring (substance used disorder and mental health) services.",
-            "Our St. Louis Park location serves parents with children. Our Minneapolis location serves single adults, justice involved individuals, and individuals with medical cannabis prescriptions.",
-            "Margie Pierce had a vision to open a treatment center to better serve clients. Margie credits her personal recovery to the fellowship of the 12-Step community.",
-            "1516 W Lake St. #201",
-            "Minneapolis, MN 55408",
-            "St. Louis Park",
-            "3381 Gorham Ave",
-            "Saint Louis Park, MN 55426"
-          ],
-          "score": 0.33
-        },
-        "doctor": {
-          "name": "Balqisa Mohamud Abdi",
-          "doctor_page_found": false,
-          "doctor_pages": [],
-          "doctor_emails": [],
-          "doctor_phones": [],
-          "structured_profile": null,
-          "score": 0
-        },
-        "website_trust_score": 0.148
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.716,
-    "status": "REVIEW"
+    "confidence": 0.4,
+    "status": "PENDING"
   },
   "13": {
     "provider_id": "13",
-    "timestamp_utc": "2025-12-17T02:20:22.488830+00:00",
+    "timestamp_utc": "2025-12-17T17:26:54.099089+00:00",
     "base_validation": {
       "provider_id": "13",
-      "timestamp_utc": "2025-12-16T20:14:06.791345Z",
+      "timestamp_utc": "2025-12-17T17:26:38.732276Z",
       "normalized": {
         "name": "Gayatri Aachi",
         "phone": "9252947022",
@@ -1425,128 +1044,19 @@
         "google_place_name": null,
         "google_place_address": null,
         "google_place_proof": null,
-        "match_score": 0.35,
-        "match": true,
-        "formatted_address": "300 Pullman St bldg a1, Livermore, CA 94551, USA",
-        "lat": 37.7068718,
-        "lng": -121.7156271,
-        "partial_match": false,
-        "proof_link": "https://www.google.com/maps/search/300%20Pullman%20St%20bldg%20a1%2C%20Livermore%2C%20CA%2094551%2C%20USA"
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.522,
-    "status": "REVIEW"
-  },
-  "14": {
-    "provider_id": "14",
-    "timestamp_utc": "2025-12-17T02:20:24.482311+00:00",
-    "base_validation": {
-      "provider_id": "14",
-      "timestamp_utc": "2025-12-16T20:14:06.809352Z",
-      "normalized": {
-        "name": "Gabriela Abadal",
-        "phone": "7024287910",
-        "address": "4904 SANTO AVE LAS VEGAS, NV 89108-1331 United States",
-        "registration_number": "",
-        "license_status": "",
-        "issue_date": "",
-        "expiry_date": "",
-        "npi": ""
-      },
-      "missing_fields": [
-        "license_number",
-        "license_status",
-        "expiry_date",
-        "npi",
-        "issue_date"
-      ],
-      "overall_confidence": 0.25,
-      "validation_status": "FAIL_NEEDS_REVIEW"
-    },
-    "enriched": {
-      "npi": {
-        "match_found": true,
-        "npi": "1245775493",
-        "basic": {
-          "first_name": "GABRIELA",
-          "last_name": "ABADAL",
-          "sole_proprietor": "YES",
-          "sex": "F",
-          "enumeration_date": "2016-12-26",
-          "last_updated": "2016-12-26",
-          "status": "A",
-          "name_prefix": "--",
-          "name_suffix": "--"
-        },
-        "addresses": [
-          {
-            "country_code": "US",
-            "country_name": "United States",
-            "address_purpose": "MAILING",
-            "address_type": "DOM",
-            "address_1": "4904 SANTO AVE",
-            "city": "LAS VEGAS",
-            "state": "NV",
-            "postal_code": "891081331",
-            "telephone_number": "702-428-7910"
-          },
-          {
-            "country_code": "US",
-            "country_name": "United States",
-            "address_purpose": "LOCATION",
-            "address_type": "DOM",
-            "address_1": "4904 SANTO AVE",
-            "city": "LAS VEGAS",
-            "state": "NV",
-            "postal_code": "891081331",
-            "telephone_number": "702-428-7910"
-          }
-        ],
-        "taxonomies": [
-          {
-            "code": "103K00000X",
-            "taxonomy_group": "",
-            "desc": "Behavior Analyst",
-            "state": null,
-            "license": null,
-            "primary": true
-          }
-        ],
-        "match_confidence": 0.612,
-        "signals": {
-          "name_match": 1.0,
-          "address_match": 0.623,
-          "phone_match": true
-        }
-      },
-      "maps": {
-        "google_place_found": true,
-        "google_place_name": "4904 Santo Ave",
-        "google_place_address": "4904 Santo Ave, Las Vegas, NV 89108, USA",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJr0M6P5nByIARph_3ZEhzCn8",
-        "match_score": 0.6456803856136448,
-        "details_found": true,
-        "formatted_address": "4904 Santo Ave, Las Vegas, NV 89108, USA",
-        "google_phone": null,
-        "website": null,
-        "lat": 36.1823142,
-        "lng": -115.2083266,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJr0M6P5nByIARph_3ZEhzCn8",
-        "name_fuzzy_match": 0.207,
-        "address_fuzzy_match": 0.817
-      }
-    },
-    "signals": {},
-    "confidence": 0.471,
+    "confidence": 0.4,
     "status": "PENDING"
   },
   "10": {
     "provider_id": "10",
-    "timestamp_utc": "2025-12-17T02:20:10.146276+00:00",
+    "timestamp_utc": "2025-12-17T17:26:53.878300+00:00",
     "base_validation": {
       "provider_id": "10",
-      "timestamp_utc": "2025-12-16T20:14:06.715348Z",
+      "timestamp_utc": "2025-12-17T17:26:38.624182Z",
       "normalized": {
         "name": "Estela Maria Abich Md",
         "phone": "4073541202",
@@ -1625,176 +1135,156 @@
         }
       },
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "Estela M. Abich, MD",
-        "google_place_address": "380 Rinehart Rd, Lake Mary, FL 32746, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJR46guDhz54gRAKJaPhRC1fE",
-        "match_score": 0.8295238095238097,
-        "details_found": true,
-        "formatted_address": "380 Rinehart Rd, Lake Mary, FL 32746, USA",
-        "google_phone": "(407) 767-5808",
-        "website": "https://www.orlandohealth.com/physician-finder/estela-m-abich-md",
-        "lat": 28.7678471,
-        "lng": -81.3486176,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJR46guDhz54gRAKJaPhRC1fE",
-        "name_fuzzy_match": 0.85,
-        "address_fuzzy_match": 0.438
-      },
-      "website": {
-        "provider_id": "10",
-        "url": "https://www.orlandohealth.com/physician-finder/estela-m-abich-md",
-        "status": "invalid_or_parked",
-        "signals": {
-          "is_js_heavy": false,
-          "is_parked_likely": true,
-          "parked_indicators": [
-            "coming soon"
-          ],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [],
-          "phones": [
-            "3218432584",
-            "3218433627",
-            "4077675808",
-            "4077675892",
-            "4073541202",
-            "4074983763"
-          ],
-          "addresses": [
-            "Estela M. Abich, MD",
-            "Clinical Trials & Research",
-            "Customer Experience Feedback Form",
-            "Orlando Area Hospitals",
-            "Aesthetic and Reconstructive Surgery Institute",
-            "Cancer Institute",
-            "Colon and Rectal Institute",
-            "Digestive Health Institute",
-            "Heart & Vascular Institute",
-            "Neuroscience Institute",
-            "Orthopedic Institute",
-            "Rehabilitation Institute",
-            "Weight Loss and Bariatric Surgery Institute",
-            "Women’s Institute",
-            "Estela M. Abich, MD - General Surgery",
-            "Request an Appointment With:",
-            "* If you are experiencing a medical emergency, call 911 immediately.",
-            "The following form creates an appointment request only, not a confirmed appointment. Upon completion of this form, a representative will contact you within 48 hours to assist you with your appointment request. By submitting this form, you agree to receive health information through email from Orlando Health and its affiliates.*",
-            "If you chose to be called, you may be asked for more information, so please have your insurance information ready.",
-            "Do you need to speak with someone regarding your appointment request?",
-            "* If you are experiencing a medical emergency, call 911 immediately. *",
-            "380 Rinehart Rd.",
-            "Lake Mary, FL 32746",
-            "Dr. Estela Abich is a board-certified general surgeon with Orlando Health Medical Group Surgery. Her specialties include:",
-            "Bowel obstruction",
-            "Endoscopy and percutaneous endoscopic gastrostomy tube placement",
-            "Tracheostomy placement",
-            "at Florida State University in Tallahassee, where she also received her medical degree. She completed her general surgery residency and a bariatric and minimally invasive surgery fellowship at Orlando Health, where she served as chief resident.",
-            "Dr. Abich is board certified in general surgery by the American Board of Surgery. Her professional memberships include the Obesity Medical Association, American Society for Metabolic and Bariatric Surgery, American Venous Forum, Florida Vascular Society and Society for Clinical Vascular Surgery.",
-            "Board Certifications",
-            "American Board of Surgery",
-            "Florida State University",
-            "9430 Turkey Lake Rd.",
-            "Orlando, FL 32819",
-            "10155 Dowden Rd.",
-            "Orlando, FL 32832",
-            "This is a comprehensive list of insurances accepted at Orlando Health hospitals, outpatient services and physician groups.",
-            "Aetna Signature Administrators",
-            "Assured Assistance International",
-            "Beech Street Network",
-            "Disney Cigna Cast Advantage (formerly known as Disney Allegiance Cast Advantage)",
-            "First Health Network",
-            "Health First Health Plans **Authorization Required - Limited/Tertiary Services Only**",
-            "MedCare/MedSave International",
-            "OccuNet (Orlando City/Global Sports)",
-            "Private Healthcare Systems (PHCS) - Commercial PPO Only",
-            "Travel Insurance Services International",
-            "Tricare - Humana Military (Standard, Prime, Tricare for Life)",
-            "Veterans Administration",
-            "Why do some Orlando Health physicians not have a patient experience rating?",
-            "The Patient Satisfaction Rating is an average of all responses to the care provider related questions, shown above, from our nationally-recognized Press-Ganey Patient Satisfaction Survey. Patients that are treated in outpatient or hospital environments may receive different surveys, and the volume of responses will vary by question.",
-            "Responses are measured on a scale of 1 to 5, with 5 being the best score.",
-            "If you are experiencing a medical emergency, call 911 immediately.",
-            "Information will update every 5 minutes. ER Wait Times are approximate and provided for informational purposes only. Estimated Wait Times as of:",
-            "Tuesday, December 16, 2025 9:18 PM",
-            "Distance(Use My Location)",
-            "Orlando Health - Health Central Hospital",
-            "Orlando Health Arnold Palmer Hospital for Children",
-            "Orlando Health Bayfront Hospital Emergency Room",
-            "Orlando Health Dr. P. Phillips Hospital",
-            "Orlando Health Emergency Room - Crossroads",
-            "Orlando Health Emergency Room - Waterford Lakes",
-            "Orlando Health Horizon West Hospital",
-            "Orlando Health Melbourne Hospital",
-            "Orlando Health Sebastian River Hospital",
-            "Orlando Health South Lake Hospital",
-            "Orlando Health St. Cloud Hospital",
-            "Online Estimates",
-            "PATIENT FINANCIAL ASSISTANCE",
-            "CLINICAL TRIALS & RESEARCH",
-            "Language Assistance Available:",
-            "Accessibility Statement"
-          ],
-          "score": 0.67
-        },
-        "doctor": {
-          "name": "Estela Maria Abich Md",
-          "doctor_page_found": false,
-          "doctor_pages": [
-            "https://www.orlandohealth.com/physician-finder",
-            "https://www.orlandohealth.com/physician-finder/estela-m-abich-md",
-            "https://www.orlandohealth.com/for-team-members?_gl=1*15ejqcq*_ga*MTU4MzYwODU0Ni4xNjkwODExMDMz*_ga_1YDLQZ02J5*MTcwMTc4MTQxMy4yMTEuMS4xNzAxNzg0MjQxLjAuMC4w*_ga_R2BYHGCQMG*MTcwMTc4MTQyMC4zNy4xLjE3MDE3ODM3OTIuMC4wLjA",
-            "javascript:void(0)",
-            "https://www.orlandohealth.com/physician-finder?OnlineScheduling=Yes",
-            "https://www.orlandohealth.com/orlando-health-medical-group/practices-and-services"
-          ],
-          "doctor_emails": [],
-          "doctor_phones": [
-            "3218432584",
-            "3218433627",
-            "4077675808",
-            "4077675892",
-            "4073541202",
-            "4074983763",
-            "3218432990"
-          ],
-          "structured_profile": {
-            "qualifications": [],
-            "colleges": [
-              "Orlando Area Hospitals",
-              "Aesthetic and Reconstructive Surgery Institute",
-              "Cancer Institute",
-              "Colon and Rectal Institute",
-              "Digestive Health Institute",
-              "Heart & Vascular Institute",
-              "Neuroscience Institute",
-              "Orthopedic Institute",
-              "Rehabilitation Institute",
-              "Weight Loss and Bariatric Surgery Institute",
-              "Women’s Institute"
-            ],
-            "work_experience": [
-              "Customer Experience Feedback Form",
-              "Physician Practices"
-            ],
-            "working_location": ""
-          },
-          "score": 0
-        },
-        "website_trust_score": 0.0
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.69,
-    "status": "REVIEW"
+    "confidence": 0.4,
+    "status": "PENDING"
+  },
+  "14": {
+    "provider_id": "14",
+    "timestamp_utc": "2025-12-17T17:26:54.171230+00:00",
+    "base_validation": {
+      "provider_id": "14",
+      "timestamp_utc": "2025-12-17T17:26:38.777019Z",
+      "normalized": {
+        "name": "Gabriela Abadal",
+        "phone": "7024287910",
+        "address": "4904 SANTO AVE LAS VEGAS, NV 89108-1331 United States",
+        "registration_number": "",
+        "license_status": "",
+        "issue_date": "",
+        "expiry_date": "",
+        "npi": ""
+      },
+      "missing_fields": [
+        "license_number",
+        "license_status",
+        "expiry_date",
+        "npi",
+        "issue_date"
+      ],
+      "overall_confidence": 0.25,
+      "validation_status": "FAIL_NEEDS_REVIEW"
+    },
+    "enriched": {
+      "npi": {
+        "match_found": true,
+        "npi": "1245775493",
+        "basic": {
+          "first_name": "GABRIELA",
+          "last_name": "ABADAL",
+          "sole_proprietor": "YES",
+          "sex": "F",
+          "enumeration_date": "2016-12-26",
+          "last_updated": "2016-12-26",
+          "status": "A",
+          "name_prefix": "--",
+          "name_suffix": "--"
+        },
+        "addresses": [
+          {
+            "country_code": "US",
+            "country_name": "United States",
+            "address_purpose": "MAILING",
+            "address_type": "DOM",
+            "address_1": "4904 SANTO AVE",
+            "city": "LAS VEGAS",
+            "state": "NV",
+            "postal_code": "891081331",
+            "telephone_number": "702-428-7910"
+          },
+          {
+            "country_code": "US",
+            "country_name": "United States",
+            "address_purpose": "LOCATION",
+            "address_type": "DOM",
+            "address_1": "4904 SANTO AVE",
+            "city": "LAS VEGAS",
+            "state": "NV",
+            "postal_code": "891081331",
+            "telephone_number": "702-428-7910"
+          }
+        ],
+        "taxonomies": [
+          {
+            "code": "103K00000X",
+            "taxonomy_group": "",
+            "desc": "Behavior Analyst",
+            "state": null,
+            "license": null,
+            "primary": true
+          }
+        ],
+        "match_confidence": 0.612,
+        "signals": {
+          "name_match": 1.0,
+          "address_match": 0.623,
+          "phone_match": true
+        }
+      },
+      "maps": {
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
+      }
+    },
+    "signals": {},
+    "confidence": 0.245,
+    "status": "PENDING"
+  },
+  "15": {
+    "provider_id": "15",
+    "timestamp_utc": "2025-12-17T17:26:54.172229+00:00",
+    "base_validation": {
+      "provider_id": "15",
+      "timestamp_utc": "2025-12-17T17:26:38.822979Z",
+      "normalized": {
+        "name": "Gani Abazi Md, Mph",
+        "phone": "2019674000",
+        "address": "230 E RIDGEWOOD AVE PARAMUS, NJ 07652-4142 United States",
+        "registration_number": "",
+        "license_status": "",
+        "issue_date": "",
+        "expiry_date": "",
+        "npi": ""
+      },
+      "missing_fields": [
+        "license_number",
+        "license_status",
+        "expiry_date",
+        "npi",
+        "issue_date"
+      ],
+      "overall_confidence": 0.25,
+      "validation_status": "FAIL_NEEDS_REVIEW"
+    },
+    "enriched": {
+      "maps": {
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
+      }
+    },
+    "signals": {},
+    "confidence": 0.0,
+    "status": "PENDING"
   },
   "16": {
     "provider_id": "16",
-    "timestamp_utc": "2025-12-17T02:20:26.877819+00:00",
+    "timestamp_utc": "2025-12-17T17:27:05.248137+00:00",
     "base_validation": {
       "provider_id": "16",
-      "timestamp_utc": "2025-12-16T20:14:06.843648Z",
+      "timestamp_utc": "2025-12-17T17:26:38.870440Z",
       "normalized": {
         "name": "Gambo Abdullahi",
         "phone": "4046410505",
@@ -1871,32 +1361,23 @@
         }
       },
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "2118 Cumberland Creek Trail SW",
-        "google_place_address": "2118 Cumberland Creek Trail SW, Marietta, GA 30008, USA",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJySSsRc0X9YgR4Zw_SBmTItQ",
-        "match_score": 0.6551882460973371,
-        "details_found": true,
-        "formatted_address": "2118 Cumberland Creek Trail SW, Marietta, GA 30008, USA",
-        "google_phone": null,
-        "website": null,
-        "lat": 33.9004341,
-        "lng": -84.59475479999999,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJySSsRc0X9YgR4Zw_SBmTItQ",
-        "name_fuzzy_match": 0.222,
-        "address_fuzzy_match": 0.843
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.478,
+    "confidence": 0.249,
     "status": "PENDING"
   },
   "18": {
     "provider_id": "18",
-    "timestamp_utc": "2025-12-17T02:20:30.137582+00:00",
+    "timestamp_utc": "2025-12-17T17:27:05.455516+00:00",
     "base_validation": {
       "provider_id": "18",
-      "timestamp_utc": "2025-12-16T20:14:06.875652Z",
+      "timestamp_utc": "2025-12-17T17:26:39.078757Z",
       "normalized": {
         "name": "Kimberly Aaron",
         "phone": "5613675258",
@@ -1977,482 +1458,19 @@
         "google_place_name": null,
         "google_place_address": null,
         "google_place_proof": null,
-        "match_score": 0.35,
-        "match": true,
-        "formatted_address": "Chapel Hill, NC, USA",
-        "lat": 35.9131996,
-        "lng": -79.0558445,
-        "partial_match": true,
-        "proof_link": "https://www.google.com/maps/search/Chapel%20Hill%2C%20NC%2C%20USA"
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.37,
+    "confidence": 0.248,
     "status": "PENDING"
-  },
-  "15": {
-    "provider_id": "15",
-    "timestamp_utc": "2025-12-17T02:20:25.235214+00:00",
-    "base_validation": {
-      "provider_id": "15",
-      "timestamp_utc": "2025-12-16T20:14:06.826649Z",
-      "normalized": {
-        "name": "Gani Abazi Md, Mph",
-        "phone": "2019674000",
-        "address": "230 E RIDGEWOOD AVE PARAMUS, NJ 07652-4142 United States",
-        "registration_number": "",
-        "license_status": "",
-        "issue_date": "",
-        "expiry_date": "",
-        "npi": ""
-      },
-      "missing_fields": [
-        "license_number",
-        "license_status",
-        "expiry_date",
-        "npi",
-        "issue_date"
-      ],
-      "overall_confidence": 0.25,
-      "validation_status": "FAIL_NEEDS_REVIEW"
-    },
-    "enriched": {
-      "maps": {
-        "google_place_found": true,
-        "google_place_name": "Bergen New Bridge Medical Center",
-        "google_place_address": "230 E Ridgewood Ave, Paramus, NJ 07652, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJFRCxVc76wokRvGJOZS0WE64",
-        "match_score": 0.8130707070707072,
-        "details_found": true,
-        "formatted_address": "230 E Ridgewood Ave, Paramus, NJ 07652, USA",
-        "google_phone": "(201) 967-4000",
-        "website": "https://www.newbridgehealth.org/",
-        "lat": 40.9568894,
-        "lng": -74.0627871,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJFRCxVc76wokRvGJOZS0WE64",
-        "name_fuzzy_match": 0.28,
-        "address_fuzzy_match": 0.828
-      },
-      "website": {
-        "provider_id": "15",
-        "url": "https://www.newbridgehealth.org/",
-        "status": "fail",
-        "signals": {
-          "is_js_heavy": false,
-          "is_parked_likely": false,
-          "parked_indicators": [],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [],
-          "phones": [],
-          "addresses": [],
-          "score": 0.0
-        },
-        "doctor": {
-          "name": "Gani Abazi Md, Mph",
-          "doctor_page_found": false,
-          "doctor_pages": [],
-          "doctor_emails": [],
-          "doctor_phones": [],
-          "structured_profile": null,
-          "score": 0.0
-        },
-        "website_trust_score": 0.0,
-        "error": "Blocked by robots.txt",
-        "trace": []
-      }
-    },
-    "signals": {},
-    "confidence": 0.285,
-    "status": "PENDING"
-  },
-  "12": {
-    "provider_id": "12",
-    "timestamp_utc": "2025-12-17T02:20:18.754107+00:00",
-    "base_validation": {
-      "provider_id": "12",
-      "timestamp_utc": "2025-12-16T20:14:06.771349Z",
-      "normalized": {
-        "name": "Escarlet Acabal",
-        "phone": "3105532695",
-        "address": "7335 VAN NUYS BLVD VAN NUYS, CA 91405-1998 United States",
-        "registration_number": "",
-        "license_status": "",
-        "issue_date": "",
-        "expiry_date": "",
-        "npi": "1396402988"
-      },
-      "missing_fields": [
-        "license_number",
-        "license_status",
-        "expiry_date",
-        "issue_date"
-      ],
-      "overall_confidence": 0.4,
-      "validation_status": "FAIL_NEEDS_REVIEW"
-    },
-    "enriched": {
-      "npi": {
-        "match_found": true,
-        "npi": "1396402988",
-        "basic": {
-          "first_name": "ESCARLET",
-          "last_name": "ACABAL",
-          "sole_proprietor": "NO",
-          "sex": "F",
-          "enumeration_date": "2021-11-18",
-          "last_updated": "2021-11-18",
-          "certification_date": "2021-11-18",
-          "status": "A"
-        },
-        "addresses": [
-          {
-            "country_code": "US",
-            "country_name": "United States",
-            "address_purpose": "MAILING",
-            "address_type": "DOM",
-            "address_1": "7335 VAN NUYS BLVD",
-            "city": "VAN NUYS",
-            "state": "CA",
-            "postal_code": "914051998",
-            "telephone_number": "310-553-2695"
-          },
-          {
-            "country_code": "US",
-            "country_name": "United States",
-            "address_purpose": "LOCATION",
-            "address_type": "DOM",
-            "address_1": "7335 VAN NUYS BLVD",
-            "city": "VAN NUYS",
-            "state": "CA",
-            "postal_code": "914051998",
-            "telephone_number": "310-553-2695"
-          }
-        ],
-        "taxonomies": [
-          {
-            "code": "2355S0801X",
-            "taxonomy_group": "",
-            "desc": "Specialist/Technologist, Speech-Language Assistant",
-            "state": "CA",
-            "license": "6373",
-            "primary": true
-          }
-        ],
-        "match_confidence": 1.0,
-        "signals": {
-          "direct_npi": true,
-          "from_api": true
-        }
-      },
-      "maps": {
-        "google_place_found": true,
-        "google_place_name": "LA Community Health Center",
-        "google_place_address": "7335 Van Nuys Blvd Suite 117, Van Nuys, CA 91405, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJlQerniWXwoARXwsZHyodvUQ",
-        "match_score": 0.7673416871783397,
-        "details_found": true,
-        "formatted_address": "7335 Van Nuys Blvd Suite 117, Van Nuys, CA 91405, USA",
-        "google_phone": "(747) 266-2666",
-        "website": "https://lacommunityhealthcenter.org/",
-        "lat": 34.2040242,
-        "lng": -118.4492582,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJlQerniWXwoARXwsZHyodvUQ",
-        "name_fuzzy_match": 0.146,
-        "address_fuzzy_match": 0.752
-      },
-      "website": {
-        "provider_id": "12",
-        "url": "https://lacommunityhealthcenter.org/",
-        "status": "ok",
-        "signals": {
-          "is_js_heavy": true,
-          "is_parked_likely": false,
-          "parked_indicators": [],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [
-            "lacommunityhealthcenter@yahoo.com"
-          ],
-          "phones": [
-            "7472662666"
-          ],
-          "addresses": [
-            "Valley Glen, CA 91405",
-            "Home Visit Request",
-            "LA Community Health Center is a private, non-profit corporation, governed by a community-based board of directors. The mission of the Health Center is to provide health care to the entire community while ensuring care to those most in need. Our governing principle is “all who seek care are welcome here.”",
-            "We are uniquely positioned to serve the undeserved in our community. Our leadership is strong and compassionate as we strive to promote wellness, provide accessible care, and culturally respect our patients. Our values are family oriented and firmly rooted in the community. It all adds up to exceptional health care for you and your family.",
-            "Affordable Rates",
-            "We offer the best affordable rates. Ask about us.",
-            "Customer Service",
-            "We are committed to the guarantee of our students success & satisfaction.",
-            "LA COMMUNITY HEALTH CENTER SERVICES ALL PATIENTS REGARDLESS OF ABLITY TO PAY. DISCOUNT FOR ESSENTIAL SERVICES ARE OFFERED ON A SLIDING FEE SCALE DEPENDING UPON FAMILY SIZE AND INCOME.",
-            "Attentive obstetric and gynecological care from experts",
-            "Our Care management team is a partner in coordinating your health journey",
-            "Intravenous (IV) therapy",
-            "Intravenous (IV) therapy is a medical procedure that delivers fluids, electrolytes, medications, or nutrients directly into a patient’s bloodstream through a vein.",
-            "Interested In Working With",
-            "I can honestly say that I have never experienced healthcare like I have at LA Community Health Center. The entire approach is remarkably accommodating to my needs and those of my family.",
-            "Leave a Review",
-            "7335 Van Nuys Blvd #117 Van Nuys, CA 91405",
-            "Saturday: Closed"
-          ],
-          "score": 1.0
-        },
-        "doctor": {
-          "name": "Escarlet Acabal",
-          "doctor_page_found": false,
-          "doctor_pages": [],
-          "doctor_emails": [],
-          "doctor_phones": [],
-          "structured_profile": null,
-          "score": 0
-        },
-        "website_trust_score": 0.55
-      }
-    },
-    "signals": {},
-    "confidence": 0.806,
-    "status": "REVIEW"
-  },
-  "11": {
-    "provider_id": "11",
-    "timestamp_utc": "2025-12-17T02:20:14.380923+00:00",
-    "base_validation": {
-      "provider_id": "11",
-      "timestamp_utc": "2025-12-16T20:14:06.749347Z",
-      "normalized": {
-        "name": "Estreya Esther Aboud",
-        "phone": "7186863700",
-        "address": "1312 38TH ST BROOKLYN, NY 11218-3612 United States",
-        "registration_number": "",
-        "license_status": "",
-        "issue_date": "",
-        "expiry_date": "",
-        "npi": "1437750635"
-      },
-      "missing_fields": [
-        "license_number",
-        "license_status",
-        "expiry_date",
-        "issue_date"
-      ],
-      "overall_confidence": 0.4,
-      "validation_status": "FAIL_NEEDS_REVIEW"
-    },
-    "enriched": {
-      "npi": {
-        "match_found": true,
-        "npi": "1437750635",
-        "basic": {
-          "first_name": "ESTREYA",
-          "last_name": "ABOUD",
-          "middle_name": "ESTHER",
-          "sole_proprietor": "NO",
-          "sex": "F",
-          "enumeration_date": "2020-11-04",
-          "last_updated": "2020-11-04",
-          "certification_date": "2020-11-04",
-          "status": "A"
-        },
-        "addresses": [
-          {
-            "country_code": "US",
-            "country_name": "United States",
-            "address_purpose": "MAILING",
-            "address_type": "DOM",
-            "address_1": "1312 38TH ST",
-            "city": "BROOKLYN",
-            "state": "NY",
-            "postal_code": "112183612",
-            "telephone_number": "718-686-3700"
-          },
-          {
-            "country_code": "US",
-            "country_name": "United States",
-            "address_purpose": "LOCATION",
-            "address_type": "DOM",
-            "address_1": "1312 38TH ST",
-            "city": "BROOKLYN",
-            "state": "NY",
-            "postal_code": "112183612",
-            "telephone_number": "718-686-3700"
-          }
-        ],
-        "taxonomies": [
-          {
-            "code": "174400000X",
-            "taxonomy_group": "",
-            "desc": "Specialist",
-            "state": null,
-            "license": null,
-            "primary": true
-          }
-        ],
-        "match_confidence": 1.0,
-        "signals": {
-          "direct_npi": true,
-          "from_api": true
-        }
-      },
-      "maps": {
-        "google_place_found": true,
-        "google_place_name": "Ezra Medical Center - 38th Street",
-        "google_place_address": "1312 38th St, Brooklyn, NY 11218, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJsVgFxtVawokRVO46qEbk_VU",
-        "match_score": 0.8039796139666017,
-        "details_found": true,
-        "formatted_address": "1312 38th St, Brooklyn, NY 11218, USA",
-        "google_phone": "(718) 686-7600",
-        "website": "http://www.ezramedical.org/",
-        "lat": 40.6406555,
-        "lng": -73.9853445,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJsVgFxtVawokRVO46qEbk_VU",
-        "name_fuzzy_match": 0.264,
-        "address_fuzzy_match": 0.805
-      },
-      "website": {
-        "provider_id": "11",
-        "url": "http://www.ezramedical.org/",
-        "status": "invalid_or_parked",
-        "signals": {
-          "is_js_heavy": true,
-          "is_parked_likely": true,
-          "parked_indicators": [
-            "coming soon"
-          ],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [],
-          "phones": [
-            "+1121815",
-            "+1121938",
-            "+1121860",
-            "+77186867600",
-            "7186867600",
-            "+71868676009"
-          ],
-          "addresses": [
-            "13th Ave Hours",
-            "Ezra 13th Ave Hours",
-            "3710 13th Avenue Brooklyn NY 11218",
-            "15th Ave Hours",
-            "Ezra 15th Ave Hours",
-            "5115 15th Avenue Brooklyn NY 11219",
-            "38th St. Hours",
-            "Ezra 38th St.",
-            "1312 38th street Brooklyn, NY 11218",
-            "60th St. Hours",
-            "Ezra 60th St.",
-            "1278 60th Street Brooklyn NY 11219",
-            "Pediatric Dentistry",
-            "General Dentistry",
-            "School-Based Dentistry",
-            "Gastroenterology",
-            "Board Members",
-            "Ezra Awards",
-            "The finest doctors in every department looking out for your health.",
-            "We bring your health full circle with close communication and coordination among all your medical professionals.",
-            "Our primary care department is known for maintaining legendary care standards and a vibrant, kid-friendly environment including a specially outfitted waiting room, cheerfully designed exam rooms, and professional doctors and nurses that make all the difference.",
-            "We take great pride in providing patients with the best medical attention from birth through infancy, during the toddler years, childhood, teen age, adulthood and the golden years. Best of all, we provide patients with the ultimate remedy: peace of mind.",
-            "Working closely with our doctors, our Nutrition division provides nutritional counseling for all ages. Nutrition specialties include weight management, diabetes management, cardiovascular disease, hypertension, high cholesterol, gastrointestinal disorders, food allergies, pediatrics and pre-natal nutrition.",
-            "This exciting, state-of-the-art physical therapy program utilizes the various benefits of warm water to facilitate healing and increased function. Aqua therapy can be an ideal introduction, or complement, to land-based physical therapy.",
-            "For rehabilitation following injury or surgery, Ezra's physical therapy services offer the best in rehabilitative recovery plans. Our vibrantly decorated therapy rooms are outfitted with all the weights, bands and balls used in traditional physical therapy, in addition to special PT treadmills and a PT table for more advanced therapeutic targeting.",
-            "Proper oral care is critical in early years to identify and correct conditions that may cause health issues later on. Ezra's pediatric specialists are trained to deal with the specific oral health needs of children's development while providing a positive dental experience, building towards a heathy future.",
-            "Being under the care of the right dentist is crucial to long-term dental health. From standard cleanings and checkups to more complicated dental work, our expert dentists and hygienists deliver a level of oral care guaranteed to brighten your smile.",
-            "Parents' work schedules, kids' school schedules, and lack of transportation make it challenging for children to receive regular dental treatment. Ezra cares, which is why our mobile School Based Dental Program visits community schools on a regular basis throughout the year, providing crucial preventive and restorative oral care.",
-            "Ezra's optometry department is where we provide comprehensive eye care for routine eye exams including prescribing eyeglasses and treating eye diseases. Additionally, our optometrists are specially trained in providing vision therapy services.",
-            "At Ezra, dermatology goes far beyond skin deep. Our dermatologists are renowned for remarkable cumulative skills and the foresight to introduce novel approaches that ensure accurate diagnosis and healing.",
-            "The foot specialists at Ezra skillfully help you put your best foot forward. Visit us for everything from routine care to orthotic treatment as well as laster treatment, diabetic foot exams and much more.",
-            "From prenatal visits and sonograms to well visits and laparoscopic surgery, experience an attentive, supportive care environment. Access every service that falls under obstetric and gynecological healthcare, including preventative medicine and personalized guidance throughout your entire care cycle-including pregnancy health, postpartum care, menopausal support and more.",
-            "NY State of Health",
-            "LATE HOURS ON SATURDAY NIGHTS!",
-            "JUST WALK IN TO 60TH ST FOR YOUR MMR VACCINE!",
-            "PROTECT YOURSELF AGAINST THE FLU!",
-            "Stay in the know with the latest health articles and tips",
-            "December 16, 2025",
-            "The Importance of Regular Dental Check-ups: Pediatric vs. Adult Dentistry Explained",
-            "December 15, 2025",
-            "Find the best pediatric care Brooklyn has for your child. A friendly guide to keeping little New Yorkers ha...",
-            "January 09, 2025",
-            "Exciting News: Ezra Medical Center's New 15th Avenue Location",
-            "We're thrilled to announce that Ezra Medical Center's newest location on 15th Avenue is coming soon!",
-            "See All Posts",
-            "Brooklyn's best care services live here",
-            "Ezra Medical - 13th Avenue",
-            "Discover the difference of outstanding healthcare at Ezra Medical Center's 13th Avenue location. Our commitment to providing exceptional medical services in a comfortable environment sets us apart. We look forward to the opportunity of serving you and your family, and aspire to become your trusted healthcare partner for all your medical, dental, vision, and OBGYN needs.",
-            "Ezra Medical - 15th Avenue",
-            "A welcoming presence on 15th Avenue, Ezra Medical Center invites you into a cutting-edge facility inspired by New York's finest hospitals.",
-            "Despite the bustle of medical professionals and support staff, the peace and calm speak volumes to Ezra's coordinated services roster and joyful visitor experience.",
-            "5115 15th Avenue Brooklyn, NY 11219",
-            "Ezra Medical - 38th Street",
-            "A welcoming presence on 38th Street, Ezra Medical Center invites you into a cutting-edge facility inspired by New York's finest hospitals.",
-            "1312 38th Street Brooklyn, NY 11218",
-            "Ezra Medical - 60th Street",
-            "The best things come in pairs. Our all-new second facility offers the same multispecialty convenience, serving up the finest Ezra services in another strategic location.",
-            "Not just in the heart of Brooklyn, our facilities are the heart of Brooklyn. Because Ezra is where our entire family holds your Health in good hands",
-            "Ezra 13th Ave",
-            "3710 13th Avenue",
-            "Brooklyn, NY 11218",
-            "Ezra 15th Ave",
-            "5115 15th Avenue",
-            "Brooklyn, NY 11219",
-            "Ezra  38th Street",
-            "1312 38th Street",
-            "Ezra 60th Street",
-            "1278 60th Street",
-            "Ezra is committed to protecting the privacy of its customers. This Privacy Policy outlines the types of information we collect, how we use it, and the steps we take to safeguard your data.",
-            "We may collect the following personal information from our customers:",
-            "* Payment information: Credit card or other payment details.",
-            "* To improve our services and customer experience.",
-            "We implement robust security measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. These measures include:",
-            "* Encryption: Using encryption to protect data in transit and at rest.",
-            "* Regular monitoring: Monitoring our systems for security threats.",
-            "* Employee training: Providing training to our employees on data security best practices.",
-            "We may share your personal information with third parties under the following circumstances:",
-            "* Legal requirements: To comply with legal obligations or law enforcement requests.",
-            "You have the following rights regarding your personal information:",
-            "* Access: To request access to your personal information.",
-            "* Correction: To request the correction of inaccurate or incomplete information.",
-            "* Deletion: To request the deletion of your personal information.",
-            "If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at:",
-            "By providing your phone number, you consent to receive SMS messages from us for purposes related to our services. Please note that your phone number will not be shared with third parties for marketing purposes."
-          ],
-          "score": 0.67
-        },
-        "doctor": {
-          "name": "Estreya Esther Aboud",
-          "doctor_page_found": false,
-          "doctor_pages": [
-            "http://www.ezramedical.org/doctors"
-          ],
-          "doctor_emails": [],
-          "doctor_phones": [
-            "+1121815",
-            "+1121938",
-            "+1121860",
-            "+77186867600",
-            "+71868676009"
-          ],
-          "structured_profile": null,
-          "score": 0
-        },
-        "website_trust_score": 0.0
-      }
-    },
-    "signals": {},
-    "confidence": 0.681,
-    "status": "REVIEW"
   },
   "20": {
     "provider_id": "20",
-    "timestamp_utc": "2025-12-17T02:20:34.453757+00:00",
+    "timestamp_utc": "2025-12-17T17:27:05.671168+00:00",
     "base_validation": {
       "provider_id": "20",
-      "timestamp_utc": "2025-12-16T20:14:06.920188Z",
+      "timestamp_utc": "2025-12-17T17:26:39.258537Z",
       "normalized": {
         "name": "Marie A Little",
         "phone": "5133065098",
@@ -2532,32 +1550,23 @@
         }
       },
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "15 Glen Este Pl",
-        "google_place_address": "15 Glen Este Pl, Cincinnati, OH 45217, USA",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJQ9XHDHSzQYgRuvROP_9IKxM",
-        "match_score": 0.6475648773551368,
-        "details_found": true,
-        "formatted_address": "15 Glen Este Pl, Cincinnati, OH 45217, USA",
-        "google_phone": null,
-        "website": null,
-        "lat": 39.154607,
-        "lng": -84.5052189,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJQ9XHDHSzQYgRuvROP_9IKxM",
-        "name_fuzzy_match": 0.207,
-        "address_fuzzy_match": 0.825
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.416,
+    "confidence": 0.19,
     "status": "PENDING"
   },
   "21": {
     "provider_id": "21",
-    "timestamp_utc": "2025-12-17T02:20:35.270947+00:00",
+    "timestamp_utc": "2025-12-17T17:27:10.778625+00:00",
     "base_validation": {
       "provider_id": "21",
-      "timestamp_utc": "2025-12-16T20:14:06.944187Z",
+      "timestamp_utc": "2025-12-17T17:26:39.296473Z",
       "normalized": {
         "name": "Martha H Aaron",
         "phone": "5033704950",
@@ -2648,32 +1657,23 @@
         }
       },
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "Aaron Martha MD",
-        "google_place_address": "4747 Skyline Rd S, Salem, OR 97306, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJJel2uDoHwFQRKta_hVN_lwM",
-        "match_score": 0.6872733736224672,
-        "details_found": true,
-        "formatted_address": "4747 Skyline Rd S, Salem, OR 97306, USA",
-        "google_phone": "(503) 370-4950",
-        "website": null,
-        "lat": 44.8901558,
-        "lng": -123.0618497,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJJel2uDoHwFQRKta_hVN_lwM",
-        "name_fuzzy_match": 0.483,
-        "address_fuzzy_match": 0.763
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.487,
+    "confidence": 0.247,
     "status": "PENDING"
   },
   "17": {
     "provider_id": "17",
-    "timestamp_utc": "2025-12-17T02:20:29.229750+00:00",
+    "timestamp_utc": "2025-12-17T17:27:05.388210+00:00",
     "base_validation": {
       "provider_id": "17",
-      "timestamp_utc": "2025-12-16T20:14:06.859648Z",
+      "timestamp_utc": "2025-12-17T17:26:38.954575Z",
       "normalized": {
         "name": "Kimberly Ann A'Hearn Pt",
         "phone": "4232387217",
@@ -2696,61 +1696,23 @@
     },
     "enriched": {
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "Hamilton Spine Health & Sport",
-        "google_place_address": "1225 Broadrick Dr, Dalton, GA 30720, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJVa-VFOJ0YIgR_By8blPuI1o",
-        "match_score": 0.7675824175824176,
-        "details_found": true,
-        "formatted_address": "1225 Broadrick Dr, Dalton, GA 30720, USA",
-        "google_phone": "(706) 529-3686",
-        "website": "https://www.hamiltonhealth.com/spineandsport",
-        "lat": 34.7843554,
-        "lng": -84.9863654,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJVa-VFOJ0YIgR_By8blPuI1o",
-        "name_fuzzy_match": 0.346,
-        "address_fuzzy_match": 0.593
-      },
-      "website": {
-        "provider_id": "17",
-        "url": "https://www.hamiltonhealth.com/spineandsport",
-        "status": "fail",
-        "signals": {
-          "is_js_heavy": false,
-          "is_parked_likely": false,
-          "parked_indicators": [],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [],
-          "phones": [],
-          "addresses": [],
-          "score": 0.0
-        },
-        "doctor": {
-          "name": "Kimberly Ann A'Hearn Pt",
-          "doctor_page_found": false,
-          "doctor_pages": [],
-          "doctor_emails": [],
-          "doctor_phones": [],
-          "structured_profile": null,
-          "score": 0.0
-        },
-        "website_trust_score": 0.0,
-        "error": "Blocked by robots.txt",
-        "trace": []
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.269,
+    "confidence": 0.0,
     "status": "PENDING"
   },
   "19": {
     "provider_id": "19",
-    "timestamp_utc": "2025-12-17T02:20:31.276957+00:00",
+    "timestamp_utc": "2025-12-17T17:27:05.497790+00:00",
     "base_validation": {
       "provider_id": "19",
-      "timestamp_utc": "2025-12-16T20:14:06.892651Z",
+      "timestamp_utc": "2025-12-17T17:26:39.205941Z",
       "normalized": {
         "name": "Kian S Abdul-Baki Do",
         "phone": "4097471883",
@@ -2773,32 +1735,23 @@
     },
     "enriched": {
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "Kian Abdul-Baki",
-        "google_place_address": "UNIVERSITY OF TEXAS MEDICAL BRANCH, 301 University Blvd, Galveston, TX 77555, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJ2f9HPzaeP4YRutM_PcQI82g",
-        "match_score": 0.7955665024630542,
-        "details_found": true,
-        "formatted_address": "UNIVERSITY OF TEXAS MEDICAL BRANCH, 301 University Blvd, Galveston, TX 77555, USA",
-        "google_phone": "(409) 747-1883",
-        "website": null,
-        "lat": 29.3109299,
-        "lng": -94.7759142,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJ2f9HPzaeP4YRutM_PcQI82g",
-        "name_fuzzy_match": 0.857,
-        "address_fuzzy_match": 0.897
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.278,
+    "confidence": 0.0,
     "status": "PENDING"
   },
   "24": {
     "provider_id": "24",
-    "timestamp_utc": "2025-12-17T02:20:39.536994+00:00",
+    "timestamp_utc": "2025-12-17T17:27:16.309330+00:00",
     "base_validation": {
       "provider_id": "24",
-      "timestamp_utc": "2025-12-16T20:14:07.035734Z",
+      "timestamp_utc": "2025-12-17T17:26:39.480008Z",
       "normalized": {
         "name": "Puya Alikhani",
         "phone": "8132590965",
@@ -2877,61 +1830,101 @@
         }
       },
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "Puya Alikhani",
-        "google_place_address": "6 Tampa General Cir Fl 1, Tampa, FL 33606, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJv9w5IJLEwogRQB2ykI6S2M4",
-        "match_score": 0.9363636363636365,
-        "details_found": true,
-        "formatted_address": "6 Tampa General Cir Fl 1, Tampa, FL 33606, USA",
-        "google_phone": "(813) 821-8034",
-        "website": "https://find-a-doctor.health.usf.edu/provider/Puya+Alikhani/725964",
-        "lat": 27.9393241,
-        "lng": -82.4589036,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJv9w5IJLEwogRQB2ykI6S2M4",
-        "name_fuzzy_match": 1.0,
-        "address_fuzzy_match": 0.745
-      },
-      "website": {
-        "provider_id": "24",
-        "url": "https://find-a-doctor.health.usf.edu/provider/Puya+Alikhani/725964",
-        "status": "fail",
-        "signals": {
-          "is_js_heavy": false,
-          "is_parked_likely": false,
-          "parked_indicators": [],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [],
-          "phones": [],
-          "addresses": [],
-          "score": 0.0
-        },
-        "doctor": {
-          "name": "Puya Alikhani",
-          "doctor_page_found": false,
-          "doctor_pages": [],
-          "doctor_emails": [],
-          "doctor_phones": [],
-          "structured_profile": null,
-          "score": 0.0
-        },
-        "website_trust_score": 0.0,
-        "error": "Blocked by robots.txt",
-        "trace": []
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.57,
-    "status": "REVIEW"
+    "confidence": 0.242,
+    "status": "PENDING"
+  },
+  "22": {
+    "provider_id": "22",
+    "timestamp_utc": "2025-12-17T17:27:15.497151+00:00",
+    "base_validation": {
+      "provider_id": "22",
+      "timestamp_utc": "2025-12-17T17:26:39.341203Z",
+      "normalized": {
+        "name": "Dr. Mark K Aasen",
+        "phone": "4143257246",
+        "address": "4131 W. LOOMIS RD STE 300 GREENFIELD, WI 53221-2059 United States",
+        "registration_number": "",
+        "license_status": "",
+        "issue_date": "",
+        "expiry_date": "",
+        "npi": ""
+      },
+      "missing_fields": [
+        "license_number",
+        "license_status",
+        "expiry_date",
+        "npi",
+        "issue_date"
+      ],
+      "overall_confidence": 0.25,
+      "validation_status": "FAIL_NEEDS_REVIEW"
+    },
+    "enriched": {
+      "maps": {
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
+      }
+    },
+    "signals": {},
+    "confidence": 0.0,
+    "status": "PENDING"
+  },
+  "23": {
+    "provider_id": "23",
+    "timestamp_utc": "2025-12-17T17:27:15.868978+00:00",
+    "base_validation": {
+      "provider_id": "23",
+      "timestamp_utc": "2025-12-17T17:26:39.422023Z",
+      "normalized": {
+        "name": "Dr. Puya Abbassi D.O.",
+        "phone": "4088855000",
+        "address": "751 S BASCOM AVE SAN JOSE, CA 95128-2699 United States",
+        "registration_number": "",
+        "license_status": "",
+        "issue_date": "",
+        "expiry_date": "",
+        "npi": ""
+      },
+      "missing_fields": [
+        "license_number",
+        "license_status",
+        "expiry_date",
+        "npi",
+        "issue_date"
+      ],
+      "overall_confidence": 0.25,
+      "validation_status": "FAIL_NEEDS_REVIEW"
+    },
+    "enriched": {
+      "maps": {
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
+      }
+    },
+    "signals": {},
+    "confidence": 0.0,
+    "status": "PENDING"
   },
   "26": {
     "provider_id": "26",
-    "timestamp_utc": "2025-12-17T02:20:40.631457+00:00",
+    "timestamp_utc": "2025-12-17T17:27:22.825595+00:00",
     "base_validation": {
       "provider_id": "26",
-      "timestamp_utc": "2025-12-16T20:14:07.090736Z",
+      "timestamp_utc": "2025-12-17T17:26:39.622669Z",
       "normalized": {
         "name": "Dr. Chitra Sadasiwan Bhosekar M.D",
         "phone": "9204457222",
@@ -3011,61 +2004,23 @@
         }
       },
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "Chitra Bhosekar, MD",
-        "google_place_address": "2020 Riverside Dr # 200, Green Bay, WI 54301, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJJ38xhhtfAogRIV9ALtExGYM",
-        "match_score": 0.8184615384615386,
-        "details_found": true,
-        "formatted_address": "2020 Riverside Dr # 200, Green Bay, WI 54301, USA",
-        "google_phone": "(920) 433-9920",
-        "website": "https://care.bellin.org/provider/chitra-s-bhosekar/4824345?utm_source=google&utm_medium=local_listing&utm_campaign=uberall_listings&utm_content=5149194",
-        "lat": 44.487227,
-        "lng": -88.029778,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJJ38xhhtfAogRIV9ALtExGYM",
-        "name_fuzzy_match": 0.692,
-        "address_fuzzy_match": 0.52
-      },
-      "website": {
-        "provider_id": "26",
-        "url": "https://care.bellin.org/provider/chitra-s-bhosekar/4824345?utm_source=google&utm_medium=local_listing&utm_campaign=uberall_listings&utm_content=5149194",
-        "status": "fail",
-        "signals": {
-          "is_js_heavy": false,
-          "is_parked_likely": false,
-          "parked_indicators": [],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [],
-          "phones": [],
-          "addresses": [],
-          "score": 0.0
-        },
-        "doctor": {
-          "name": "Dr. Chitra Sadasiwan Bhosekar M.D",
-          "doctor_page_found": false,
-          "doctor_pages": [],
-          "doctor_emails": [],
-          "doctor_phones": [],
-          "structured_profile": null,
-          "score": 0.0
-        },
-        "website_trust_score": 0.0,
-        "error": "Blocked by robots.txt",
-        "trace": []
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.686,
-    "status": "REVIEW"
+    "confidence": 0.4,
+    "status": "PENDING"
   },
   "27": {
     "provider_id": "27",
-    "timestamp_utc": "2025-12-17T02:20:41.111653+00:00",
+    "timestamp_utc": "2025-12-17T17:27:23.188571+00:00",
     "base_validation": {
       "provider_id": "27",
-      "timestamp_utc": "2025-12-16T20:14:07.108762Z",
+      "timestamp_utc": "2025-12-17T17:26:39.723231Z",
       "normalized": {
         "name": "Jordan M Abel Md",
         "phone": "3608278400",
@@ -3142,109 +2097,23 @@
         }
       },
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "Jordan M. Abel, MD",
-        "google_place_address": "18313 Paulson St SW Suite A, Rochester, WA 98579, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJETL7oSgLkVQRVck4tPsD4os",
-        "match_score": 0.9319289878113408,
-        "details_found": true,
-        "formatted_address": "18313 Paulson St SW Suite A, Rochester, WA 98579, USA",
-        "google_phone": "(360) 827-8400",
-        "website": "https://www.providence.org/doctors/family-medicine-obstetrics/wa/rochester/jordan-abel-1821438029?ls=provider&y_source=1_NDQxMzcyNDMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
-        "lat": 46.8212844,
-        "lng": -123.0860874,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJETL7oSgLkVQRVck4tPsD4os",
-        "name_fuzzy_match": 0.941,
-        "address_fuzzy_match": 0.775
-      },
-      "website": {
-        "provider_id": "27",
-        "url": "https://www.providence.org/doctors/family-medicine-obstetrics/wa/rochester/jordan-abel-1821438029?ls=provider&y_source=1_NDQxMzcyNDMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
-        "status": "fail",
-        "signals": {
-          "is_js_heavy": false,
-          "is_parked_likely": false,
-          "parked_indicators": [],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [],
-          "phones": [],
-          "addresses": [],
-          "score": 0.0
-        },
-        "doctor": {
-          "name": "Jordan M Abel Md",
-          "doctor_page_found": false,
-          "doctor_pages": [],
-          "doctor_emails": [],
-          "doctor_phones": [],
-          "structured_profile": null,
-          "score": 0.0
-        },
-        "website_trust_score": 0.0,
-        "error": "Blocked by robots.txt",
-        "trace": []
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.726,
-    "status": "REVIEW"
-  },
-  "23": {
-    "provider_id": "23",
-    "timestamp_utc": "2025-12-17T02:20:37.862251+00:00",
-    "base_validation": {
-      "provider_id": "23",
-      "timestamp_utc": "2025-12-16T20:14:07.001192Z",
-      "normalized": {
-        "name": "Dr. Puya Abbassi D.O.",
-        "phone": "4088855000",
-        "address": "751 S BASCOM AVE SAN JOSE, CA 95128-2699 United States",
-        "registration_number": "",
-        "license_status": "",
-        "issue_date": "",
-        "expiry_date": "",
-        "npi": ""
-      },
-      "missing_fields": [
-        "license_number",
-        "license_status",
-        "expiry_date",
-        "npi",
-        "issue_date"
-      ],
-      "overall_confidence": 0.25,
-      "validation_status": "FAIL_NEEDS_REVIEW"
-    },
-    "enriched": {
-      "maps": {
-        "google_place_found": true,
-        "google_place_name": "Santa Clara Valley Medical Center",
-        "google_place_address": "751 S Bascom Ave, San Jose, CA 95128, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJ54JcoTHLj4ARwKWou-_AueA",
-        "match_score": 0.6497076023391813,
-        "details_found": true,
-        "formatted_address": "751 S Bascom Ave, San Jose, CA 95128, USA",
-        "google_phone": "(408) 885-5000",
-        "website": null,
-        "lat": 37.3139499,
-        "lng": -121.9340007,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJ54JcoTHLj4ARwKWou-_AueA",
-        "name_fuzzy_match": 0.222,
-        "address_fuzzy_match": 0.821
-      }
-    },
-    "signals": {},
-    "confidence": 0.227,
+    "confidence": 0.4,
     "status": "PENDING"
   },
   "25": {
     "provider_id": "25",
-    "timestamp_utc": "2025-12-17T02:20:39.887616+00:00",
+    "timestamp_utc": "2025-12-17T17:27:21.442021+00:00",
     "base_validation": {
       "provider_id": "25",
-      "timestamp_utc": "2025-12-16T20:14:07.064734Z",
+      "timestamp_utc": "2025-12-17T17:26:39.556615Z",
       "normalized": {
         "name": "Dr. Purita Episcope Ambat Dmd",
         "phone": "7183887007",
@@ -3267,32 +2136,23 @@
     },
     "enriched": {
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "Dr. Rachel E. Ambat, DDS",
-        "google_place_address": "749 Grand St, Brooklyn, NY 11211, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJZypwZlZZwokRne29ykEcY8I",
-        "match_score": 0.7317902588854761,
-        "details_found": true,
-        "formatted_address": "749 Grand St, Brooklyn, NY 11211, USA",
-        "google_phone": "(718) 388-7007",
-        "website": null,
-        "lat": 40.7119113,
-        "lng": -73.9430314,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJZypwZlZZwokRne29ykEcY8I",
-        "name_fuzzy_match": 0.642,
-        "address_fuzzy_match": 0.814
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.256,
+    "confidence": 0.0,
     "status": "PENDING"
   },
   "28": {
     "provider_id": "28",
-    "timestamp_utc": "2025-12-17T02:20:44.587986+00:00",
+    "timestamp_utc": "2025-12-17T17:27:27.489138+00:00",
     "base_validation": {
       "provider_id": "28",
-      "timestamp_utc": "2025-12-16T20:14:07.125148Z",
+      "timestamp_utc": "2025-12-17T17:26:39.773935Z",
       "normalized": {
         "name": "Rookmini Singh Fnp",
         "phone": "6469622700",
@@ -3367,61 +2227,23 @@
         }
       },
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "NY Presbyterian Weill Cornell University Hospital of Columbia and Cornell",
-        "google_place_address": "505 E 70th St, New York, NY 10021, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJHVqn_cNYwokRUWwaae6BK7w",
-        "match_score": 0.7861896530435857,
-        "details_found": true,
-        "formatted_address": "505 E 70th St, New York, NY 10021, USA",
-        "google_phone": "(212) 746-2900",
-        "website": "https://www.nyp.org/acn/primary-care/weill-cornell-internal-medicine-associates-helmsley",
-        "lat": 40.7657186,
-        "lng": -73.9541658,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJHVqn_cNYwokRUWwaae6BK7w",
-        "name_fuzzy_match": 0.198,
-        "address_fuzzy_match": 0.787
-      },
-      "website": {
-        "provider_id": "28",
-        "url": "https://www.nyp.org/acn/primary-care/weill-cornell-internal-medicine-associates-helmsley",
-        "status": "fail",
-        "signals": {
-          "is_js_heavy": false,
-          "is_parked_likely": false,
-          "parked_indicators": [],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [],
-          "phones": [],
-          "addresses": [],
-          "score": 0.0
-        },
-        "doctor": {
-          "name": "Rookmini Singh Fnp",
-          "doctor_page_found": false,
-          "doctor_pages": [],
-          "doctor_emails": [],
-          "doctor_phones": [],
-          "structured_profile": null,
-          "score": 0.0
-        },
-        "website_trust_score": 0.0,
-        "error": "Blocked by robots.txt",
-        "trace": []
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.675,
-    "status": "REVIEW"
+    "confidence": 0.4,
+    "status": "PENDING"
   },
   "29": {
     "provider_id": "29",
-    "timestamp_utc": "2025-12-17T02:20:46.227623+00:00",
+    "timestamp_utc": "2025-12-17T17:27:31.989927+00:00",
     "base_validation": {
       "provider_id": "29",
-      "timestamp_utc": "2025-12-16T20:14:07.145157Z",
+      "timestamp_utc": "2025-12-17T17:26:39.818703Z",
       "normalized": {
         "name": "Malak S Al-Alawi",
         "phone": "2484364400",
@@ -3496,200 +2318,23 @@
         }
       },
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "27777 Inkster Rd",
-        "google_place_address": "27777 Inkster Rd, Farmington Hills, MI 48336, USA",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJY8MO-Ti3JIgRbAAdOk6W100",
-        "match_score": 0.6367117117117118,
-        "details_found": true,
-        "formatted_address": "27777 Inkster Rd, Farmington Hills, MI 48336, USA",
-        "google_phone": null,
-        "website": null,
-        "lat": 42.4917879,
-        "lng": -83.3230462,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJY8MO-Ti3JIgRbAAdOk6W100",
-        "name_fuzzy_match": 0.125,
-        "address_fuzzy_match": 0.847
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.623,
-    "status": "REVIEW"
-  },
-  "22": {
-    "provider_id": "22",
-    "timestamp_utc": "2025-12-17T02:20:35.888061+00:00",
-    "base_validation": {
-      "provider_id": "22",
-      "timestamp_utc": "2025-12-16T20:14:06.972188Z",
-      "normalized": {
-        "name": "Dr. Mark K Aasen",
-        "phone": "4143257246",
-        "address": "4131 W. LOOMIS RD STE 300 GREENFIELD, WI 53221-2059 United States",
-        "registration_number": "",
-        "license_status": "",
-        "issue_date": "",
-        "expiry_date": "",
-        "npi": ""
-      },
-      "missing_fields": [
-        "license_number",
-        "license_status",
-        "expiry_date",
-        "npi",
-        "issue_date"
-      ],
-      "overall_confidence": 0.25,
-      "validation_status": "FAIL_NEEDS_REVIEW"
-    },
-    "enriched": {
-      "maps": {
-        "google_place_found": true,
-        "google_place_name": "Pain Physicians of Wisconsin - Dr. Mark Aasen",
-        "google_place_address": "2500 W Layton Ave #200, Milwaukee, WI 53221, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJ75bnCtIRBYgRiA9VU-BG1IM",
-        "match_score": 0.7258740751487016,
-        "details_found": true,
-        "formatted_address": "2500 W Layton Ave #200, Milwaukee, WI 53221, USA",
-        "google_phone": "(262) 297-7246",
-        "website": "http://www.ppwhealth.com/?utm_source=GMBSocialClimb&utm_medium=PainPhysiciansofWisconsin-Dr.MarkAasen",
-        "lat": 42.9600078,
-        "lng": -87.9456232,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJ75bnCtIRBYgRiA9VU-BG1IM",
-        "name_fuzzy_match": 0.459,
-        "address_fuzzy_match": 0.336
-      },
-      "website": {
-        "provider_id": "22",
-        "url": "http://www.ppwhealth.com/?utm_source=GMBSocialClimb&utm_medium=PainPhysiciansofWisconsin-Dr.MarkAasen",
-        "status": "ok",
-        "signals": {
-          "is_js_heavy": false,
-          "is_parked_likely": false,
-          "parked_indicators": [],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [
-            "newpatients@prospinepain.com"
-          ],
-          "phones": [
-            "2622977246",
-            "+1010574"
-          ],
-          "addresses": [
-            "Nerve Block",
-            "Vertebroplasty and Kyphoplasty",
-            "Insurance List",
-            "Frequently Asked Questions",
-            "Request Medical Records",
-            "Patient Registration Form",
-            "Madison Clinic",
-            "Kenosha Clinic",
-            "Waukesha Clinic",
-            "Layton Clinic",
-            "Franklin Clinic",
-            "Brookfield Clinic",
-            "Request Appointment",
-            "Wisconsin’s Leading Interventional Pain Management Clinic",
-            "We provide exceptional pain management care in a collaborative, patient-focused environment—offering a level of personalized treatment that sets us apart from traditional healthcare systems.",
-            "Experience the Expertise and Compassion of Trusted Pain Specialists at Pro Spine & Pain",
-            "When it comes to managing and alleviating pain, our experience and skillset set us apart. We’ve successfully resolved even the most challenging pain conditions, where others have fallen short using both non-surgical and surgical treatment approaches. Your road to recovery starts with us.",
-            "Pro Spine Pain, the best pain management clinic in Wisconsin, is a full-service center equipped with some of the most advanced diagnostic tools available.",
-            "Whether you're experiencing pain from head to toe, you can trust our specialists to provide expert care, starting with an accurate diagnosis. But what truly sets us apart is our commitment to precision, innovation, and patient-centered treatment.",
-            "As the name suggests, CRPS is a complex disease typically associated with injury",
-            "As one of the most advanced pain management centers in Wisconsin, Pro Spine & Pain specializes in interventional treatments designed to relieve pain and restore function.",
-            "Our modern facility offers a comfortable setting where you'll receive expert care from a compassionate team of pain management specialists. Most treatments are performed on-site, ensuring convenient access to comprehensive pain relief—all under one roof.",
-            "Innovative approaches for safer outcomes along with faster recovery",
-            "Research driven care to provide you the best neuromodulation solution",
-            "We offer safe minimally invasive treatment options, such as nerve block injections, to provide an immediate pain relief.",
-            "Experienced & Reputable Pain Specialists in Wisconsin",
-            "At Pro Spine & Pain, our team of highly skilled, board-certified physicians is dedicated to providing advanced interventional pain management. Dr. Thomas Stauss, MD, Dr. Mark Aasen, MD, Dr. Dino Tsoulfas, MD, and Dr. Joseph Reyes, DO, bring years of expertise in treating a wide range of pain conditions.",
-            "As nationally recognized specialists in their respective fields, our doctors work together to create personalized, effective treatment plans. With a patient-centered approach, each physician is committed to delivering the best possible care to help you achieve lasting pain relief.",
-            "Thomas Stauss, MD",
-            "Board Certified in Pain Management",
-            "Board Certified in Anesthesiology",
-            "Board Certified in Pain Management Fellowship Trained in Pain Management",
-            "Board Certified in Family Medicine",
-            "Board-Certified in Pain Management",
-            "Board-Certified in Physical Medicine & Rehabilitation and Sports Medicine",
-            "How To Find a Pain Clinic in Your Area",
-            "If you're seeking a pain clinic nearby, here are a few tips:",
-            "pain management clinic near me",
-            "Read reviews of local pain clinics online and schedule consultations to get to know their practice.",
-            "At Pro Spine Pain, our skilled, compassionate team provides cutting-edge procedures and techniques, including pharmacotherapy, psychotherapy, integrative treatments, and advanced minimally invasive surgery. We prioritize individualized patient care and accompany you throughout your healthcare journey, addressing all your questions and guiding you toward a pain-free life.",
-            "At Pro Spine & Pain, we are committed to delivering high-quality care that is both accessible and affordable for individuals and families. Our board-certified physicians and specialists bring years of training and experience, always prioritizing your health and well-being. We are dedicated to helping you achieve optimal pain relief and improved quality of life.",
-            "I had an epidural steroid injection for sciatica by Dr. Stauss today. I had it with no sedation, and the procedure was very tolerable. Dr. Stauss is professional, empathetic, thorough, and clearly very talented. His staff was excellent. They were attentive, caring, and professional. I would highly recommend Dr. Stauss and his team to anyone in pain.",
-            "This clinic is absolutely amazing. They have gone beyond my expectations to assist with my medical issues. I'm so blessed to have them on the top of my care, truthfully I don't know where I would be at if I didn't have them.",
-            "The providers are professional and empathetic. Without my care team I wouldn’t be able to live a somewhat normal life. The doctors and nurse practitioners are very knowledgeable and informative. I have had great experiences with my team and very thankful to have them to help with my life long pain control.",
-            "I CANT RECOMMEND THIS WONDERFUL CLINIC ENOUGH!!! From the warm, courteous staff to the exceptional Doctor who did my injections! Bravo sir! I did not feel any discomfort and IN literally 5 seconds it was over! If you need injections Dr. Dino is your Doctor!!!",
-            "This was my first time visiting the Waukesha Pro Pain & Spine Clinic . From the minute, I walked into the office I was greeted by Deb, the receptionist. was the sweetest person I have ever met. She wasn’t only helpful. Her personality was so sweet and it wasn’t just me she was kind and helpful to everyone. She went above and beyond to help everyone.",
-            "Dr Stauss and staff have been absolutely amazing. From the front desk staff to the nurses. I have never been happier with my results. It was the best decision I ever made coming to this practice.",
-            "Your well-being is our top priority. From the moment you walk through our doors, our dedicated team is focused on helping you achieve lasting pain relief.",
-            "34 Schroeder Court, Madison, WI 53711",
-            "4202 W. Oakwood Park Court, Franklin, WI 53132",
-            "10105 74th Street, Suite 101, Kenosha, WI 53142",
-            "2500 W. Layton Ave, Ste 200, Milwaukee, WI 53221",
-            "1200 Delafield Street, Waukesha, WI 53188",
-            "17495 W Capitol Dr. Suite L, Brookfield, WI 53045",
-            "Request an Appointment",
-            "Take the first step toward effective pain management. Consult with our dedicated doctors today.",
-            "Getting an accurate diagnosis can be one of the most impactful experiences that you can have.",
-            "You Have Any Question?",
-            "Accessibility Statement",
-            "The information on this website is for informational purposes only. While we strive for accuracy, we make no guarantees about the completeness or reliability of the content. It's not medical advice; consult a healthcare professional for personalized guidance. We are not liable for any errors or damages resulting from the use of this information."
-          ],
-          "score": 1.0
-        },
-        "doctor": {
-          "name": "Dr. Mark K Aasen",
-          "doctor_page_found": false,
-          "doctor_pages": [
-            "https://prospinepain.com/physicians/",
-            "https://prospinepain.com/advanced-practice-providers/",
-            "https://prospinepain.com/best-pain-management-doctors-wisconsin/",
-            "https://prospinepain.com/motor-vehicle-accident-treatment/",
-            "http://www.ppwhealth.com/thomas-stauss/",
-            "http://www.ppwhealth.com/mark-aasen/"
-          ],
-          "doctor_emails": [
-            "newpatients@prospinepain.com"
-          ],
-          "doctor_phones": [
-            "2622977246",
-            "2625004810",
-            "1679119689",
-            "1841267572"
-          ],
-          "structured_profile": {
-            "qualifications": [],
-            "colleges": [],
-            "work_experience": [
-              "Read reviews of local pain doctors online and schedule consultations to get to know their practice.",
-              "Patient Experience",
-              "I have been a patient for over 18 yrs I love Dr dino ❤️ and his staff they always treat me with kindness and compassion cuzz it's sometimes hard to be happy in pain theu understand this. Best of the bestest",
-              "Dr. Dino, and his team, have helped me tremendously to get my chronic pain managed at a really good level. They take good care of you from start to finish and I would recommend them to anyone. They’ve helped me so much, I just can’t say a enough good things. I’ve been coming her for five or six years now, at least, and wouldn’t go anywhere else!",
-              "Dr Thomas Stauss and company is the team you need when it comes to pain. Has been my go to team for my pain for over 20 years.",
-              "(262) 500-4810",
-              "1679119689"
-            ],
-            "working_location": ""
-          },
-          "score": 0
-        },
-        "website_trust_score": 0.6
-      }
-    },
-    "signals": {},
-    "confidence": 0.404,
+    "confidence": 0.4,
     "status": "PENDING"
   },
   "30": {
     "provider_id": "30",
-    "timestamp_utc": "2025-12-17T02:20:47.662348+00:00",
+    "timestamp_utc": "2025-12-17T17:27:32.828270+00:00",
     "base_validation": {
       "provider_id": "30",
-      "timestamp_utc": "2025-12-16T20:14:07.162148Z",
+      "timestamp_utc": "2025-12-17T17:26:39.876840Z",
       "normalized": {
         "name": "Nanine Beal",
         "phone": "7072682990",
@@ -3763,263 +2408,106 @@
         }
       },
       "maps": {
-        "google_place_found": true,
-        "google_place_name": "Humboldt County Behavioral Health",
-        "google_place_address": "720 Wood St, Eureka, CA 95501, United States",
-        "google_place_proof": "https://www.google.com/maps/place/?q=place_id:ChIJ08nNUJP_01QRQOq5cMZxUlI",
-        "match_score": 0.8020763187429855,
-        "details_found": true,
-        "formatted_address": "720 Wood St, Eureka, CA 95501, USA",
-        "google_phone": "(707) 268-2900",
-        "website": "https://humboldtgov.org/329/Behavioral-Health",
-        "lat": 40.7809769,
-        "lng": -124.1610467,
-        "proof_link": "https://www.google.com/maps/place/?q=place_id:ChIJ08nNUJP_01QRQOq5cMZxUlI",
-        "name_fuzzy_match": 0.273,
-        "address_fuzzy_match": 0.79
-      },
-      "website": {
-        "provider_id": "30",
-        "url": "https://humboldtgov.org/329/Behavioral-Health",
-        "status": "ok",
-        "signals": {
-          "is_js_heavy": true,
-          "is_parked_likely": false,
-          "parked_indicators": [],
-          "not_medical_site": false
-        },
-        "hospital": {
-          "emails": [],
-          "phones": [
-            "8557659703",
-            "8558457415",
-            "8776635433",
-            "7074452881",
-            "7074436042",
-            "+18666686543",
-            "7074457715",
-            "+888849572824",
-            "8007352929",
-            "7072682900",
-            "7074764054",
-            "7072682990",
-            "+7074764049720",
-            "+20202021"
-          ],
-          "addresses": [
-            "- Manage notification subscriptions, save form progress and more.",
-            "Administration",
-            "Behavioral Health programs and services are committed to the principles of recovery, wellness, and discovery, which states that every client has the ability to:",
-            "Develop the interest and skills to determine how best to advantage \"failure\"",
-            "Advance their abilities in developing strong and lasting relationships of their choice.",
-            "Behavioral Health Board",
-            "The Humboldt County Behavioral Health Board meets monthly to discuss and evaluate the community’s behavioral health needs and priorities.",
-            "Mental Health Quality Improvement monitors services that are provided throughout Humboldt County’s Mental Health Plan—including contracted providers—to ensure that state contracts and state and federal regulations are met.",
-            "The Community Assistance, Recovery and Empowerment (CARE) Act is a new state law meant to support those living with untreated schizophrenia spectrum or other psychotic disorders by allowing a court to order individuals into behavioral health treatment in community-based settings.",
-            "Crisis Stabilization Unit",
-            "Crisis Stabilization Unit (CSU) is an outpatient program that provides crisis intervention and stabilization services to individuals in need of immediate crisis services.",
-            "The Hope Center is a safe, positive environment where clients learn to live the best life possible - personally, socially, mentally and emotionally. It is a place to relax, create, socialize, play games, learn new skills and maximize your potential.",
-            "The Mobile Response Team is a field-based crisis response team that engages in proactive case management, peer support and clinical care before, during and after a mental health crisis.",
-            "Sempervirens (SV) offers a locked facility for clients who have serious and persistent mental illness and need acute psychiatric care.",
-            "Substance Use Disorder Treatment Services",
-            "Our Substance Use Disorder (SUD) Treatment Services assist individuals who are experiencing substance use problems that are impacting their physical health, interpersonal relationships or causing employment or legal issues.",
-            "24-hour Substance Use Disorder Access Line 855-765-9703",
-            "Some of the symptoms that may qualify a person for SMHS include, but are not limited to, severely depressed mood, suicide attempts, self-harm, psychiatric hospitalizations, hallucinations, inability to work or go to school, difficulty maintaining housing and/or an inability to meet daily needs for long periods of time.",
-            "are used to ensure the best treatment outcomes.",
-            ": Call 310-855-HOPE or 800-TLC-TEEN (nationwide toll-free) from 6pm to 10pm PST or Text \"TEEN\" to 839863 between 6:00pm-9:00pm PST to receive person teen-to-teen education and support.",
-            "North Coast Rape Crisis Team",
-            "Humboldt Domestic Violence Services:",
-            "5 Minute Mindfulness Meditation - Diana Winston",
-            "Down Dog Yoga app - free through April 1st for public and through July 1st for educators and students",
-            "24-hour Substance Use Disorder Access Line",
-            "720 Wood St.",
-            "Eureka, CA 95501",
-            "Behavioral Health Programs Contact List (PDF)",
-            "California Institute For Behavioral Health Solutions (CIBHS)",
-            "Substance Use Disorder Programs Contact List (PDF)",
-            "Substance Use Disorder Programs Contact List - Spanish (PDF)",
-            "825 5th Street",
-            "Staff Directory",
-            "Stay Connected",
-            "Board of Supervisors",
-            "Boards & Committees",
-            "Customer Satisfaction Survey",
-            "Public Records Request"
-          ],
-          "score": 0.67
-        },
-        "doctor": {
-          "name": "Nanine Beal",
-          "doctor_page_found": false,
-          "doctor_pages": [
-            "https://humboldtgov.org/MyAccount/ProfileCreate",
-            "https://humboldtgov.org/2384/Mobile-Response-Team",
-            "https://humboldtgov.org/2796/Organizational-Provider-Resources",
-            "https://ncrct.org/",
-            "https://humboldtgov.org/DocumentCenter/View/51672/Provider-Directory-PDF",
-            "https://humboldtgov.org/directory.aspx"
-          ],
-          "doctor_emails": [],
-          "doctor_phones": [
-            "7074457715",
-            "+888849572824",
-            "8557659703",
-            "8007352929",
-            "7072682900",
-            "7074764054",
-            "7072682990",
-            "+7074764049720",
-            "+108201127",
-            "+20201127",
-            "+0100300",
-            "+0100301",
-            "+0100302",
-            "+0100604",
-            "+0100610",
-            "+0406101",
-            "+07040460",
-            "+0704341",
-            "+0704370",
-            "+0704390",
-            "+0704420",
-            "+0704500",
-            "+0704540",
-            "+0704660",
-            "+0704871",
-            "+0704873",
-            "+0704875",
-            "+0704877",
-            "+0704878",
-            "+0704879",
-            "+0704880",
-            "+0704881",
-            "+0704882",
-            "+0704980",
-            "+1001005",
-            "+1001100",
-            "+1001200",
-            "+1001800",
-            "+0100599",
-            "+0704670",
-            "+0704671",
-            "+0704680",
-            "+22769172",
-            "+3797122380861",
-            "+00612792",
-            "5294193094",
-            "+820240102",
-            "+619662120240102",
-            "0020240102",
-            "+100002020000",
-            "+20240102",
-            "+120240102",
-            "+1960120",
-            "+10000960120",
-            "+20240103",
-            "0020240103",
-            "+100001970000",
-            "+567255753",
-            "+213347297",
-            "+100001410000",
-            "7074415260",
-            "7072683721",
-            "7074762390",
-            "7074457663",
-            "7074762452",
-            "7074634700",
-            "8669013212",
-            "7074457475",
-            "7074457266",
-            "8443650352",
-            "7074457556",
-            "7072682544",
-            "7074457236",
-            "7074415410",
-            "7074456215",
-            "+707268290024",
-            "8662929286",
-            "7074456200",
-            "8774108809",
-            "7074457411",
-            "7074457481",
-            "7074762349",
-            "7072683669",
-            "7072682548",
-            "7074457552",
-            "+18887244821",
-            "7072691918",
-            "7078225954",
-            "7076684207",
-            "7072691990",
-            "7072691915",
-            "7072691905",
-            "7072691910",
-            "7072691900",
-            "7077869559",
-            "7077253460",
-            "7079232230",
-            "5306255082",
-            "7078394459",
-            "7077643333",
-            "7076770227",
-            "5306292146",
-            "7074457541",
-            "7074762429",
-            "7074457401",
-            "7074440600",
-            "7074457644",
-            "7074457634",
-            "7074457491",
-            "7074457652",
-            "7074457377",
-            "7074457448",
-            "7074457428",
-            "7074457741",
-            "7074457651",
-            "7077683898",
-            "7074457205",
-            "7074457421",
-            "7074457575",
-            "7074457374",
-            "7074457621",
-            "7074457593",
-            "7074457382",
-            "7074457251",
-            "7078409132",
-            "7074457242",
-            "7079232761",
-            "5306291025",
-            "7078396600",
-            "7072682500",
-            "7074762398",
-            "7074457351"
-          ],
-          "structured_profile": {
-            "qualifications": [],
-            "colleges": [
-              "Provide appropriate alternatives to hospitalization"
-            ],
-            "work_experience": [
-              "Ph: 707-445-7715",
-              "Ph: 888-849-5728",
-              "Ph: 855-765-9703",
-              "TTY: 800-735-2929 or 711",
-              "Ph: 707-268-2900",
-              "Ph: 707-476-4054",
-              "Ph: 707-268-2990",
-              "Fx: 707-476-4049",
-              "Eureka, CA 95501",
-              "24-hour Substance Use Disorder Access Line 855-765-9703"
-            ],
-            "working_location": ""
-          },
-          "score": 0
-        },
-        "website_trust_score": 0.352
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
       }
     },
     "signals": {},
-    "confidence": 0.769,
-    "status": "REVIEW"
+    "confidence": 0.4,
+    "status": "PENDING"
+  },
+  "6": {
+    "provider_id": "6",
+    "timestamp_utc": "2025-12-17T17:27:34.133401+00:00",
+    "base_validation": {
+      "provider_id": "6",
+      "timestamp_utc": "2025-12-17T17:26:40.103280Z",
+      "normalized": {
+        "name": "Ragunath Appasamy, Md, Phd",
+        "phone": "2153498222",
+        "address": "3400 Spruce Street, 3 Dulles Building Philadelphia, PA 19104-4206, United States",
+        "registration_number": "PA-MD-778945",
+        "license_status": "ACTIVE",
+        "issue_date": "June 12, 2015",
+        "expiry_date": "June 30, 2026",
+        "npi": "1467401976"
+      },
+      "missing_fields": [],
+      "overall_confidence": 1.0,
+      "validation_status": "PASS"
+    },
+    "enriched": {
+      "npi": {
+        "match_found": true,
+        "npi": "1467401976",
+        "basic": {
+          "first_name": "RAGUNATH",
+          "last_name": "APPASAMY",
+          "credential": "MD PhD",
+          "sole_proprietor": "NO",
+          "sex": "M",
+          "enumeration_date": "2006-05-10",
+          "last_updated": "2022-02-21",
+          "certification_date": "2022-02-21",
+          "status": "A"
+        },
+        "addresses": [
+          {
+            "country_code": "US",
+            "country_name": "United States",
+            "address_purpose": "LOCATION",
+            "address_type": "DOM",
+            "address_1": "3400 SPRUCE STREET",
+            "address_2": "3 DULLES BUILDING",
+            "city": "PHILADELPHIA",
+            "state": "PA",
+            "postal_code": "191044206",
+            "telephone_number": "215-349-8222",
+            "fax_number": "215-349-5915"
+          },
+          {
+            "country_code": "US",
+            "country_name": "United States",
+            "address_purpose": "MAILING",
+            "address_type": "DOM",
+            "address_1": "3400 SPRUCE STREET",
+            "address_2": "3 DULLES BUILDING",
+            "city": "PHILADELPHIA",
+            "state": "PA",
+            "postal_code": "191044206",
+            "telephone_number": "215-349-8222",
+            "fax_number": "215-349-5915"
+          }
+        ],
+        "taxonomies": [
+          {
+            "code": "207RG0100X",
+            "taxonomy_group": "",
+            "desc": "Internal Medicine, Gastroenterology",
+            "state": "PA",
+            "license": "MD041058L",
+            "primary": true
+          }
+        ],
+        "match_confidence": 1.0,
+        "signals": {
+          "direct_npi": true,
+          "from_api": true
+        }
+      },
+      "maps": {
+        "google_place_found": false,
+        "google_place_name": null,
+        "google_place_address": null,
+        "google_place_proof": null,
+        "match_score": 0.0
+      }
+    },
+    "signals": {},
+    "confidence": 0.4,
+    "status": "PENDING"
   }
 }

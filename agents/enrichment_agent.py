@@ -179,7 +179,7 @@ async def run():
             out = await enricher.enrich_one(pid, rec)
             enriched_existing[pid] = out
             await atomic_write(ENRICHED_JSON, enriched_existing)
-            print(f"✅ Enriched {pid} → {out['confidence']}")
+            print(f" Enriched {pid} → {out['confidence']}")
 
     for pid, rec in validated.items():
         tasks.append(worker(pid, rec))

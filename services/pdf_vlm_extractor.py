@@ -7,7 +7,9 @@ from google import genai
 from io import BytesIO
 from PIL import Image
      
-     
+import time
+import random
+
 from config import settings
 
 client = genai.Client(api_key=settings.GEMINI_API_KEY)
@@ -48,6 +50,7 @@ class PDFVLMExtractor:
             return ""
 
     # 3. GEMINI TEXT MODEL (FREE)
+
     def analyze_with_gemini_text(self, text: str) -> dict:
         prompt = f"""
     Extract ONLY license/credential data from the document text.
@@ -67,16 +70,41 @@ class PDFVLMExtractor:
     "registered_address": ""
     }}
     """
-        try:
-            response = client.models.generate_content(
-                model=settings.GEMINI_TEXT_MODEL,
-                contents=prompt
-            )
-            output = response.text
-            start, end = output.find("{"), output.rfind("}")
-            return json.loads(output[start:end+1]) if start!=-1 and end!=-1 else {{"error":"JSON not found","raw":output}}
-        except Exception as e:
-            return {"error": f"Text model failed: {e}"}
+
+        MAX_RETRIES = 4
+
+        for attempt in range(MAX_RETRIES):
+            try:
+                response = client.models.generate_content(
+                    model=settings.GEMINI_TEXT_MODEL,
+                    contents=prompt
+                )
+
+                output = response.text or ""
+                start, end = output.find("{"), output.rfind("}")
+
+                if start != -1 and end != -1:
+                    return json.loads(output[start:end+1])
+
+                return {
+                    "error": "JSON not found",
+                    "raw": output
+                }
+
+            except Exception as e:
+                err = str(e)
+
+                # 🔥 THIS IS THE 503 HANDLER
+                if "503" in err or "Service Unavailable" in err:
+                    sleep_time = (2 ** attempt) + random.uniform(0.5, 1.5)
+                    print(f"⚠ Gemini busy (503). Retrying in {sleep_time:.1f}s...")
+                    time.sleep(sleep_time)
+                    continue
+
+                # other errors → fail fast
+                return {"error": f"Gemini failed: {err}"}
+
+        return {"error": "Gemini failed after retries"}
 
     # 4. JSON FILE HELPERS
     def _read_json(self, path):

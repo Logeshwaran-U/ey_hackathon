@@ -1,7 +1,76 @@
 {
+  "1": {
+    "provider_id": "1",
+    "name": "Balqisa Mohamud Abdi",
+    "phone": "6515001998",
+    "address": "1516 W Lake St, Suite 104 Minneapolis, MN 55408, United States",
+    "npi": "1740961333",
+    "license_number": "MN-BT-458921",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "REJECTED",
+    "issues": [],
+    "signals": {
+      "validation_status": "PASS",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "2": {
+    "provider_id": "2",
+    "name": "Mithun Mamoottil Abraham, Dpt",
+    "phone": "5168290030",
+    "address": "475 Northern Blvd, Suite 11 Great Neck, NY 11021, United States",
+    "npi": "1033689781",
+    "license_number": "NY-PT-998712",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "REJECTED",
+    "issues": [],
+    "signals": {
+      "validation_status": "PASS",
+      "confidence_bucket": "LOW"
+    }
+  },
   "4": {
     "provider_id": "4",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.934399+00:00",
+    "name": "Lawrence E Addison, O.D.",
+    "phone": "7152412020",
+    "address": "4009 Community Center Dr, Weston, WI 54476-4139, United States",
+    "npi": "1760794697",
+    "license_number": "WI-OD-614782",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "REJECTED",
+    "issues": [],
+    "signals": {
+      "validation_status": "PASS",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "5": {
+    "provider_id": "5",
+    "name": "Bill Abbo, Dds, Ms",
+    "phone": "3059450909",
+    "address": "3031 NE 163rd St, North Miami Beach, FL 33160-4462, United States",
+    "npi": "1720147853",
+    "license_number": "FL-DDS-884210",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "REJECTED",
+    "issues": [],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "8": {
+    "provider_id": "8",
+    "name": "Dr. Espir J Abaji Dds",
+    "phone": "3146566615",
+    "address": "12221 SAINT CHARLES ROCK RD BRIDGETON, MO 63044-2502 United States",
+    "npi": "1356965289",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -14,12 +83,16 @@
   },
   "3": {
     "provider_id": "3",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.934399+00:00",
+    "name": "John Aaron Md",
+    "phone": "9312457094",
+    "address": "PO BOX 3799 CLARKSVILLE, TN 37043 United States",
+    "npi": "1629019922",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
-      "missing_license_number",
-      "address_mismatch_npi_maps"
+      "missing_license_number"
     ],
     "signals": {
       "validation_status": "FAIL_NEEDS_REVIEW",
@@ -28,26 +101,16 @@
   },
   "7": {
     "provider_id": "7",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.934399+00:00",
+    "name": "Esther Aarinola Rbt",
+    "phone": "6789047053",
+    "address": "190 HANDLEY RD TYRONE, GA 30290-2178 United States",
+    "npi": "1063192243",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
-      "missing_license_number",
-      "address_mismatch_npi_maps"
-    ],
-    "signals": {
-      "validation_status": "FAIL_NEEDS_REVIEW",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "8": {
-    "provider_id": "8",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.934399+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "FAIL_QA",
-    "issues": [
-      "missing_license_number",
-      "address_mismatch_npi_maps"
+      "missing_license_number"
     ],
     "signals": {
       "validation_status": "FAIL_NEEDS_REVIEW",
@@ -56,136 +119,12 @@
   },
   "9": {
     "provider_id": "9",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.934399+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "FAIL_QA",
-    "issues": [
-      "missing_license_number",
-      "address_mismatch_npi_maps"
-    ],
-    "signals": {
-      "validation_status": "FAIL_NEEDS_REVIEW",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "2": {
-    "provider_id": "2",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.934399+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "REJECTED",
-    "issues": [],
-    "signals": {
-      "validation_status": "PASS",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "5": {
-    "provider_id": "5",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.934399+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "FAIL_QA",
-    "issues": [
-      "missing_license_number"
-    ],
-    "signals": {
-      "validation_status": "FAIL_NEEDS_REVIEW",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "6": {
-    "provider_id": "6",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "FAIL_QA",
-    "issues": [
-      "address_mismatch_npi_maps"
-    ],
-    "signals": {
-      "validation_status": "PASS",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "1": {
-    "provider_id": "1",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "REJECTED",
-    "issues": [],
-    "signals": {
-      "validation_status": "PASS",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "13": {
-    "provider_id": "13",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "FAIL_QA",
-    "issues": [
-      "missing_license_number"
-    ],
-    "signals": {
-      "validation_status": "FAIL_NEEDS_REVIEW",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "14": {
-    "provider_id": "14",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "FAIL_QA",
-    "issues": [
-      "missing_license_number"
-    ],
-    "signals": {
-      "validation_status": "FAIL_NEEDS_REVIEW",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "10": {
-    "provider_id": "10",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "FAIL_QA",
-    "issues": [
-      "missing_license_number",
-      "address_mismatch_npi_maps"
-    ],
-    "signals": {
-      "validation_status": "FAIL_NEEDS_REVIEW",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "16": {
-    "provider_id": "16",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "FAIL_QA",
-    "issues": [
-      "missing_license_number"
-    ],
-    "signals": {
-      "validation_status": "FAIL_NEEDS_REVIEW",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "18": {
-    "provider_id": "18",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "FAIL_QA",
-    "issues": [
-      "missing_license_number",
-      "address_mismatch_npi_maps"
-    ],
-    "signals": {
-      "validation_status": "FAIL_NEEDS_REVIEW",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "15": {
-    "provider_id": "15",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
+    "name": "Eskinder Abasseran Cota",
+    "phone": "4252425671",
+    "address": "2424 156TH AVE NE BELLEVUE, WA 98007-3814 United States",
+    "npi": "1811763980",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -198,7 +137,12 @@
   },
   "12": {
     "provider_id": "12",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
+    "name": "Escarlet Acabal",
+    "phone": "3105532695",
+    "address": "7335 VAN NUYS BLVD VAN NUYS, CA 91405-1998 United States",
+    "npi": "1396402988",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -211,7 +155,120 @@
   },
   "11": {
     "provider_id": "11",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
+    "name": "Estreya Esther Aboud",
+    "phone": "7186863700",
+    "address": "1312 38TH ST BROOKLYN, NY 11218-3612 United States",
+    "npi": "1437750635",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "13": {
+    "provider_id": "13",
+    "name": "Gayatri Aachi",
+    "phone": "9252947022",
+    "address": "300 PULLMAN ST BLDG A1 LIVERMORE, CA 94551-9756 United States",
+    "npi": "1235660754",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "10": {
+    "provider_id": "10",
+    "name": "Estela Maria Abich Md",
+    "phone": "4073541202",
+    "address": "9430 TURKEY LAKE RD STE 114 ORLANDO, FL 32819-8015 United States",
+    "npi": "1821583287",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "14": {
+    "provider_id": "14",
+    "name": "Gabriela Abadal",
+    "phone": "7024287910",
+    "address": "4904 SANTO AVE LAS VEGAS, NV 89108-1331 United States",
+    "npi": "",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "15": {
+    "provider_id": "15",
+    "name": "Gani Abazi Md, Mph",
+    "phone": "2019674000",
+    "address": "230 E RIDGEWOOD AVE PARAMUS, NJ 07652-4142 United States",
+    "npi": "",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "16": {
+    "provider_id": "16",
+    "name": "Gambo Abdullahi",
+    "phone": "4046410505",
+    "address": "2118 CUMBERLAND CREEK TRL SW MARIETTA, GA 30008-4457 United States",
+    "npi": "",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "18": {
+    "provider_id": "18",
+    "name": "Kimberly Aaron",
+    "phone": "5613675258",
+    "address": "9329 NC HWY 33E CHAPEL HILL, OH 27517 United States",
+    "npi": "",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -224,12 +281,16 @@
   },
   "20": {
     "provider_id": "20",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
+    "name": "Marie A Little",
+    "phone": "5133065098",
+    "address": "15 GLEN ESTE PL CINCINNATI, OH 45217-2162 United States",
+    "npi": "",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
-      "missing_license_number",
-      "address_mismatch_npi_maps"
+      "missing_license_number"
     ],
     "signals": {
       "validation_status": "FAIL_NEEDS_REVIEW",
@@ -238,7 +299,12 @@
   },
   "21": {
     "provider_id": "21",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
+    "name": "Martha H Aaron",
+    "phone": "5033704950",
+    "address": "4747 SKYLINE RD S # 180 SALEM, OR 97306-4200 United States",
+    "npi": "",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -251,7 +317,12 @@
   },
   "17": {
     "provider_id": "17",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
+    "name": "Kimberly Ann A'Hearn Pt",
+    "phone": "4232387217",
+    "address": "508 E MORRIS ST DALTON, GA 30721-3403 United States",
+    "npi": "",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -264,7 +335,12 @@
   },
   "19": {
     "provider_id": "19",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
+    "name": "Kian S Abdul-Baki Do",
+    "phone": "4097471883",
+    "address": "UNIVERSITY OF TEXAS MEDICAL BRANCH 301 UNIVERSITY BLVD GALVESTON, TX 77555-0001 United States",
+    "npi": "",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -277,88 +353,12 @@
   },
   "24": {
     "provider_id": "24",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "FAIL_QA",
-    "issues": [
-      "missing_license_number",
-      "address_mismatch_npi_maps"
-    ],
-    "signals": {
-      "validation_status": "FAIL_NEEDS_REVIEW",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "26": {
-    "provider_id": "26",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "FAIL_QA",
-    "issues": [
-      "missing_license_number",
-      "address_mismatch_npi_maps"
-    ],
-    "signals": {
-      "validation_status": "FAIL_NEEDS_REVIEW",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "27": {
-    "provider_id": "27",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.937402+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "FAIL_QA",
-    "issues": [
-      "missing_license_number"
-    ],
-    "signals": {
-      "validation_status": "FAIL_NEEDS_REVIEW",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "23": {
-    "provider_id": "23",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.937402+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "FAIL_QA",
-    "issues": [
-      "missing_license_number"
-    ],
-    "signals": {
-      "validation_status": "FAIL_NEEDS_REVIEW",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "25": {
-    "provider_id": "25",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.937402+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "FAIL_QA",
-    "issues": [
-      "missing_license_number"
-    ],
-    "signals": {
-      "validation_status": "FAIL_NEEDS_REVIEW",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "28": {
-    "provider_id": "28",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.937402+00:00",
-    "combined_confidence": 0.0,
-    "final_status": "FAIL_QA",
-    "issues": [
-      "missing_license_number",
-      "address_mismatch_npi_maps"
-    ],
-    "signals": {
-      "validation_status": "FAIL_NEEDS_REVIEW",
-      "confidence_bucket": "LOW"
-    }
-  },
-  "29": {
-    "provider_id": "29",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.937402+00:00",
+    "name": "Puya Alikhani",
+    "phone": "8132590965",
+    "address": "2 TAMPA GENERAL CIR 7TH FLOOR TAMPA, FL 33606-3603 United States",
+    "npi": "",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -371,7 +371,120 @@
   },
   "22": {
     "provider_id": "22",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.937402+00:00",
+    "name": "Dr. Mark K Aasen",
+    "phone": "4143257246",
+    "address": "4131 W. LOOMIS RD STE 300 GREENFIELD, WI 53221-2059 United States",
+    "npi": "",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "23": {
+    "provider_id": "23",
+    "name": "Dr. Puya Abbassi D.O.",
+    "phone": "4088855000",
+    "address": "751 S BASCOM AVE SAN JOSE, CA 95128-2699 United States",
+    "npi": "",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "26": {
+    "provider_id": "26",
+    "name": "Dr. Chitra Sadasiwan Bhosekar M.D",
+    "phone": "9204457222",
+    "address": "PO BOX 22487 GREEN BAY, WI 54305-2487 United States",
+    "npi": "1114144466",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "27": {
+    "provider_id": "27",
+    "name": "Jordan M Abel Md",
+    "phone": "3608278400",
+    "address": "18313 PAULSON ST SW ROCHESTER, WA 98579-9262 United States",
+    "npi": "1821438029",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "25": {
+    "provider_id": "25",
+    "name": "Dr. Purita Episcope Ambat Dmd",
+    "phone": "7183887007",
+    "address": "749 GRAND STREET BROOKLYN, NY 11211 United States",
+    "npi": "",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "28": {
+    "provider_id": "28",
+    "name": "Rookmini Singh Fnp",
+    "phone": "6469622700",
+    "address": "520 E 70TH ST NEW YORK, NY 10021-9800 United States",
+    "npi": "1912475377",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "29": {
+    "provider_id": "29",
+    "name": "Malak S Al-Alawi",
+    "phone": "2484364400",
+    "address": "27777 INKSTER RD FARMINGTON HILLS, MI 48334-5326 United States",
+    "npi": "1437794203",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -384,7 +497,12 @@
   },
   "30": {
     "provider_id": "30",
-    "qa_timestamp_utc": "2025-12-17T02:32:15.937402+00:00",
+    "name": "Nanine Beal",
+    "phone": "7072682990",
+    "address": "720 WOOD ST EUREKA, CA 95501-4413 United States",
+    "npi": "1871365379",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -392,6 +510,22 @@
     ],
     "signals": {
       "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "6": {
+    "provider_id": "6",
+    "name": "Ragunath Appasamy, Md, Phd",
+    "phone": "2153498222",
+    "address": "3400 Spruce Street, 3 Dulles Building Philadelphia, PA 19104-4206, United States",
+    "npi": "1467401976",
+    "license_number": "PA-MD-778945",
+    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "REJECTED",
+    "issues": [],
+    "signals": {
+      "validation_status": "PASS",
       "confidence_bucket": "LOW"
     }
   }

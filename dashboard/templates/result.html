@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation Results</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #0f2027, #203a43);
+            padding: 30px;
+        }
+
+        h2 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .container {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 1100px;
+        }
+
+        thead th {
+            position: sticky;
+            top: 0;
+            background: #f5f7f9;
+            z-index: 10;
+            font-size: 13px;
+            color: #333;
+            border-bottom: 2px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+            font-size: 13px;
+        }
+
+        tbody tr:hover {
+            background: #f9fbfc;
+        }
+
+        /* ---------- Status badges ---------- */
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 999px;
+            white-space: nowrap;
+        }
+
+        .badge-ok {
+            background-color: #dafbe1;
+            color: #1a7f37;
+            border: 1px solid #2da44e;
+        }
+
+        .badge-warn {
+            background-color: #fff8c5;
+            color: #9a6700;
+            border: 1px solid #d4a72c;
+        }
+
+        /* ---------- Confidence ---------- */
+        .confidence {
+            font-weight: 600;
+        }
+
+        .confidence.high { color: #1a7f37; }
+        .confidence.medium { color: #9a6700; }
+        .confidence.low { color: #b00020; }
+
+        /* ---------- JSON column (single-line) ---------- */
+        td.json-cell {
+            max-width: 260px;
+        }
+
+        td.json-cell pre {
+            max-height: 120px;
+            max-width: 260px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            background: #f6f8fa;
+            padding: 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            border: 1px solid #e1e4e8;
+
+            white-space: nowrap;   /* 🔑 single line */
+            word-break: normal;
+        }
+
+        /* ---------- Issues (neutral) ---------- */
+        .issue {
+            font-size: 12px;
+            color: #333;
+            margin-bottom: 6px;
+        }
+
+        footer {
+            margin-top: 16px;
+            color: #ccc;
+            font-size: 12px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Provider Validation Results</h2>
+
+<div class="container">
+<table>
+  <thead>
+    <tr>
+      <th>Provider ID</th>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Address</th>
+      <th>NPI</th>
+      <th>Data (JSON)</th>
+      <th>Confidence</th>
+      <th>Issues</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  {% for row in rows %}
+  <tr>
+    <td>{{ row.provider_id }}</td>
+    <td>{{ row.name }}</td>
+    <td>{{ row.phone }}</td>
+    <td>{{ row.address }}</td>
+    <td>{{ row.npi }}</td>
+
+    <!-- SINGLE-LINE JSON -->
+    <td class="json-cell">
+      <pre>{{ row.json_preview | tojson }}</pre>
+    </td>
+
+    <td>
+      <span class="confidence
+        {% if row.confidence >= 85 %}high
+        {% elif row.confidence >= 60 %}medium
+        {% else %}low{% endif %}">
+        {{ row.confidence }}%
+      </span>
+    </td>
+
+    <td>
+      {% for issue in row.issues %}
+        <div class="issue">{{ issue }}</div>
+      {% endfor %}
+    </td>
+
+    <td>
+      <span class="status-badge">{{ row.status }}</span>
+    </td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+
+<footer>© 2025 EY Internal Tool</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".status-badge").forEach(el => {
+      const text = el.innerText.trim().toLowerCase();
+      el.classList.add("badge");
+
+      if (text === "accepted") {
+        el.classList.add("badge-ok");
+      } else {
+        el.classList.add("badge-warn");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

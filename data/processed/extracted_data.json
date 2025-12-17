@@ -1,48 +1,4 @@
 {
-  "1": {
-    "provider_id": "1",
-    "csv_data": {
-      "Provider_ID": "1",
-      "Name": "BALQISA MOHAMUD ABDI",
-      "Address": "1516 W LAKE ST STE 104\nMINNEAPOLIS, MN 55408\nUnited States",
-      "Phone_No": "651-500-1998",
-      "Speciality": "Behavior Technician",
-      "NPI_ID": "1740961333",
-      "Pdf": "data/input/pdfs/sample_balqisa_license.pdf"
-    },
-    "pdf_data": {
-      "registered_name": "Balqisa Mohamud Abdi",
-      "license_number": "MN-BT-458921",
-      "license_type": "Behavior Technician",
-      "issuing_authority": "STATE OF MINNESOTA BOARD OF BEHAVIORAL HEALTH",
-      "issue_date": "March 15, 2022",
-      "expiry_date": "March 31, 2026",
-      "license_status": "ACTIVE",
-      "registered_address": "1516 W Lake St, Suite 104\nMinneapolis, MN 55408, United States"
-    }
-  },
-  "2": {
-    "provider_id": "2",
-    "csv_data": {
-      "Provider_ID": "2",
-      "Name": "Dr. MITHUN MAMOOTTIL ABRAHAM DPT",
-      "Address": "475 NORTHERN BLVD STE 11\nGREAT NECK, NY 11021\nUnited States",
-      "Phone_No": "516-829-0030",
-      "Speciality": "Physical Therapist - Orthopedic",
-      "NPI_ID": "1033689781",
-      "Pdf": "data/input/pdfs/sample_mithun_license.pdf"
-    },
-    "pdf_data": {
-      "registered_name": "Mithun Mamoottil Abraham, DPT",
-      "license_number": "NY-PT-998712",
-      "license_type": "Physical Therapy",
-      "issuing_authority": "STATE BOARD OF PHYSICAL THERAPY, STATE OF NEW YORK",
-      "issue_date": "August 20, 2020",
-      "expiry_date": "August 31, 2026",
-      "license_status": "ACTIVE",
-      "registered_address": "475 Northern Blvd, Suite 11\nGreat Neck, NY 11021, United States"
-    }
-  },
   "3": {
     "provider_id": "3",
     "csv_data": {
@@ -55,54 +11,6 @@
       "Pdf": ""
     },
     "pdf_data": null
-  },
-  "4": {
-    "provider_id": "4",
-    "csv_data": {
-      "Provider_ID": "4",
-      "Name": "LAWRENCE E ADDISON O.D.",
-      "Address": "4009 COMMUNITY CENTER DR\nWESTON, WI 54476-4139\nUnited States",
-      "Phone_No": " 715-241-2020",
-      "Speciality": "Optometrist",
-      "NPI_ID": "1760794697",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "5": {
-    "provider_id": "5",
-    "csv_data": {
-      "Provider_ID": "5",
-      "Name": "Dr. BILL ABBO DDS MS",
-      "Address": "3031 NE 163RD ST\nNORTH MIAMI BEACH, FL 33160-4462\nUnited States",
-      "Phone_No": "305-945-0909",
-      "Speciality": "Dentist - Prosthodontics",
-      "NPI_ID": "1720147853",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "6": {
-    "provider_id": "6",
-    "csv_data": {
-      "Provider_ID": "6",
-      "Name": "RAGUNATH APPASAMY MD PhD",
-      "Address": "3400 SPRUCE STREET 3 DULLES BUILDING PHILADELPHIA, PA 19104-4206 United States",
-      "Phone_No": "215-349-8222,",
-      "Speciality": "Internal Medicine - Gastroenterology",
-      "NPI_ID": "1467401976",
-      "Pdf": "data/input/pdfs/sample_ragu_appa.pdf"
-    },
-    "pdf_data": {
-      "registered_name": "Ragunath Appasamy, MD, PhD",
-      "license_number": "PA-MD-778945",
-      "license_type": "PHYSICIAN LICENSE",
-      "issuing_authority": "COMMONWEALTH OF PENNSYLVANIA STATE BOARD OF MEDICINE",
-      "issue_date": "June 12, 2015",
-      "expiry_date": "June 30, 2026",
-      "license_status": "ACTIVE",
-      "registered_address": "3400 Spruce Street, 3 Dulles Building, Philadelphia, PA 19104-4206, United States"
-    }
   },
   "7": {
     "provider_id": "7",
@@ -415,5 +323,115 @@
       "Pdf": ""
     },
     "pdf_data": null
+  },
+  "5": {
+    "provider_id": "5",
+    "csv_data": {
+      "Provider_ID": "5",
+      "Name": "Dr. BILL ABBO DDS MS",
+      "Address": "3031 NE 163RD ST\nNORTH MIAMI BEACH, FL 33160-4462\nUnited States",
+      "Phone_No": "305-945-0909",
+      "Speciality": "Dentist - Prosthodontics",
+      "NPI_ID": "1720147853",
+      "Pdf": "data/input/pdfs/abbo.pdf"
+    },
+    "pdf_data": {
+      "registered_name": "Bill Abbo, DDS, MS",
+      "license_number": "FL-DDS-884210",
+      "license_type": "Dentist – Prosthodontics",
+      "issuing_authority": "STATE BOARD OF DENTISTRY",
+      "issue_date": "July 21, 2014",
+      "expiry_date": "July 31, 2025",
+      "license_status": "ACTIVE",
+      "registered_address": "3031 NE 163rd St, North Miami Beach, FL 33160-4462, United States"
+    }
+  },
+  "6": {
+    "provider_id": "6",
+    "csv_data": {
+      "Provider_ID": "6",
+      "Name": "RAGUNATH APPASAMY MD PhD",
+      "Address": "3400 SPRUCE STREET 3 DULLES BUILDING PHILADELPHIA, PA 19104-4206 United States",
+      "Phone_No": "215-349-8222,",
+      "Speciality": "Internal Medicine - Gastroenterology",
+      "NPI_ID": "1467401976",
+      "Pdf": "data/input/pdfs/sample_ragu_appa.pdf"
+    },
+    "pdf_data": {
+      "registered_name": "Ragunath Appasamy, MD, PhD",
+      "license_number": "PA-MD-778945",
+      "license_type": "PHYSICIAN LICENSE CERTIFICATE",
+      "issuing_authority": "COMMONWEALTH OF PENNSYLVANIA STATE BOARD OF MEDICINE",
+      "issue_date": "June 12, 2015",
+      "expiry_date": "June 30, 2026",
+      "license_status": "ACTIVE",
+      "registered_address": "3400 Spruce Street, 3 Dulles Building\nPhiladelphia, PA 19104-4206, United States"
+    }
+  },
+  "1": {
+    "provider_id": "1",
+    "csv_data": {
+      "Provider_ID": "1",
+      "Name": "BALQISA MOHAMUD ABDI",
+      "Address": "1516 W LAKE ST STE 104\nMINNEAPOLIS, MN 55408\nUnited States",
+      "Phone_No": "651-500-1998",
+      "Speciality": "Behavior Technician",
+      "NPI_ID": "1740961333",
+      "Pdf": "data/input/pdfs/sample_balqisa_license.pdf"
+    },
+    "pdf_data": {
+      "registered_name": "Balqisa Mohamud Abdi",
+      "license_number": "MN-BT-458921",
+      "license_type": "Behavior Technician",
+      "issuing_authority": "STATE OF MINNESOTA BOARD OF BEHAVIORAL HEALTH",
+      "issue_date": "March 15, 2022",
+      "expiry_date": "March 31, 2026",
+      "license_status": "ACTIVE",
+      "registered_address": "1516 W Lake St, Suite 104\nMinneapolis, MN 55408, United States"
+    }
+  },
+  "2": {
+    "provider_id": "2",
+    "csv_data": {
+      "Provider_ID": "2",
+      "Name": "Dr. MITHUN MAMOOTTIL ABRAHAM DPT",
+      "Address": "475 NORTHERN BLVD STE 11\nGREAT NECK, NY 11021\nUnited States",
+      "Phone_No": "516-829-0030",
+      "Speciality": "Physical Therapist - Orthopedic",
+      "NPI_ID": "1033689781",
+      "Pdf": "data/input/pdfs/sample_mithun_license.pdf"
+    },
+    "pdf_data": {
+      "registered_name": "Mithun Mamoottil Abraham, DPT",
+      "license_number": "NY-PT-998712",
+      "license_type": "Physical Therapy",
+      "issuing_authority": "STATE OF NEW YORK STATE BOARD OF PHYSICAL THERAPY",
+      "issue_date": "August 20, 2020",
+      "expiry_date": "August 31, 2026",
+      "license_status": "ACTIVE",
+      "registered_address": "475 Northern Blvd, Suite 11\nGreat Neck, NY 11021, United States"
+    }
+  },
+  "4": {
+    "provider_id": "4",
+    "csv_data": {
+      "Provider_ID": "4",
+      "Name": "LAWRENCE E ADDISON O.D.",
+      "Address": "4009 COMMUNITY CENTER DR\nWESTON, WI 54476-4139\nUnited States",
+      "Phone_No": " 715-241-2020",
+      "Speciality": "Optometrist",
+      "NPI_ID": "1760794697",
+      "Pdf": "data/input/pdfs/lawrence_fl.pdf"
+    },
+    "pdf_data": {
+      "registered_name": "Lawrence E Addison, O.D.",
+      "license_number": "WI-OD-614782",
+      "license_type": "Optometrist License",
+      "issuing_authority": "Commonwealth of Wisconsin, Department of Safety and Professional Services, Optometry Examining Board",
+      "issue_date": "August 18, 2014",
+      "expiry_date": "December 31, 2026",
+      "license_status": "ACTIVE",
+      "registered_address": "4009 Community Center Dr, Weston, WI 54476-4139, United States"
+    }
   }
 }

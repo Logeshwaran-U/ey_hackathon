@@ -88,12 +88,25 @@ class QualityAssuranceAgent:
         else:
             final_status = "REJECTED"
 
+        normalized = base.get("normalized", {})
+
         return {
             "provider_id": enriched.get("provider_id"),
+
+            # -------- USER DETAILS (for UI / CSV) --------
+            "name": normalized.get("name", ""),
+            "phone": normalized.get("phone", ""),
+            "address": normalized.get("address", ""),
+            "npi": normalized.get("npi", ""),
+            "license_number": normalized.get("registration_number", ""),
+
+            # -------- QA META --------
             "qa_timestamp_utc": utc_now(),
             "combined_confidence": combined,
             "final_status": final_status,
             "issues": issues,
+
+            # -------- SIGNALS (YOU WILL USE THIS IN UI) --------
             "signals": {
                 "validation_status": validation_status,
                 "confidence_bucket": (
@@ -103,6 +116,7 @@ class QualityAssuranceAgent:
                 )
             }
         }
+
 
 # ---------------- BATCH RUNNER ----------------
 def run():
