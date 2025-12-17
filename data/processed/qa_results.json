@@ -1,0 +1,398 @@
+{
+  "4": {
+    "provider_id": "4",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.934399+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "3": {
+    "provider_id": "3",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.934399+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number",
+      "address_mismatch_npi_maps"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "7": {
+    "provider_id": "7",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.934399+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number",
+      "address_mismatch_npi_maps"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "8": {
+    "provider_id": "8",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.934399+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number",
+      "address_mismatch_npi_maps"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "9": {
+    "provider_id": "9",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.934399+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number",
+      "address_mismatch_npi_maps"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "2": {
+    "provider_id": "2",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.934399+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "REJECTED",
+    "issues": [],
+    "signals": {
+      "validation_status": "PASS",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "5": {
+    "provider_id": "5",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.934399+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "6": {
+    "provider_id": "6",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "address_mismatch_npi_maps"
+    ],
+    "signals": {
+      "validation_status": "PASS",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "1": {
+    "provider_id": "1",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "REJECTED",
+    "issues": [],
+    "signals": {
+      "validation_status": "PASS",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "13": {
+    "provider_id": "13",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "14": {
+    "provider_id": "14",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "10": {
+    "provider_id": "10",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number",
+      "address_mismatch_npi_maps"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "16": {
+    "provider_id": "16",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "18": {
+    "provider_id": "18",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number",
+      "address_mismatch_npi_maps"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "15": {
+    "provider_id": "15",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.935401+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "12": {
+    "provider_id": "12",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "11": {
+    "provider_id": "11",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "20": {
+    "provider_id": "20",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number",
+      "address_mismatch_npi_maps"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "21": {
+    "provider_id": "21",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "17": {
+    "provider_id": "17",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "19": {
+    "provider_id": "19",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "24": {
+    "provider_id": "24",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number",
+      "address_mismatch_npi_maps"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "26": {
+    "provider_id": "26",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.936399+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number",
+      "address_mismatch_npi_maps"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "27": {
+    "provider_id": "27",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.937402+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "23": {
+    "provider_id": "23",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.937402+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "25": {
+    "provider_id": "25",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.937402+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "28": {
+    "provider_id": "28",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.937402+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number",
+      "address_mismatch_npi_maps"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "29": {
+    "provider_id": "29",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.937402+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "22": {
+    "provider_id": "22",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.937402+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  },
+  "30": {
+    "provider_id": "30",
+    "qa_timestamp_utc": "2025-12-17T02:32:15.937402+00:00",
+    "combined_confidence": 0.0,
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
+    "signals": {
+      "validation_status": "FAIL_NEEDS_REVIEW",
+      "confidence_bucket": "LOW"
+    }
+  }
+}
