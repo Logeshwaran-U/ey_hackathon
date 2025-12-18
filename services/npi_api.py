@@ -5,7 +5,7 @@ import json
 from difflib import SequenceMatcher
 from typing import Optional, Dict, Any
 
-# OPTIONAL – PUT YOUR PROXY HERE (US-BASED)
+
 US_PROXY = "http://user123:pass123@198.74.52.82:3128"
 
 PROXIES = {
@@ -27,7 +27,6 @@ class NPIRegistryService:
     RETRIES = 2
     BACKOFF = 0.5
 
-    # SYNTHETIC FALLBACK
     SYNTHETIC = [
         {
             "npi": "1427557893",
@@ -45,7 +44,6 @@ class NPIRegistryService:
         }
     ]
 
-    # SAFE REQUEST (with optional proxy)
     def _request(self, params, use_proxy=False):
         try:
             if use_proxy:
@@ -68,29 +66,23 @@ class NPIRegistryService:
             pass
         return None
 
-    # SMART SEARCH: TRIES DIRECT → PROXY → SYNTHETIC
     def _smart_search(self, params):
-        # Normal request first
         direct = self._request(params, use_proxy=False)
         if direct and direct.get("results"):
             return direct, "from_api"
 
-        #  If empty, try proxy request
         proxy = self._request(params, use_proxy=True)
         if proxy and proxy.get("results"):
             return proxy, "from_proxy"
 
-        #  Nothing found
         return None, None
 
-    # FUZZY MATCH
     @staticmethod
     def _fuzzy(a: Optional[str], b: Optional[str]) -> float:
         if not a or not b:
             return 0.0
         return SequenceMatcher(None, a.lower().strip(), b.lower().strip()).ratio()
 
-    # MAIN SEARCH FUNCTION
     def search(self, **kwargs):
         params = {}
 
@@ -117,7 +109,6 @@ class NPIRegistryService:
             "mode": mode
         }
 
-    # BEST MATCH (USED BY ENRICHMENT AGENT)
     def get_best_match(
         self,
         provider_name=None,
@@ -128,7 +119,6 @@ class NPIRegistryService:
         npi_number=None
     ) -> Dict[str, Any]:
 
-        #  DIRECT NPI OVERRIDE
         if npi_number:
             result = self.search(npi_number=npi_number)
 
@@ -144,7 +134,6 @@ class NPIRegistryService:
                     "signals": {"direct_npi": True, result["mode"]: True}
                 }
 
-            # synthetic fallback
             for s in self.SYNTHETIC:
                 if s["npi"] == npi_number:
                     return {
@@ -167,7 +156,6 @@ class NPIRegistryService:
                 "signals": {"direct_npi": True, "no_data": True}
             }
 
-        # 2️⃣ NAME-BASED MATCHING
         if not provider_name:
             return {"match_found": False}
 
@@ -182,7 +170,6 @@ class NPIRegistryService:
             state=state
         )
 
-        # API/proxy failed → synthetic fallback
         if not result["found"]:
             for s in self.SYNTHETIC:
                 if s["first_name"].lower() == first.lower():
@@ -200,7 +187,6 @@ class NPIRegistryService:
                     }
             return {"match_found": False}
 
-        #  FUZZY MATCHING FOR MULTIPLE RESULTS
         best_entry = None
         best_score = -1
         best_signals = {}
@@ -213,32 +199,27 @@ class NPIRegistryService:
             score = 0.0
             signals = {}
 
-            # NAME SCORE
             nm = (self._fuzzy(first, basic.get("first_name")) +
                   self._fuzzy(last, basic.get("last_name"))) / 2
             score += nm * 0.50
             signals["name_match"] = round(nm, 3)
 
-            # SPECIALITY SCORE
             if specialization and tax:
                 ts = self._fuzzy(specialization, tax[0].get("desc", ""))
                 score += ts * 0.25
                 signals["taxonomy_match"] = round(ts, 3)
 
-            # STATE SCORE
             loc = next((a for a in addrs if a.get("address_purpose") == "LOCATION"), None)
             if state and loc and loc.get("state") == state:
                 score += 0.15
                 signals["state_match"] = True
 
-            # ADDRESS SCORE
             if external_address and loc:
                 api_addr = f"{loc.get('address_1','')} {loc.get('city','')}"
                 ascore = self._fuzzy(external_address, api_addr)
                 score += ascore * 0.10
                 signals["address_match"] = round(ascore, 3)
 
-            # PHONE SCORE
             npi_phone = loc.get("telephone_number") if loc else None
             if external_phone and npi_phone and external_phone[-4:] == npi_phone[-4:]:
                 score += 0.05

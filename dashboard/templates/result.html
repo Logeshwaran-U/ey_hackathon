@@ -5,7 +5,6 @@
     <title>Validation Results</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
@@ -61,7 +60,6 @@
             background: #f9fbfc;
         }
 
-        /* ---------- Status badges ---------- */
         .badge {
             display: inline-block;
             padding: 4px 12px;
@@ -83,7 +81,6 @@
             border: 1px solid #d4a72c;
         }
 
-        /* ---------- Confidence ---------- */
         .confidence {
             font-weight: 600;
         }
@@ -92,7 +89,6 @@
         .confidence.medium { color: #9a6700; }
         .confidence.low { color: #b00020; }
 
-        /* ---------- JSON column (single-line) ---------- */
         td.json-cell {
             max-width: 260px;
         }
@@ -108,11 +104,10 @@
             font-size: 12px;
             border: 1px solid #e1e4e8;
 
-            white-space: nowrap;   /* 🔑 single line */
+            white-space: nowrap;   
             word-break: normal;
         }
 
-        /* ---------- Issues (neutral) ---------- */
         .issue {
             font-size: 12px;
             color: #333;
@@ -157,7 +152,6 @@
     <td>{{ row.address }}</td>
     <td>{{ row.npi }}</td>
 
-    <!-- SINGLE-LINE JSON -->
     <td class="json-cell">
       <pre>{{ row.json_preview | tojson }}</pre>
     </td>

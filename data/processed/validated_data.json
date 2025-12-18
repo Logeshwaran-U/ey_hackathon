@@ -1,7 +1,7 @@
 {
   "3": {
     "provider_id": "3",
-    "timestamp_utc": "2025-12-17T17:26:38.424644Z",
+    "timestamp_utc": "2025-12-18T11:21:33.050218Z",
     "normalized": {
       "name": "John Aaron Md",
       "phone": "9312457094",
@@ -23,41 +23,51 @@
   },
   "4": {
     "provider_id": "4",
-    "timestamp_utc": "2025-12-17T17:26:40.498584Z",
+    "timestamp_utc": "2025-12-18T11:21:33.096775Z",
     "normalized": {
-      "name": "Lawrence E Addison, O.D.",
+      "name": "Lawrence E Addison O.D.",
       "phone": "7152412020",
-      "address": "4009 Community Center Dr, Weston, WI 54476-4139, United States",
-      "registration_number": "WI-OD-614782",
-      "license_status": "ACTIVE",
-      "issue_date": "August 18, 2014",
-      "expiry_date": "December 31, 2026",
+      "address": "4009 COMMUNITY CENTER DR WESTON, WI 54476-4139 United States",
+      "registration_number": "",
+      "license_status": "",
+      "issue_date": "",
+      "expiry_date": "",
       "npi": "1760794697"
     },
-    "missing_fields": [],
-    "overall_confidence": 1.0,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "5": {
     "provider_id": "5",
-    "timestamp_utc": "2025-12-17T17:26:40.032305Z",
+    "timestamp_utc": "2025-12-18T11:21:33.130479Z",
     "normalized": {
-      "name": "Bill Abbo, Dds, Ms",
+      "name": "Dr. Bill Abbo Dds Ms",
       "phone": "3059450909",
-      "address": "3031 NE 163rd St, North Miami Beach, FL 33160-4462, United States",
-      "registration_number": "FL-DDS-884210",
-      "license_status": "ACTIVE",
-      "issue_date": "July 21, 2014",
-      "expiry_date": "July 31, 2025",
+      "address": "3031 NE 163RD ST NORTH MIAMI BEACH, FL 33160-4462 United States",
+      "registration_number": "",
+      "license_status": "",
+      "issue_date": "",
+      "expiry_date": "",
       "npi": "1720147853"
     },
-    "missing_fields": [],
-    "overall_confidence": 1.0,
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
     "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "7": {
     "provider_id": "7",
-    "timestamp_utc": "2025-12-17T17:26:38.438039Z",
+    "timestamp_utc": "2025-12-17T18:27:18.306232Z",
     "normalized": {
       "name": "Esther Aarinola Rbt",
       "phone": "6789047053",
@@ -79,7 +89,7 @@
   },
   "8": {
     "provider_id": "8",
-    "timestamp_utc": "2025-12-17T17:26:38.479617Z",
+    "timestamp_utc": "2025-12-17T18:27:18.366332Z",
     "normalized": {
       "name": "Dr. Espir J Abaji Dds",
       "phone": "3146566615",
@@ -101,7 +111,7 @@
   },
   "9": {
     "provider_id": "9",
-    "timestamp_utc": "2025-12-17T17:26:38.551566Z",
+    "timestamp_utc": "2025-12-17T18:27:18.450102Z",
     "normalized": {
       "name": "Eskinder Abasseran Cota",
       "phone": "4252425671",
@@ -123,7 +133,7 @@
   },
   "10": {
     "provider_id": "10",
-    "timestamp_utc": "2025-12-17T17:26:38.624182Z",
+    "timestamp_utc": "2025-12-17T18:27:18.507719Z",
     "normalized": {
       "name": "Estela Maria Abich Md",
       "phone": "4073541202",
@@ -145,7 +155,7 @@
   },
   "11": {
     "provider_id": "11",
-    "timestamp_utc": "2025-12-17T17:26:38.652377Z",
+    "timestamp_utc": "2025-12-17T18:27:18.553527Z",
     "normalized": {
       "name": "Estreya Esther Aboud",
       "phone": "7186863700",
@@ -167,7 +177,7 @@
   },
   "12": {
     "provider_id": "12",
-    "timestamp_utc": "2025-12-17T17:26:38.687331Z",
+    "timestamp_utc": "2025-12-17T18:27:18.594298Z",
     "normalized": {
       "name": "Escarlet Acabal",
       "phone": "3105532695",
@@ -189,7 +199,7 @@
   },
   "13": {
     "provider_id": "13",
-    "timestamp_utc": "2025-12-17T17:26:38.732276Z",
+    "timestamp_utc": "2025-12-17T18:27:18.636943Z",
     "normalized": {
       "name": "Gayatri Aachi",
       "phone": "9252947022",
@@ -211,7 +221,7 @@
   },
   "14": {
     "provider_id": "14",
-    "timestamp_utc": "2025-12-17T17:26:38.777019Z",
+    "timestamp_utc": "2025-12-17T18:27:18.678072Z",
     "normalized": {
       "name": "Gabriela Abadal",
       "phone": "7024287910",
@@ -234,7 +244,7 @@
   },
   "15": {
     "provider_id": "15",
-    "timestamp_utc": "2025-12-17T17:26:38.822979Z",
+    "timestamp_utc": "2025-12-17T18:27:18.721048Z",
     "normalized": {
       "name": "Gani Abazi Md, Mph",
       "phone": "2019674000",
@@ -257,7 +267,7 @@
   },
   "16": {
     "provider_id": "16",
-    "timestamp_utc": "2025-12-17T17:26:38.870440Z",
+    "timestamp_utc": "2025-12-17T18:27:18.761022Z",
     "normalized": {
       "name": "Gambo Abdullahi",
       "phone": "4046410505",
@@ -280,7 +290,7 @@
   },
   "17": {
     "provider_id": "17",
-    "timestamp_utc": "2025-12-17T17:26:38.954575Z",
+    "timestamp_utc": "2025-12-17T18:27:18.850162Z",
     "normalized": {
       "name": "Kimberly Ann A'Hearn Pt",
       "phone": "4232387217",
@@ -303,7 +313,7 @@
   },
   "18": {
     "provider_id": "18",
-    "timestamp_utc": "2025-12-17T17:26:39.078757Z",
+    "timestamp_utc": "2025-12-17T18:27:18.904265Z",
     "normalized": {
       "name": "Kimberly Aaron",
       "phone": "5613675258",
@@ -326,7 +336,7 @@
   },
   "19": {
     "provider_id": "19",
-    "timestamp_utc": "2025-12-17T17:26:39.205941Z",
+    "timestamp_utc": "2025-12-17T18:27:19.029399Z",
     "normalized": {
       "name": "Kian S Abdul-Baki Do",
       "phone": "4097471883",
@@ -349,7 +359,7 @@
   },
   "20": {
     "provider_id": "20",
-    "timestamp_utc": "2025-12-17T17:26:39.258537Z",
+    "timestamp_utc": "2025-12-17T18:27:19.151893Z",
     "normalized": {
       "name": "Marie A Little",
       "phone": "5133065098",
@@ -372,7 +382,7 @@
   },
   "21": {
     "provider_id": "21",
-    "timestamp_utc": "2025-12-17T17:26:39.296473Z",
+    "timestamp_utc": "2025-12-17T18:27:19.228221Z",
     "normalized": {
       "name": "Martha H Aaron",
       "phone": "5033704950",
@@ -395,7 +405,7 @@
   },
   "22": {
     "provider_id": "22",
-    "timestamp_utc": "2025-12-17T17:26:39.341203Z",
+    "timestamp_utc": "2025-12-17T18:27:19.304357Z",
     "normalized": {
       "name": "Dr. Mark K Aasen",
       "phone": "4143257246",
@@ -418,7 +428,7 @@
   },
   "23": {
     "provider_id": "23",
-    "timestamp_utc": "2025-12-17T17:26:39.422023Z",
+    "timestamp_utc": "2025-12-17T18:27:19.379495Z",
     "normalized": {
       "name": "Dr. Puya Abbassi D.O.",
       "phone": "4088855000",
@@ -441,7 +451,7 @@
   },
   "24": {
     "provider_id": "24",
-    "timestamp_utc": "2025-12-17T17:26:39.480008Z",
+    "timestamp_utc": "2025-12-17T18:27:19.438073Z",
     "normalized": {
       "name": "Puya Alikhani",
       "phone": "8132590965",
@@ -464,7 +474,7 @@
   },
   "25": {
     "provider_id": "25",
-    "timestamp_utc": "2025-12-17T17:26:39.556615Z",
+    "timestamp_utc": "2025-12-17T18:27:19.678756Z",
     "normalized": {
       "name": "Dr. Purita Episcope Ambat Dmd",
       "phone": "7183887007",
@@ -487,7 +497,7 @@
   },
   "26": {
     "provider_id": "26",
-    "timestamp_utc": "2025-12-17T17:26:39.622669Z",
+    "timestamp_utc": "2025-12-17T18:27:19.722960Z",
     "normalized": {
       "name": "Dr. Chitra Sadasiwan Bhosekar M.D",
       "phone": "9204457222",
@@ -509,7 +519,7 @@
   },
   "27": {
     "provider_id": "27",
-    "timestamp_utc": "2025-12-17T17:26:39.723231Z",
+    "timestamp_utc": "2025-12-17T18:27:19.765993Z",
     "normalized": {
       "name": "Jordan M Abel Md",
       "phone": "3608278400",
@@ -531,7 +541,7 @@
   },
   "28": {
     "provider_id": "28",
-    "timestamp_utc": "2025-12-17T17:26:39.773935Z",
+    "timestamp_utc": "2025-12-17T18:27:19.807004Z",
     "normalized": {
       "name": "Rookmini Singh Fnp",
       "phone": "6469622700",
@@ -553,7 +563,7 @@
   },
   "29": {
     "provider_id": "29",
-    "timestamp_utc": "2025-12-17T17:26:39.818703Z",
+    "timestamp_utc": "2025-12-17T18:27:19.858304Z",
     "normalized": {
       "name": "Malak S Al-Alawi",
       "phone": "2484364400",
@@ -575,7 +585,7 @@
   },
   "30": {
     "provider_id": "30",
-    "timestamp_utc": "2025-12-17T17:26:39.876840Z",
+    "timestamp_utc": "2025-12-17T18:27:19.938899Z",
     "normalized": {
       "name": "Nanine Beal",
       "phone": "7072682990",
@@ -597,53 +607,68 @@
   },
   "6": {
     "provider_id": "6",
-    "timestamp_utc": "2025-12-17T17:26:40.103280Z",
+    "timestamp_utc": "2025-12-18T11:21:33.171269Z",
     "normalized": {
-      "name": "Ragunath Appasamy, Md, Phd",
+      "name": "Ragunath Appasamy Md Phd",
       "phone": "2153498222",
-      "address": "3400 Spruce Street, 3 Dulles Building Philadelphia, PA 19104-4206, United States",
-      "registration_number": "PA-MD-778945",
-      "license_status": "ACTIVE",
-      "issue_date": "June 12, 2015",
-      "expiry_date": "June 30, 2026",
+      "address": "3400 SPRUCE STREET 3 DULLES BUILDING PHILADELPHIA, PA 19104-4206 United States",
+      "registration_number": "",
+      "license_status": "",
+      "issue_date": "",
+      "expiry_date": "",
       "npi": "1467401976"
     },
-    "missing_fields": [],
-    "overall_confidence": 1.0,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "1": {
     "provider_id": "1",
-    "timestamp_utc": "2025-12-17T17:26:40.230063Z",
+    "timestamp_utc": "2025-12-18T11:21:33.011327Z",
     "normalized": {
       "name": "Balqisa Mohamud Abdi",
       "phone": "6515001998",
-      "address": "1516 W Lake St, Suite 104 Minneapolis, MN 55408, United States",
-      "registration_number": "MN-BT-458921",
-      "license_status": "ACTIVE",
-      "issue_date": "March 15, 2022",
-      "expiry_date": "March 31, 2026",
+      "address": "1516 W LAKE ST STE 104 MINNEAPOLIS, MN 55408 United States",
+      "registration_number": "",
+      "license_status": "",
+      "issue_date": "",
+      "expiry_date": "",
       "npi": "1740961333"
     },
-    "missing_fields": [],
-    "overall_confidence": 1.0,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   },
   "2": {
     "provider_id": "2",
-    "timestamp_utc": "2025-12-17T17:26:40.405054Z",
+    "timestamp_utc": "2025-12-18T11:21:33.019303Z",
     "normalized": {
-      "name": "Mithun Mamoottil Abraham, Dpt",
+      "name": "Dr. Mithun Mamoottil Abraham Dpt",
       "phone": "5168290030",
-      "address": "475 Northern Blvd, Suite 11 Great Neck, NY 11021, United States",
-      "registration_number": "NY-PT-998712",
-      "license_status": "ACTIVE",
-      "issue_date": "August 20, 2020",
-      "expiry_date": "August 31, 2026",
+      "address": "475 NORTHERN BLVD STE 11 GREAT NECK, NY 11021 United States",
+      "registration_number": "",
+      "license_status": "",
+      "issue_date": "",
+      "expiry_date": "",
       "npi": "1033689781"
     },
-    "missing_fields": [],
-    "overall_confidence": 1.0,
-    "validation_status": "PASS"
+    "missing_fields": [
+      "license_number",
+      "license_status",
+      "expiry_date",
+      "issue_date"
+    ],
+    "overall_confidence": 0.4,
+    "validation_status": "FAIL_NEEDS_REVIEW"
   }
 }

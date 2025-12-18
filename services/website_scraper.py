@@ -1,30 +1,3 @@
-# services/website_scraper.py
-"""
-Option A — Modern structured website scraper (one-file).
-Output JSON shape (recommended):
-{
-  "provider_id": "P001",
-  "url": "https://example.com",
-  "status": "ok" | "fail" | "invalid_or_parked",
-  "signals": {
-      "is_js_heavy": False,
-      "is_parked_likely": False,
-      "parked_indicators": [],
-      "not_medical_site": False
-  },
-  "hospital": { "emails": [], "phones": [], "addresses": [], "score": 0.0 },
-  "doctor": {
-      "name": "Dr X",
-      "doctor_page_found": True,
-      "doctor_pages": [],
-      "doctor_emails": [],
-      "doctor_phones": [],
-      "structured_profile": {},
-      "score": 0.0
-  },
-  "website_trust_score": 0.0
-}
-"""
 
 from __future__ import annotations
 
@@ -55,7 +28,6 @@ class WebsiteScraper:
                       "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     }
 
-    # strict-ish phone regex for captured E.164-ish segments (we keep flexible)
     STRICT_PHONE_RE = re.compile(r"(?:\+?\d[\d\-\s().]{6,}\d)")
     EMAIL_RE = re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}")
     PARKED_KEYWORDS = [
@@ -110,7 +82,6 @@ class WebsiteScraper:
             try:
                 rp.read()
             except Exception:
-                # permissive fallback: treat as allowed if robots can't be read
                 return True
             return rp.can_fetch(self.USER_AGENT["User-Agent"], url)
         except Exception:
@@ -167,7 +138,6 @@ class WebsiteScraper:
             return BeautifulSoup(html, "html.parser")
 
     def _visible_text(self, soup: BeautifulSoup) -> str:
-        # remove script/style/svg/iframe to avoid junk
         for tag in soup(["script", "style", "noscript", "svg", "iframe"]):
             tag.decompose()
         return soup.get_text("\n", strip=True)
@@ -181,14 +151,11 @@ class WebsiteScraper:
         seen = set()
         for m in raw:
             s = re.sub(r"[^\d+]", "", m)
-            # keep plausible lengths (7..15 digits)
             digits = re.sub(r"\D", "", s)
             if 7 <= len(digits) <= 15:
-                # normalize: prefer leading + when available
                 if s.startswith("+"):
                     val = "+" + digits
                 elif len(digits) == 10:
-                    # heuristic: local 10-digit -> do not force country (leave digits)
                     val = digits
                 else:
                     val = "+" + digits
@@ -204,7 +171,6 @@ class WebsiteScraper:
             low = ln.lower()
             if (any(tok in low for tok in self.ADDRESS_KEYWORDS) or (re.search(r"\d{3,}", ln) and "," in ln)) and 10 <= len(ln) <= 400:
                 candidates.append(ln)
-        # dedupe preserving order
         out = []
         seen = set()
         for a in candidates:
@@ -240,7 +206,6 @@ class WebsiteScraper:
             matches_token = any(t in href_l or t in txt for t in tokens) if tokens else False
             if matches_keyword or matches_token:
                 pages.append(resolved)
-        # dedupe and limit
         seen = set(); out = []
         for p in pages:
             if p not in seen:
@@ -258,14 +223,12 @@ class WebsiteScraper:
             soup = self._bs4_soup(fetched["html"])
             pages = self._detect_doctor_links(soup, base, doctor_name)
             if pages:
-                # validate first candidate by checking name presence
                 for page in pages:
                     pf = self._fetch_html(page)
                     if pf.get("ok"):
                         text = self._visible_text(self._bs4_soup(pf["html"])).lower()
                         if doctor_name.lower().replace("dr.", "").strip() in text:
                             return page
-                # if none validated, return first candidate as best-effort
                 return pages[0]
         return None
 
@@ -279,7 +242,6 @@ class WebsiteScraper:
             xml = fetched["html"]
             root = ET.fromstring(xml)
             urls = []
-            # look for loc elements
             for url_el in root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc") or root.findall(".//loc"):
                 if url_el is not None and url_el.text:
                     u = url_el.text.strip()
@@ -297,13 +259,16 @@ class WebsiteScraper:
             return None
         return None
 
-    def _parked_signals(self, text: str, html: str) -> (bool, List[str]):
-        indicators = []
+    def _parked_signals(self, text: str, html: str) -> tuple[bool, list[str]]:
+        indicators: list[str] = []
+
         low = (text + " " + (html[:1000] if html else "")).lower()
+
         for k in self.PARKED_KEYWORDS:
             if k in low:
                 indicators.append(k)
-        return (len(indicators) > 0, indicators)
+
+        return len(indicators) > 0, indicators
 
     def extract_doctor_profile_structured(self, html: str) -> Optional[Dict[str, Any]]:
         soup = self._bs4_soup(html)
@@ -420,14 +385,12 @@ class WebsiteScraper:
         soup = self._bs4_soup(html)
         text = self._visible_text(soup)
 
-        # signals
         js_heavy = self._looks_js_heavy(html)
         parked_flag, parked_indicators = self._parked_signals(text, html)
         out["signals"]["is_js_heavy"] = js_heavy
         out["signals"]["is_parked_likely"] = parked_flag
         out["signals"]["parked_indicators"] = parked_indicators
 
-        # extract hospital-level info
         emails = self._extract_emails(text)
         phones = self._extract_phones(text)
         addresses = self._extract_addresses(text)
@@ -440,14 +403,11 @@ class WebsiteScraper:
             hospital_score = min(1.0, (0.33 if emails else 0) + (0.34 if phones else 0) + (0.33 if addresses else 0))
         out["hospital"]["score"] = round(hospital_score, 3)
 
-        # Doctor discovery
         doctor_pages = self._detect_doctor_links(soup, url, doctor_name) if doctor_name else []
-        # safe discovery if none found on homepage
         if doctor_name and not doctor_pages:
             discovered = self._safe_discover_doctor(url, doctor_name)
             if discovered:
                 doctor_pages = [discovered]
-        # sitemap fallback
         if doctor_name and not doctor_pages:
             sm = self._sitemap_discover(url, doctor_name)
             if sm:
@@ -494,22 +454,17 @@ class WebsiteScraper:
         })
 
         out["signals"]["not_medical_site"] = False
-        # Simple heuristic: if neither hospital signals nor doctor signals, mark maybe not medical
         if hospital_score < 0.1 and doctor_score < 0.1:
             out["signals"]["not_medical_site"] = True
 
-        # compute overall trust
         trust = self.score_website_trust(hospital_score, doctor_score, parked_flag, js_heavy)
         out["website_trust_score"] = round(trust, 3)
 
-        # status decisions (do not drop/throw away working sites)
-        # if parked_flag strong and trust very low, tag as parked but still return data
         if parked_flag and trust < 0.15:
             out["status"] = "invalid_or_parked"
         else:
             out["status"] = "ok"
 
-        # optional save
         if save:
             out_dir = Path("data/processed/website_scrape")
             out_dir.mkdir(parents=True, exist_ok=True)
@@ -519,7 +474,6 @@ class WebsiteScraper:
         return out
 
 
-# CLI helper
 def main():
     parser = argparse.ArgumentParser(description="WebsiteScraper (Option A structured output)")
     parser.add_argument("--url", required=True)

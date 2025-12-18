@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# run_pipeline.py
-# EY Hackathon – FULL PIPELINE (ONE RUN)
 
 import os
 import csv
@@ -8,7 +5,6 @@ import json
 import asyncio
 from datetime import datetime, timezone
 
-# ---------- SAFE PATH SETUP ----------
 ROOT = os.path.dirname(os.path.abspath(__file__))
 os.chdir(ROOT)
 
@@ -24,13 +20,11 @@ QA_JSON = os.path.join(PROCESSED_DIR, "qa_results.json")
 
 os.makedirs(PROCESSED_DIR, exist_ok=True)
 
-# ---------- IMPORT AGENTS ----------
 from services.pdf_vlm_extractor import PDFVLMExtractor
 from agents.data_validation_agent import DataValidationAgent
 from agents.enrichment_agent import run as run_enrichment
 from agents.quality_assurance_agent import QualityAssuranceAgent
 
-# ---------- HELPERS ----------
 def utc_now():
     return datetime.now(timezone.utc).isoformat()
 
@@ -42,7 +36,6 @@ def atomic_write(path, data):
         os.fsync(f.fileno())
     os.replace(tmp, path)
 
-# ---------- PHASE 1: EXTRACT ----------
 async def extract_phase():
     extractor = PDFVLMExtractor()
     extracted = {}
@@ -68,7 +61,6 @@ async def extract_phase():
     atomic_write(EXTRACTED_JSON, extracted)
     print(f" Extraction completed ({len(extracted)})")
 
-# ---------- PHASE 2: VALIDATION ----------
 def validation_phase():
     validator = DataValidationAgent()
 
@@ -82,12 +74,10 @@ def validation_phase():
 
     print(" Validation completed")
 
-# ---------- PHASE 3: ENRICHMENT ----------
 async def enrichment_phase():
     await run_enrichment()
     print("✅ Enrichment completed")
 
-# ---------- PHASE 4: QUALITY ASSURANCE ----------
 def qa_phase():
     enriched = json.load(open(ENRICHED_JSON, encoding="utf-8"))
     qa_agent = QualityAssuranceAgent()
@@ -99,7 +89,6 @@ def qa_phase():
     atomic_write(QA_JSON, qa_results)
     print("✅ QA completed")
 
-# ---------- MAIN ----------
 async def main():
     print("\n🚀 EY PROVIDER PIPELINE STARTED\n")
 

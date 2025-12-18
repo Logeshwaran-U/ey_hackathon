@@ -18,7 +18,6 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 
 class PDFVLMExtractor:
 
-    # 1. TEXT EXTRACTION 
     def extract_text(self, pdf_path: str) -> str:
         text_data = ""
         try:
@@ -30,7 +29,6 @@ class PDFVLMExtractor:
 
         return text_data.strip()
 
-    # 2. OCR FALLBACK FOR SCANNED PDFs
     def extract_ocr(self, pdf_path: str) -> str:
         try:
             pdf = pdfium.PdfDocument(pdf_path)
@@ -49,7 +47,6 @@ class PDFVLMExtractor:
             print(f"[ERROR] OCR failed: {e}")
             return ""
 
-    # 3. GEMINI TEXT MODEL (FREE)
 
     def analyze_with_gemini_text(self, text: str) -> dict:
         prompt = f"""
@@ -94,19 +91,16 @@ class PDFVLMExtractor:
             except Exception as e:
                 err = str(e)
 
-                # 🔥 THIS IS THE 503 HANDLER
                 if "503" in err or "Service Unavailable" in err:
                     sleep_time = (2 ** attempt) + random.uniform(0.5, 1.5)
                     print(f"⚠ Gemini busy (503). Retrying in {sleep_time:.1f}s...")
                     time.sleep(sleep_time)
                     continue
 
-                # other errors → fail fast
                 return {"error": f"Gemini failed: {err}"}
 
         return {"error": "Gemini failed after retries"}
 
-    # 4. JSON FILE HELPERS
     def _read_json(self, path):
         if not os.path.exists(path):
             return {}
@@ -130,11 +124,9 @@ class PDFVLMExtractor:
         self._write_json(settings.ENRICHED_JSON, data)
 
     
-    # 5. MAIN PIPELINE (FREE TIER SAFE)
     
     def run(self, pdf_path: str, provider_id: str) -> dict:
 
-        # Step 1: text extraction
         text = self.extract_text(pdf_path)
 
         if len(text) < 20:
@@ -143,14 +135,12 @@ class PDFVLMExtractor:
 
         self.save_raw_text(provider_id, text)
 
-        # Step 2: process with Gemini TEXT model
         result = self.analyze_with_gemini_text(text)
 
         self.save_final_output(provider_id, result)
         return result
 
 
-# CLI test
 if __name__ == "__main__":
     import sys
     if len(sys.argv) != 3:

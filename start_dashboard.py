@@ -11,9 +11,8 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🏥 EY Healthcare Provider Validation Dashboard")
+st.title(" EY Healthcare Provider Validation Dashboard")
 
-# ---------------- LOAD DATA ----------------
 def load_json(path):
     if not os.path.exists(path):
         return {}
@@ -24,10 +23,9 @@ qa_data = load_json(QA_JSON)
 validated_data = load_json(VALIDATED_JSON)
 
 if not qa_data:
-    st.error("❌ QA results not found. Run pipeline first.")
+    st.error(" QA results not found. Run pipeline first.")
     st.stop()
 
-# ---------------- FLATTEN DATA ----------------
 rows = []
 
 for pid, qa in qa_data.items():
@@ -48,7 +46,6 @@ for pid, qa in qa_data.items():
 
 df = pd.DataFrame(rows)
 
-# ---------------- METRICS ----------------
 c1, c2, c3, c4 = st.columns(4)
 
 c1.metric("Total Providers", len(df))
@@ -58,7 +55,6 @@ c4.metric("FAIL / REJECTED", df["Final Status"].isin(["FAIL_QA", "REJECTED"]).su
 
 st.divider()
 
-# ---------------- FILTERS ----------------
 status_filter = st.multiselect(
     "Filter by Final Status",
     options=df["Final Status"].unique().tolist(),
@@ -67,23 +63,20 @@ status_filter = st.multiselect(
 
 filtered_df = df[df["Final Status"].isin(status_filter)]
 
-# ---------------- TABLE ----------------
-st.subheader("📋 Provider Results")
+st.subheader(" Provider Results")
 
 st.dataframe(
     filtered_df.sort_values("Confidence", ascending=False),
     use_container_width=True
 )
 
-# ---------------- CONFIDENCE CHART ----------------
-st.subheader("📊 Confidence Distribution")
+st.subheader("Confidence Distribution")
 
 st.bar_chart(
     filtered_df.groupby("Final Status")["Confidence"].mean()
 )
 
-# ---------------- ISSUE BREAKDOWN ----------------
-st.subheader("⚠️ Common Issues")
+st.subheader("Common Issues")
 
 issue_series = (
     filtered_df["Issues"]

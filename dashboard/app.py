@@ -26,11 +26,9 @@ def index():
         if not csv_file:
             return render_template("index.html", error="CSV file required")
 
-        # overwrite input CSV
         input_path = os.path.join("data", "input", "dta.csv")
         csv_file.save(input_path)
 
-        # run full pipeline
         subprocess.run(
         [sys.executable, os.path.abspath("run_pipeline.py")],
         cwd=os.path.abspath(os.path.join(os.path.dirname(__file__), "..")),
@@ -59,7 +57,7 @@ def result():
             display_issues = rec.get("issues", []) or ["Needs manual verification"]
 
         rows.append({
-            "provider_id": int(pid),  # 🔥 convert for proper sorting
+            "provider_id": int(pid),  
             "name": rec.get("name", ""),
             "phone": rec.get("phone", ""),
             "address": rec.get("address", ""),
@@ -76,7 +74,6 @@ def result():
             }
         })
 
-    # ✅ SORT ASCENDING (by provider_id)
     rows.sort(key=lambda x: x["provider_id"])
 
     return render_template("result.html", rows=rows)

@@ -3,61 +3,69 @@
     "provider_id": "1",
     "name": "Balqisa Mohamud Abdi",
     "phone": "6515001998",
-    "address": "1516 W Lake St, Suite 104 Minneapolis, MN 55408, United States",
+    "address": "1516 W LAKE ST STE 104 MINNEAPOLIS, MN 55408 United States",
     "npi": "1740961333",
-    "license_number": "MN-BT-458921",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
-    "final_status": "REJECTED",
-    "issues": [],
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
     "signals": {
-      "validation_status": "PASS",
+      "validation_status": "FAIL_NEEDS_REVIEW",
       "confidence_bucket": "LOW"
     }
   },
   "2": {
     "provider_id": "2",
-    "name": "Mithun Mamoottil Abraham, Dpt",
+    "name": "Dr. Mithun Mamoottil Abraham Dpt",
     "phone": "5168290030",
-    "address": "475 Northern Blvd, Suite 11 Great Neck, NY 11021, United States",
+    "address": "475 NORTHERN BLVD STE 11 GREAT NECK, NY 11021 United States",
     "npi": "1033689781",
-    "license_number": "NY-PT-998712",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
-    "final_status": "REJECTED",
-    "issues": [],
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
     "signals": {
-      "validation_status": "PASS",
+      "validation_status": "FAIL_NEEDS_REVIEW",
       "confidence_bucket": "LOW"
     }
   },
   "4": {
     "provider_id": "4",
-    "name": "Lawrence E Addison, O.D.",
+    "name": "Lawrence E Addison O.D.",
     "phone": "7152412020",
-    "address": "4009 Community Center Dr, Weston, WI 54476-4139, United States",
+    "address": "4009 COMMUNITY CENTER DR WESTON, WI 54476-4139 United States",
     "npi": "1760794697",
-    "license_number": "WI-OD-614782",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
-    "final_status": "REJECTED",
-    "issues": [],
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
     "signals": {
-      "validation_status": "PASS",
+      "validation_status": "FAIL_NEEDS_REVIEW",
       "confidence_bucket": "LOW"
     }
   },
   "5": {
     "provider_id": "5",
-    "name": "Bill Abbo, Dds, Ms",
+    "name": "Dr. Bill Abbo Dds Ms",
     "phone": "3059450909",
-    "address": "3031 NE 163rd St, North Miami Beach, FL 33160-4462, United States",
+    "address": "3031 NE 163RD ST NORTH MIAMI BEACH, FL 33160-4462 United States",
     "npi": "1720147853",
-    "license_number": "FL-DDS-884210",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
-    "final_status": "REJECTED",
-    "issues": [],
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
     "signals": {
       "validation_status": "FAIL_NEEDS_REVIEW",
       "confidence_bucket": "LOW"
@@ -70,7 +78,7 @@
     "address": "12221 SAINT CHARLES ROCK RD BRIDGETON, MO 63044-2502 United States",
     "npi": "1356965289",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -88,7 +96,7 @@
     "address": "PO BOX 3799 CLARKSVILLE, TN 37043 United States",
     "npi": "1629019922",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -106,7 +114,7 @@
     "address": "190 HANDLEY RD TYRONE, GA 30290-2178 United States",
     "npi": "1063192243",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -124,7 +132,7 @@
     "address": "2424 156TH AVE NE BELLEVUE, WA 98007-3814 United States",
     "npi": "1811763980",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.968017+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -142,7 +150,7 @@
     "address": "7335 VAN NUYS BLVD VAN NUYS, CA 91405-1998 United States",
     "npi": "1396402988",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -160,7 +168,7 @@
     "address": "1312 38TH ST BROOKLYN, NY 11218-3612 United States",
     "npi": "1437750635",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -178,7 +186,7 @@
     "address": "300 PULLMAN ST BLDG A1 LIVERMORE, CA 94551-9756 United States",
     "npi": "1235660754",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -196,7 +204,7 @@
     "address": "9430 TURKEY LAKE RD STE 114 ORLANDO, FL 32819-8015 United States",
     "npi": "1821583287",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -214,7 +222,7 @@
     "address": "4904 SANTO AVE LAS VEGAS, NV 89108-1331 United States",
     "npi": "",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -232,7 +240,7 @@
     "address": "230 E RIDGEWOOD AVE PARAMUS, NJ 07652-4142 United States",
     "npi": "",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -250,7 +258,7 @@
     "address": "2118 CUMBERLAND CREEK TRL SW MARIETTA, GA 30008-4457 United States",
     "npi": "",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -268,7 +276,7 @@
     "address": "9329 NC HWY 33E CHAPEL HILL, OH 27517 United States",
     "npi": "",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -286,7 +294,7 @@
     "address": "15 GLEN ESTE PL CINCINNATI, OH 45217-2162 United States",
     "npi": "",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -304,7 +312,7 @@
     "address": "4747 SKYLINE RD S # 180 SALEM, OR 97306-4200 United States",
     "npi": "",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -322,7 +330,7 @@
     "address": "508 E MORRIS ST DALTON, GA 30721-3403 United States",
     "npi": "",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -340,7 +348,7 @@
     "address": "UNIVERSITY OF TEXAS MEDICAL BRANCH 301 UNIVERSITY BLVD GALVESTON, TX 77555-0001 United States",
     "npi": "",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -358,7 +366,7 @@
     "address": "2 TAMPA GENERAL CIR 7TH FLOOR TAMPA, FL 33606-3603 United States",
     "npi": "",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -376,7 +384,7 @@
     "address": "4131 W. LOOMIS RD STE 300 GREENFIELD, WI 53221-2059 United States",
     "npi": "",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -394,7 +402,7 @@
     "address": "751 S BASCOM AVE SAN JOSE, CA 95128-2699 United States",
     "npi": "",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -412,7 +420,7 @@
     "address": "PO BOX 22487 GREEN BAY, WI 54305-2487 United States",
     "npi": "1114144466",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -430,7 +438,7 @@
     "address": "18313 PAULSON ST SW ROCHESTER, WA 98579-9262 United States",
     "npi": "1821438029",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -448,7 +456,7 @@
     "address": "749 GRAND STREET BROOKLYN, NY 11211 United States",
     "npi": "",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -466,7 +474,7 @@
     "address": "520 E 70TH ST NEW YORK, NY 10021-9800 United States",
     "npi": "1912475377",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -484,7 +492,7 @@
     "address": "27777 INKSTER RD FARMINGTON HILLS, MI 48334-5326 United States",
     "npi": "1437794203",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -502,7 +510,7 @@
     "address": "720 WOOD ST EUREKA, CA 95501-4413 United States",
     "npi": "1871365379",
     "license_number": "",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
     "final_status": "FAIL_QA",
     "issues": [
@@ -515,17 +523,19 @@
   },
   "6": {
     "provider_id": "6",
-    "name": "Ragunath Appasamy, Md, Phd",
+    "name": "Ragunath Appasamy Md Phd",
     "phone": "2153498222",
-    "address": "3400 Spruce Street, 3 Dulles Building Philadelphia, PA 19104-4206, United States",
+    "address": "3400 SPRUCE STREET 3 DULLES BUILDING PHILADELPHIA, PA 19104-4206 United States",
     "npi": "1467401976",
-    "license_number": "PA-MD-778945",
-    "qa_timestamp_utc": "2025-12-17T17:27:50.969014+00:00",
+    "license_number": "",
+    "qa_timestamp_utc": "2025-12-18T11:22:06.271141+00:00",
     "combined_confidence": 0.0,
-    "final_status": "REJECTED",
-    "issues": [],
+    "final_status": "FAIL_QA",
+    "issues": [
+      "missing_license_number"
+    ],
     "signals": {
-      "validation_status": "PASS",
+      "validation_status": "FAIL_NEEDS_REVIEW",
       "confidence_bucket": "LOW"
     }
   }

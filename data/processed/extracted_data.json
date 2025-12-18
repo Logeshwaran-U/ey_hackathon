@@ -1,4 +1,30 @@
 {
+  "1": {
+    "provider_id": "1",
+    "csv_data": {
+      "Provider_ID": "1",
+      "Name": "BALQISA MOHAMUD ABDI",
+      "Address": "1516 W LAKE ST STE 104\nMINNEAPOLIS, MN 55408\nUnited States",
+      "Phone_No": "651-500-1998",
+      "Speciality": "Behavior Technician",
+      "NPI_ID": "1740961333",
+      "Pdf": ""
+    },
+    "pdf_data": null
+  },
+  "2": {
+    "provider_id": "2",
+    "csv_data": {
+      "Provider_ID": "2",
+      "Name": "Dr. MITHUN MAMOOTTIL ABRAHAM DPT",
+      "Address": "475 NORTHERN BLVD STE 11\nGREAT NECK, NY 11021\nUnited States",
+      "Phone_No": "516-829-0030",
+      "Speciality": "Physical Therapist - Orthopedic",
+      "NPI_ID": "1033689781",
+      "Pdf": ""
+    },
+    "pdf_data": null
+  },
   "3": {
     "provider_id": "3",
     "csv_data": {
@@ -12,314 +38,15 @@
     },
     "pdf_data": null
   },
-  "7": {
-    "provider_id": "7",
+  "4": {
+    "provider_id": "4",
     "csv_data": {
-      "Provider_ID": "7",
-      "Name": "ESTHER AARINOLA RBT",
-      "Address": "190 HANDLEY RD\nTYRONE, GA 30290-2178\nUnited States",
-      "Phone_No": "678-904-7053",
-      "Speciality": "Behavior Technician",
-      "NPI_ID": "1063192243",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "8": {
-    "provider_id": "8",
-    "csv_data": {
-      "Provider_ID": "8",
-      "Name": "Dr. ESPIR J ABAJI DDS",
-      "Address": "12221 SAINT CHARLES ROCK RD\nBRIDGETON, MO 63044-2502\nUnited States",
-      "Phone_No": "314-656-6615",
-      "Speciality": "Dentist - Prosthodontics",
-      "NPI_ID": "1356965289",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "9": {
-    "provider_id": "9",
-    "csv_data": {
-      "Provider_ID": "9",
-      "Name": "ESKINDER ABASSERAN COTA",
-      "Address": "2424 156TH AVE NE\nBELLEVUE, WA 98007-3814\nUnited States",
-      "Phone_No": "425-242-5671",
-      "Speciality": "Occupational Therapist",
-      "NPI_ID": "1811763980",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "10": {
-    "provider_id": "10",
-    "csv_data": {
-      "Provider_ID": "10",
-      "Name": "ESTELA MARIA ABICH MD",
-      "Address": "9430 TURKEY LAKE RD STE 114\nORLANDO, FL 32819-8015\nUnited States\n",
-      "Phone_No": "407-354-1202",
-      "Speciality": "Surgery",
-      "NPI_ID": "1821583287",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "11": {
-    "provider_id": "11",
-    "csv_data": {
-      "Provider_ID": "11",
-      "Name": "ESTREYA ESTHER ABOUD",
-      "Address": "1312 38TH ST\nBROOKLYN, NY 11218-3612\nUnited States",
-      "Phone_No": "718-686-3700",
-      "Speciality": "Specialist",
-      "NPI_ID": "1437750635",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "12": {
-    "provider_id": "12",
-    "csv_data": {
-      "Provider_ID": "12",
-      "Name": "ESCARLET ACABAL",
-      "Address": "7335 VAN NUYS BLVD\nVAN NUYS, CA 91405-1998\nUnited States",
-      "Phone_No": "310-553-2695",
-      "Speciality": "Specialist/Technologist",
-      "NPI_ID": "1396402988",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "13": {
-    "provider_id": "13",
-    "csv_data": {
-      "Provider_ID": "13",
-      "Name": "GAYATRI AACHI\n\n",
-      "Address": "300 PULLMAN ST BLDG A1\nLIVERMORE, CA 94551-9756\nUnited States\n",
-      "Phone_No": "925-294-7022",
-      "Speciality": "Pharmacist",
-      "NPI_ID": "1235660754",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "14": {
-    "provider_id": "14",
-    "csv_data": {
-      "Provider_ID": "14",
-      "Name": "GABRIELA ABADAL",
-      "Address": "4904 SANTO AVE\nLAS VEGAS, NV 89108-1331\nUnited States\n",
-      "Phone_No": "702-428-7910",
-      "Speciality": "Behavior Analyst",
-      "NPI_ID": "",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "15": {
-    "provider_id": "15",
-    "csv_data": {
-      "Provider_ID": "15",
-      "Name": "GANI ABAZI MD, MPH",
-      "Address": "230 E RIDGEWOOD AVE\nPARAMUS, NJ 07652-4142\nUnited States",
-      "Phone_No": "201-967-4000",
-      "Speciality": "Student in an Organized Health Care Education/Training Program",
-      "NPI_ID": "",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "16": {
-    "provider_id": "16",
-    "csv_data": {
-      "Provider_ID": "16",
-      "Name": "GAMBO ABDULLAHI",
-      "Address": "2118 CUMBERLAND CREEK TRL SW\nMARIETTA, GA 30008-4457\nUnited States",
-      "Phone_No": "404-641-0505",
-      "Speciality": "Registered Nurse - Psych",
-      "NPI_ID": "",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "17": {
-    "provider_id": "17",
-    "csv_data": {
-      "Provider_ID": "17",
-      "Name": "KIMBERLY ANN A'HEARN PT",
-      "Address": "508 E MORRIS ST\nDALTON, GA 30721-3403\nUnited States\n",
-      "Phone_No": "423-238-7217",
-      "Speciality": "Physical Therapist - Orthopedic",
-      "NPI_ID": "",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "18": {
-    "provider_id": "18",
-    "csv_data": {
-      "Provider_ID": "18",
-      "Name": "KIMBERLY AARON",
-      "Address": "9329 NC HWY 33E\nCHAPEL HILL, OH 27517\nUnited States\n",
-      "Phone_No": "561-367-5258",
-      "Speciality": "Respiratory Therapist",
-      "NPI_ID": "",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "19": {
-    "provider_id": "19",
-    "csv_data": {
-      "Provider_ID": "19",
-      "Name": "KIAN S ABDUL-BAKI DO",
-      "Address": "UNIVERSITY OF TEXAS MEDICAL BRANCH 301 UNIVERSITY BLVD\nGALVESTON, TX 77555-0001\nUnited States",
-      "Phone_No": "409-747-1883",
-      "Speciality": "Hospitalist",
-      "NPI_ID": "",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "20": {
-    "provider_id": "20",
-    "csv_data": {
-      "Provider_ID": "20",
-      "Name": "MARIE A LITTLE",
-      "Address": "15 GLEN ESTE PL\nCINCINNATI, OH 45217-2162\nUnited States",
-      "Phone_No": "513-306-5098",
-      "Speciality": "Licensed Practical Nurse",
-      "NPI_ID": "",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "21": {
-    "provider_id": "21",
-    "csv_data": {
-      "Provider_ID": "21",
-      "Name": "MARTHA H AARON ",
-      "Address": "4747 SKYLINE RD S # 180\nSALEM, OR 97306-4200\nUnited States",
-      "Phone_No": "503-370-4950",
-      "Speciality": "Psychiatry & Neurology",
-      "NPI_ID": "",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "22": {
-    "provider_id": "22",
-    "csv_data": {
-      "Provider_ID": "22",
-      "Name": "Dr. MARK K AASEN",
-      "Address": "4131 W. LOOMIS RD\nSTE 300\nGREENFIELD, WI 53221-2059\nUnited States",
-      "Phone_No": "414-325-7246 ",
-      "Speciality": "Interventional Pain Medicine",
-      "NPI_ID": "",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "23": {
-    "provider_id": "23",
-    "csv_data": {
-      "Provider_ID": "23",
-      "Name": "Dr. PUYA ABBASSI D.O.",
-      "Address": "751 S BASCOM AVE\nSAN JOSE, CA 95128-2699\nUnited States\n",
-      "Phone_No": "408-885-5000",
-      "Speciality": "Psychiatry & Neurology",
-      "NPI_ID": "",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "24": {
-    "provider_id": "24",
-    "csv_data": {
-      "Provider_ID": "24",
-      "Name": "PUYA ALIKHANI",
-      "Address": "2 TAMPA GENERAL CIR\n7TH FLOOR\nTAMPA, FL 33606-3603\nUnited States",
-      "Phone_No": "813-259-0965",
-      "Speciality": "Neurological Surgery",
-      "NPI_ID": "",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "25": {
-    "provider_id": "25",
-    "csv_data": {
-      "Provider_ID": "25",
-      "Name": "Dr. PURITA EPISCOPE AMBAT DMD\n\n",
-      "Address": "749 GRAND STREET\nBROOKLYN, NY 11211\nUnited States",
-      "Phone_No": "718-388-7007",
-      "Speciality": "General Practice",
-      "NPI_ID": "",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "26": {
-    "provider_id": "26",
-    "csv_data": {
-      "Provider_ID": "26",
-      "Name": "Dr. CHITRA SADASIWAN BHOSEKAR M.D\n\n",
-      "Address": "PO BOX 22487\nGREEN BAY, WI 54305-2487\nUnited States",
-      "Phone_No": "920-445-7222",
-      "Speciality": "Respiratory Therapist",
-      "NPI_ID": "1114144466",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "27": {
-    "provider_id": "27",
-    "csv_data": {
-      "Provider_ID": "27",
-      "Name": "JORDAN M ABEL MD\n\n",
-      "Address": "18313 PAULSON ST SW\nROCHESTER, WA 98579-9262\nUnited States",
-      "Phone_No": "360-827-8400",
-      "Speciality": " Family Medicine",
-      "NPI_ID": "1821438029",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "28": {
-    "provider_id": "28",
-    "csv_data": {
-      "Provider_ID": "28",
-      "Name": "ROOKMINI SINGH FNP\n\n",
-      "Address": "520 E 70TH ST\nNEW YORK, NY 10021-9800\nUnited States",
-      "Phone_No": "646-962-2700 ",
-      "Speciality": "Nurse Practitioner - Family",
-      "NPI_ID": "1912475377",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "29": {
-    "provider_id": "29",
-    "csv_data": {
-      "Provider_ID": "29",
-      "Name": "MALAK S AL-ALAWI\n\n",
-      "Address": "\t27777 INKSTER RD\nFARMINGTON HILLS, MI 48334-5326\nUnited States",
-      "Phone_No": "248-436-4400",
-      "Speciality": "Behavior Technician",
-      "NPI_ID": "1437794203",
-      "Pdf": ""
-    },
-    "pdf_data": null
-  },
-  "30": {
-    "provider_id": "30",
-    "csv_data": {
-      "Provider_ID": "30",
-      "Name": "NANINE BEAL\n\n",
-      "Address": "\t720 WOOD ST\nEUREKA, CA 95501-4413\nUnited States",
-      "Phone_No": "707-268-2990",
-      "Speciality": "Licensed Practical Nurse",
-      "NPI_ID": "1871365379",
+      "Provider_ID": "4",
+      "Name": "LAWRENCE E ADDISON O.D.",
+      "Address": "4009 COMMUNITY CENTER DR\nWESTON, WI 54476-4139\nUnited States",
+      "Phone_No": " 715-241-2020",
+      "Speciality": "Optometrist",
+      "NPI_ID": "1760794697",
       "Pdf": ""
     },
     "pdf_data": null
@@ -333,18 +60,9 @@
       "Phone_No": "305-945-0909",
       "Speciality": "Dentist - Prosthodontics",
       "NPI_ID": "1720147853",
-      "Pdf": "data/input/pdfs/abbo.pdf"
+      "Pdf": ""
     },
-    "pdf_data": {
-      "registered_name": "Bill Abbo, DDS, MS",
-      "license_number": "FL-DDS-884210",
-      "license_type": "Dentist – Prosthodontics",
-      "issuing_authority": "STATE BOARD OF DENTISTRY",
-      "issue_date": "July 21, 2014",
-      "expiry_date": "July 31, 2025",
-      "license_status": "ACTIVE",
-      "registered_address": "3031 NE 163rd St, North Miami Beach, FL 33160-4462, United States"
-    }
+    "pdf_data": null
   },
   "6": {
     "provider_id": "6",
@@ -355,83 +73,8 @@
       "Phone_No": "215-349-8222,",
       "Speciality": "Internal Medicine - Gastroenterology",
       "NPI_ID": "1467401976",
-      "Pdf": "data/input/pdfs/sample_ragu_appa.pdf"
+      "Pdf": ""
     },
-    "pdf_data": {
-      "registered_name": "Ragunath Appasamy, MD, PhD",
-      "license_number": "PA-MD-778945",
-      "license_type": "PHYSICIAN LICENSE CERTIFICATE",
-      "issuing_authority": "COMMONWEALTH OF PENNSYLVANIA STATE BOARD OF MEDICINE",
-      "issue_date": "June 12, 2015",
-      "expiry_date": "June 30, 2026",
-      "license_status": "ACTIVE",
-      "registered_address": "3400 Spruce Street, 3 Dulles Building\nPhiladelphia, PA 19104-4206, United States"
-    }
-  },
-  "1": {
-    "provider_id": "1",
-    "csv_data": {
-      "Provider_ID": "1",
-      "Name": "BALQISA MOHAMUD ABDI",
-      "Address": "1516 W LAKE ST STE 104\nMINNEAPOLIS, MN 55408\nUnited States",
-      "Phone_No": "651-500-1998",
-      "Speciality": "Behavior Technician",
-      "NPI_ID": "1740961333",
-      "Pdf": "data/input/pdfs/sample_balqisa_license.pdf"
-    },
-    "pdf_data": {
-      "registered_name": "Balqisa Mohamud Abdi",
-      "license_number": "MN-BT-458921",
-      "license_type": "Behavior Technician",
-      "issuing_authority": "STATE OF MINNESOTA BOARD OF BEHAVIORAL HEALTH",
-      "issue_date": "March 15, 2022",
-      "expiry_date": "March 31, 2026",
-      "license_status": "ACTIVE",
-      "registered_address": "1516 W Lake St, Suite 104\nMinneapolis, MN 55408, United States"
-    }
-  },
-  "2": {
-    "provider_id": "2",
-    "csv_data": {
-      "Provider_ID": "2",
-      "Name": "Dr. MITHUN MAMOOTTIL ABRAHAM DPT",
-      "Address": "475 NORTHERN BLVD STE 11\nGREAT NECK, NY 11021\nUnited States",
-      "Phone_No": "516-829-0030",
-      "Speciality": "Physical Therapist - Orthopedic",
-      "NPI_ID": "1033689781",
-      "Pdf": "data/input/pdfs/sample_mithun_license.pdf"
-    },
-    "pdf_data": {
-      "registered_name": "Mithun Mamoottil Abraham, DPT",
-      "license_number": "NY-PT-998712",
-      "license_type": "Physical Therapy",
-      "issuing_authority": "STATE OF NEW YORK STATE BOARD OF PHYSICAL THERAPY",
-      "issue_date": "August 20, 2020",
-      "expiry_date": "August 31, 2026",
-      "license_status": "ACTIVE",
-      "registered_address": "475 Northern Blvd, Suite 11\nGreat Neck, NY 11021, United States"
-    }
-  },
-  "4": {
-    "provider_id": "4",
-    "csv_data": {
-      "Provider_ID": "4",
-      "Name": "LAWRENCE E ADDISON O.D.",
-      "Address": "4009 COMMUNITY CENTER DR\nWESTON, WI 54476-4139\nUnited States",
-      "Phone_No": " 715-241-2020",
-      "Speciality": "Optometrist",
-      "NPI_ID": "1760794697",
-      "Pdf": "data/input/pdfs/lawrence_fl.pdf"
-    },
-    "pdf_data": {
-      "registered_name": "Lawrence E Addison, O.D.",
-      "license_number": "WI-OD-614782",
-      "license_type": "Optometrist License",
-      "issuing_authority": "Commonwealth of Wisconsin, Department of Safety and Professional Services, Optometry Examining Board",
-      "issue_date": "August 18, 2014",
-      "expiry_date": "December 31, 2026",
-      "license_status": "ACTIVE",
-      "registered_address": "4009 Community Center Dr, Weston, WI 54476-4139, United States"
-    }
+    "pdf_data": null
   }
 }

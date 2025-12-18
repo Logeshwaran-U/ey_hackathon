@@ -1,18 +1,14 @@
-# agents/data_validation_agent.py
-# EY-HACKATHON FINAL – DECISION-CORRECT (ROBUST VERSION)
 
 from __future__ import annotations
 import json, os, re, tempfile
 from datetime import datetime, date
 
-# ------------------ CONFIG ------------------
 PROCESSED_DIR = "data/processed"
 VALIDATED_JSON = os.path.join(PROCESSED_DIR, "validated_data.json")
 os.makedirs(PROCESSED_DIR, exist_ok=True)
 
 DIGITS = re.compile(r"\d+")
 
-# ------------------ NORMALIZERS ------------------
 def norm_name(x): 
     return re.sub(r"\s+", " ", str(x or "")).strip().title()
 
@@ -26,7 +22,6 @@ def safe(x):
     x = str(x).strip() if x else ""
     return x if x else ""
 
-# ------------------ IO HELPERS ------------------
 def _atomic_write(path, data):
     fd, tmp = tempfile.mkstemp(dir=os.path.dirname(path))
     with os.fdopen(fd, "w", encoding="utf-8") as f:
@@ -35,7 +30,6 @@ def _atomic_write(path, data):
         os.fsync(f.fileno())
     os.replace(tmp, path)
 
-# ------------------ AGENT ------------------
 class DataValidationAgent:
 
     LICENSE_REQUIRED = ["license_number", "license_status", "expiry_date"]
@@ -59,7 +53,6 @@ class DataValidationAgent:
 
     def run(self, provider_id: str, csv_row: dict, pdf_row: dict | None):
 
-        # ------------------ NORMALIZATION ------------------
         name = norm_name((pdf_row or {}).get("registered_name") or csv_row.get("Name"))
         phone = norm_phone((pdf_row or {}).get("phone") or csv_row.get("Phone_No"))
         address = norm_addr((pdf_row or {}).get("registered_address") or csv_row.get("Address"))
@@ -70,10 +63,7 @@ class DataValidationAgent:
         expiry_date = safe((pdf_row or {}).get("expiry_date"))
         npi = safe((pdf_row or {}).get("npi") or csv_row.get("NPI_ID"))
 
-        # ------------------ MISSING FIELD LOGIC ------------------
         missing = []
-
-        # Mandatory license fields
         if not registration:
             missing.append("license_number")
         if not license_status:
@@ -81,13 +71,11 @@ class DataValidationAgent:
         if not expiry_date:
             missing.append("expiry_date")
 
-        # Enrichable
         if not npi:
             missing.append("npi")
         if not issue_date:
             missing.append("issue_date")
 
-        # ------------------ STATUS DECISION (NO SCORE CHEATING) ------------------
         if (
             "license_number" in missing or
             "license_status" in missing or
@@ -103,13 +91,11 @@ class DataValidationAgent:
         else:
             status = "PASS"
 
-        # ------------------ CONFIDENCE (SECONDARY) ------------------
         confidence = round(
             (1.0 - (len(missing) * 0.15)), 2
         )
         confidence = max(0.0, min(confidence, 1.0))
 
-        # ------------------ RECORD ------------------
         record = {
             "provider_id": provider_id,
             "timestamp_utc": datetime.utcnow().isoformat() + "Z",

@@ -5,9 +5,6 @@ import json
 from typing import Optional, Dict, Any
 from difflib import SequenceMatcher
 
-# -------------------------------------------
-# FIX: SAFE IMPORT FOR SETTINGS
-# -------------------------------------------
 try:
     from config.settings import GOOGLE_MAPS_API_KEY
 except Exception:
@@ -25,9 +22,6 @@ class GoogleMapsService:
         self.api_key = api_key or GOOGLE_MAPS_API_KEY
         self.timeout = timeout
 
-    # ---------------------------------------------------------
-    # INTERNAL HTTP
-    # ---------------------------------------------------------
     def _get(self, url: str, params: dict, retries: int = 2, backoff: float = 0.6) -> dict:
         for attempt in range(retries + 1):
             try:
@@ -45,9 +39,6 @@ class GoogleMapsService:
             return 0.0
         return SequenceMatcher(None, a.lower().strip(), b.lower().strip()).ratio()
 
-    # ---------------------------------------------------------
-    # GEOCODE
-    # ---------------------------------------------------------
     def geocode_address(self, address: str) -> Dict[str, Any]:
         if not address:
             return {"match": False}
@@ -68,9 +59,6 @@ class GoogleMapsService:
             "proof_link": f"https://www.google.com/maps/search/{urllib.parse.quote(r.get('formatted_address',''))}"
         }
 
-    # ---------------------------------------------------------
-    # TEXT SEARCH (Hospital Name)
-    # ---------------------------------------------------------
     def find_clinic(self, query: str) -> Dict[str, Any]:
         if not query:
             return {"found": False}
@@ -94,9 +82,6 @@ class GoogleMapsService:
             "proof_link": f"https://www.google.com/maps/place/?q=place_id:{place_id}"
         }
 
-    # ---------------------------------------------------------
-    # DETAILS (Phone, Website, etc.)
-    # ---------------------------------------------------------
     def get_place_details(self, place_id: str) -> Dict[str, Any]:
         if not place_id:
             return {"details_found": False}
@@ -126,9 +111,6 @@ class GoogleMapsService:
             "proof_link": f"https://www.google.com/maps/place/?q=place_id:{place_id}"
         }
 
-    # ---------------------------------------------------------
-    # MASTER: Enrich provider with coordinates + website + phone
-    # ---------------------------------------------------------
     def enrich_provider_location(self, name: str, address: str) -> Dict[str, Any]:
         search_query = f"{name} {address}".strip()
         place = self.find_clinic(search_query)
@@ -168,9 +150,6 @@ class GoogleMapsService:
         return result
 
 
-# ============================================================
-# CLI EXECUTION SUPPORT
-# ============================================================
 if __name__ == "__main__":
     import sys
 

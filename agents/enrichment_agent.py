@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# agents/enrichment_agent.py
-# EY Hackathon – FINAL STABLE ASYNC ENRICHMENT AGENT (Windows-safe)
 
 from __future__ import annotations
 import os
@@ -11,20 +8,18 @@ import tempfile
 from datetime import datetime, timezone
 from typing import Dict, Any
 
-# ---------------- PATH FIX ----------------
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
-# ---------------- SAFE IMPORTS ----------------
 try:
     from services.npi_api import NPIRegistryService
     from services.google_maps_api import GoogleMapsService
     from services.website_scraper import WebsiteScraper
 except Exception:
-    raise RuntimeError("❌ services/* imports failed. Run from project root.")
+    raise RuntimeError(" services/* imports failed. Run from project root.")
 
-# ---------------- CONFIG ----------------
+
 PROCESSED_DIR = os.path.join("data", "processed")
 VALIDATED_JSON = os.path.join(PROCESSED_DIR, "validated_data.json")
 ENRICHED_JSON = os.path.join(PROCESSED_DIR, "enriched_data.json")
@@ -34,7 +29,6 @@ os.makedirs(PROCESSED_DIR, exist_ok=True)
 WEIGHTS = {"npi": 0.4, "maps": 0.35, "website": 0.25}
 MAX_CONCURRENCY = 6
 
-# ---------------- SAFE IO ----------------
 _file_lock = asyncio.Lock()
 
 def load_json(path: str) -> Dict[str, Any]:
@@ -67,14 +61,12 @@ async def atomic_write(path: str, data: Dict[str, Any]):
                 except Exception:
                     pass
 
-# ---------------- HELPERS ----------------
 def now_utc():
     return datetime.now(timezone.utc).isoformat()
 
 def valid_http_url(u: str) -> bool:
     return isinstance(u, str) and u.startswith(("http://", "https://"))
 
-# ---------------- ENRICHER ----------------
 class Enricher:
     def __init__(self):
         self.npi = NPIRegistryService()
@@ -101,7 +93,6 @@ class Enricher:
 
         score = 0.0
 
-        # ---------- NPI ----------
         try:
             npi_data = await asyncio.to_thread(
                 self.npi.get_best_match,
@@ -116,7 +107,6 @@ class Enricher:
         except Exception:
             pass
 
-        # ---------- MAPS ----------
         try:
             maps_data = await asyncio.to_thread(
                 self.maps.enrich_provider_location,
@@ -129,7 +119,6 @@ class Enricher:
         except Exception:
             pass
 
-        # ---------- WEBSITE ----------
         website_url = None
         if maps_data:
             website_url = maps_data.get("website")
@@ -161,11 +150,10 @@ class Enricher:
 
         return enriched
 
-# ---------------- RUNNER ----------------
 async def run():
     validated = load_json(VALIDATED_JSON)
     if not validated:
-        print("❌ No validated data found")
+        print(" No validated data found")
         return
 
     enriched_existing = load_json(ENRICHED_JSON)
@@ -186,6 +174,5 @@ async def run():
 
     await asyncio.gather(*tasks)
 
-# ---------------- MAIN ----------------
 if __name__ == "__main__":
     asyncio.run(run())

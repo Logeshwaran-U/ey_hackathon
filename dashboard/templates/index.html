@@ -173,12 +173,10 @@
             const card = document.getElementById("card");
             const btn = document.getElementById("submitBtn");
 
-            // ❌ No file → let browser validation run
-            if (!fileInput.files || fileInput.files.length === 0) {
+                        if (!fileInput.files || fileInput.files.length === 0) {
                 return true;
             }
 
-            // ✅ File selected → show loader
             loading.style.display = "flex";
             card.style.display = "none";
             btn.disabled = true;
@@ -190,7 +188,6 @@
 
 <body>
 
-<!-- UPLOAD CARD -->
 <div class="card" id="card">
     <div class="logo">EY</div>
     <h2>Provider Validation</h2>
@@ -206,7 +203,6 @@
     </form>
 </div>
 
-<!-- LOADING OVERLAY -->
 <div class="loading" id="loading">
     <div class="wrapper">
         <div class="logo">EY</div>
